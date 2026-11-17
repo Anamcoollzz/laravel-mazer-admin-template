@@ -18,8 +18,14 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <div class="auth-logo">
-                        <a href="{{ route('mazer.index.html') }}"><img src="{{ asset('mazzer-assets/compiled/svg/logo.svg') }}" alt="Logo"></a>
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="auth-logo">
+                            <a href="{{ route('mazer.index.html') }}"><img src="{{ asset('mazzer-assets/compiled/svg/logo.svg') }}" alt="Logo"></a>
+                        </div>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Language switcher">
+                            <a href="{{ route('locale.switch', 'id') }}" class="btn {{ app()->getLocale() === 'id' ? 'btn-primary' : 'btn-outline-primary' }}">ID</a>
+                            <a href="{{ route('locale.switch', 'en') }}" class="btn {{ app()->getLocale() === 'en' ? 'btn-primary' : 'btn-outline-primary' }}">EN</a>
+                        </div>
                     </div>
                     <h1 class="auth-title">{{ __('Sign Up') }}</h1>
                     <p class="auth-subtitle mb-5">{{ __('Input your data to register to our website.') }}</p>

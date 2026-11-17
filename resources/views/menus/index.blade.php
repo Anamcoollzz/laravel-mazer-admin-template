@@ -68,6 +68,7 @@
                               <tr>
                                   <th>{{ __('Order') }}</th>
                                   <th>{{ __('Title') }}</th>
+                                  <th>{{ __('Title (EN)') }}</th>
                                   <th>{{ __('Type') }}</th>
                                   <th>{{ __('Parent') }}</th>
                                   <th>{{ __('Icon') }}</th>
@@ -87,6 +88,7 @@
                                               <span class="badge bg-light-secondary text-secondary ms-1">{{ $menu->children_count }} {{ __('sub') }}</span>
                                           @endif
                                       </td>
+                                      <td>{{ $menu->title_en ?? '-' }}</td>
                                       <td>
                                           <span class="badge {{ $menu->isTitle() ? 'bg-info' : 'bg-primary' }}">
                                               {{ $menu->type }}
@@ -153,7 +155,7 @@
                                   </tr>
                               @empty
                                   <tr>
-                                      <td colspan="9" class="text-center text-muted py-4">{{ __('Belum ada data menu.') }}</td>
+                                      <td colspan="10" class="text-center text-muted py-4">{{ __('Belum ada data menu.') }}</td>
                                   </tr>
                               @endforelse
                           </tbody>

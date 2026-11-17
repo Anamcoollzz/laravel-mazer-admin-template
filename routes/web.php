@@ -9,6 +9,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/mazer/index.html');
 
+Route::get('/locale/{locale}', function (string $locale) {
+    if (in_array($locale, ['id', 'en'], true)) {
+        session(['locale' => $locale]);
+    }
+
+    return back();
+})->name('locale.switch');
+
 Route::prefix('app/auth')->name('app.auth.')->group(function (): void {
     Route::middleware('guest')->group(function (): void {
         Route::get('/login', [AuthController::class, 'showLogin'])->name('login');

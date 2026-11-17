@@ -60,33 +60,46 @@ class RolePermissionSeeder extends Seeder
      */
     private function seedSidebarMenus(): void
     {
-        $userManagement = Menu::query()->firstOrCreate(
-            ['title' => 'User Management', 'parent_id' => null],
-            [
-                'type' => Menu::TypeItem,
-                'icon' => 'bi bi-people-fill',
-                'route_pattern' => 'users.*,roles.*',
-                'order' => 4,
-                'is_active' => true,
-            ],
-        );
+        $userManagement = Menu::query()
+            ->whereNull('parent_id')
+            ->whereIn('title', ['User Management', 'Manajemen User'])
+            ->first();
 
-        Menu::query()->firstOrCreate(
+        $userManagementAttributes = [
+            'parent_id' => null,
+            'type' => Menu::TypeItem,
+            'title' => 'Manajemen User',
+            'title_en' => 'User Management',
+            'icon' => 'bi bi-people-fill',
+            'route_pattern' => 'users.*,roles.*',
+            'order' => 4,
+            'is_active' => true,
+        ];
+
+        if ($userManagement) {
+            $userManagement->update($userManagementAttributes);
+        } else {
+            $userManagement = Menu::query()->create($userManagementAttributes);
+        }
+
+        Menu::query()->updateOrCreate(
             ['route_name' => 'users.index', 'parent_id' => $userManagement->id],
             [
                 'type' => Menu::TypeItem,
-                'title' => 'Users',
+                'title' => 'User',
+                'title_en' => 'Users',
                 'route_pattern' => 'users.*',
                 'order' => 1,
                 'is_active' => true,
             ],
         );
 
-        Menu::query()->firstOrCreate(
+        Menu::query()->updateOrCreate(
             ['route_name' => 'roles.index', 'parent_id' => $userManagement->id],
             [
                 'type' => Menu::TypeItem,
-                'title' => 'Roles',
+                'title' => 'Role',
+                'title_en' => 'Roles',
                 'route_pattern' => 'roles.*',
                 'order' => 2,
                 'is_active' => true,

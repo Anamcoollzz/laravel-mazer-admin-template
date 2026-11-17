@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -62,7 +62,7 @@
                         @foreach ($sidebarMenus as $menu)
                             @continue(! $menu->isVisibleTo(auth()->user()))
                             @if ($menu->isTitle())
-                                <li class="sidebar-title">{{ $menu->title }}</li>
+                                <li class="sidebar-title">{{ $menu->localizedTitle() }}</li>
                             @elseif ($menu->children->isNotEmpty())
                                 @php
                                     $visibleChildren = $menu->children->filter(fn ($child) => $child->isVisibleTo(auth()->user()));
@@ -74,7 +74,7 @@
                                         @if ($menu->icon)
                                             <i class="{{ $menu->icon }}"></i>
                                         @endif
-                                        <span>{{ $menu->title }}</span>
+                                        <span>{{ $menu->localizedTitle() }}</span>
                                     </a>
                                     <ul class="submenu {{ $isMenuActive ? 'active' : '' }}">
                                         @foreach ($visibleChildren as $child)
@@ -85,18 +85,18 @@
                                                 @endphp
                                                 @continue($visibleGrandchildren->isEmpty())
                                                 <li class="submenu-item {{ $isChildActive ? 'active' : '' }} has-sub">
-                                                    <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->title }}</a>
+                                                    <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->localizedTitle() }}</a>
                                                     <ul class="submenu submenu-level-2 {{ $isChildActive ? 'active' : '' }}">
                                                         @foreach ($visibleGrandchildren as $grandchild)
                                                             <li class="submenu-item {{ $grandchild->isCurrentlyActive() ? 'active' : '' }}">
-                                                                <a href="{{ $grandchild->resolvedHref() }}" class="submenu-link">{{ $grandchild->title }}</a>
+                                                                <a href="{{ $grandchild->resolvedHref() }}" class="submenu-link">{{ $grandchild->localizedTitle() }}</a>
                                                             </li>
                                                         @endforeach
                                                     </ul>
                                                 </li>
                                             @else
                                                 <li class="submenu-item {{ $child->isCurrentlyActive() ? 'active' : '' }}">
-                                                    <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->title }}</a>
+                                                    <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->localizedTitle() }}</a>
                                                 </li>
                                             @endif
                                         @endforeach
@@ -108,7 +108,7 @@
                                         @if ($menu->icon)
                                             <i class="{{ $menu->icon }}"></i>
                                         @endif
-                                        <span>{{ $menu->title }}</span>
+                                        <span>{{ $menu->localizedTitle() }}</span>
                                     </a>
                                 </li>
                             @endif
@@ -118,10 +118,14 @@
             </div>
         </div>
         <div id="main">
-            <header class="mb-3">
+            <header class="mb-3 d-flex justify-content-between align-items-center">
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
+                <div class="ms-auto btn-group btn-group-sm" role="group" aria-label="Language switcher">
+                    <a href="{{ route('locale.switch', 'id') }}" class="btn {{ app()->getLocale() === 'id' ? 'btn-primary' : 'btn-outline-primary' }}">ID</a>
+                    <a href="{{ route('locale.switch', 'en') }}" class="btn {{ app()->getLocale() === 'en' ? 'btn-primary' : 'btn-outline-primary' }}">EN</a>
+                </div>
             </header>
 
             @yield('page-heading')

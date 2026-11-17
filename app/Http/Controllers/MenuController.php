@@ -27,6 +27,7 @@ class MenuController extends Controller
             ->when($search !== '', function ($query) use ($search): void {
                 $query->where(function ($q) use ($search): void {
                     $q->where('title', 'like', "%{$search}%")
+                        ->orWhere('title_en', 'like', "%{$search}%")
                         ->orWhere('route_name', 'like', "%{$search}%")
                         ->orWhere('url', 'like', "%{$search}%")
                         ->orWhere('permission_name', 'like', "%{$search}%");

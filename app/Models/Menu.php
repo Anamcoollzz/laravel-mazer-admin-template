@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
     'parent_id',
     'type',
     'title',
+    'title_en',
     'icon',
     'route_name',
     'url',
@@ -135,5 +136,17 @@ class Menu extends Model
         }
 
         return $user?->can($this->permission_name) ?? false;
+    }
+
+    /**
+     * Resolve the menu title for the current application locale.
+     */
+    public function localizedTitle(): string
+    {
+        if (app()->getLocale() === 'en' && filled($this->title_en)) {
+            return $this->title_en;
+        }
+
+        return $this->title;
     }
 }

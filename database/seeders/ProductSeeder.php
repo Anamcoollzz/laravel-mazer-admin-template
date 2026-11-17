@@ -17,11 +17,12 @@ class ProductSeeder extends Seeder
             Product::factory()->count(15)->create();
         }
 
-        Menu::query()->firstOrCreate(
+        Menu::query()->updateOrCreate(
             ['route_name' => 'products.index', 'parent_id' => null],
             [
                 'type' => Menu::TypeItem,
-                'title' => 'Products',
+                'title' => 'Produk',
+                'title_en' => 'Products',
                 'icon' => 'bi bi-box-seam-fill',
                 'route_pattern' => 'products.*',
                 'order' => 5,

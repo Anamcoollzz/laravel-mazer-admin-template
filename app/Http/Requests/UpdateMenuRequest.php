@@ -47,6 +47,7 @@ class UpdateMenuRequest extends FormRequest
             ],
             'type' => ['required', 'string', Rule::in([Menu::TypeTitle, Menu::TypeItem])],
             'title' => ['required', 'string', 'max:255'],
+            'title_en' => ['nullable', 'string', 'max:255'],
             'icon' => ['nullable', 'string', 'max:255'],
             'route_name' => ['nullable', 'string', 'max:255'],
             'url' => ['nullable', 'string', 'max:2048'],

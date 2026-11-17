@@ -25,7 +25,7 @@
         @enderror
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
         <label for="title" class="form-label">{{ __('Title') }} <span class="text-danger">*</span></label>
         <input
             type="text"
@@ -41,7 +41,22 @@
         @enderror
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
+        <label for="title_en" class="form-label">{{ __('Title (EN)') }}</label>
+        <input
+            type="text"
+            id="title_en"
+            name="title_en"
+            value="{{ old('title_en', $menu->title_en) }}"
+            class="form-control @error('title_en') is-invalid @enderror"
+            placeholder="{{ __('Contoh: Dashboard (English)') }}"
+        >
+        @error('title_en')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="col-md-4">
         <label for="icon" class="form-label">{{ __('Icon Class') }}</label>
         <input
             type="text"
