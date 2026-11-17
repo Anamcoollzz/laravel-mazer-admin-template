@@ -124,11 +124,29 @@
                                       </td>
                                       <td class="text-end">
                                           <div class="d-inline-flex gap-1">
-                                              <a href="{{ route('menus.edit', $menu) }}" class="btn btn-sm btn-warning">Edit</a>
+                                              <a
+                                                  href="{{ route('menus.edit', $menu) }}"
+                                                  class="btn btn-sm btn-warning"
+                                                  data-bs-toggle="tooltip"
+                                                  data-bs-placement="top"
+                                                  title="Edit Menu"
+                                                  aria-label="Edit Menu"
+                                              >
+                                                  <i class="bi bi-pencil-square"></i>
+                                              </a>
                                               <form method="POST" action="{{ route('menus.destroy', $menu) }}" onsubmit="return confirm('Hapus menu ini?')">
                                                   @csrf
                                                   @method('DELETE')
-                                                  <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                                  <button
+                                                      type="submit"
+                                                      class="btn btn-sm btn-danger"
+                                                      data-bs-toggle="tooltip"
+                                                      data-bs-placement="top"
+                                                      title="Hapus Menu"
+                                                      aria-label="Hapus Menu"
+                                                  >
+                                                      <i class="bi bi-trash"></i>
+                                                  </button>
                                               </form>
                                           </div>
                                       </td>

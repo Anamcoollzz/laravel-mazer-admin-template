@@ -98,11 +98,29 @@
                                       <td>{{ $user->created_at?->format('d M Y') }}</td>
                                       <td class="text-end">
                                           <div class="d-inline-flex gap-1">
-                                              <a href="{{ route('users.edit', $user) }}" class="btn btn-sm btn-warning">Edit</a>
+                                              <a
+                                                  href="{{ route('users.edit', $user) }}"
+                                                  class="btn btn-sm btn-warning"
+                                                  data-bs-toggle="tooltip"
+                                                  data-bs-placement="top"
+                                                  title="Edit User"
+                                                  aria-label="Edit User"
+                                              >
+                                                  <i class="bi bi-pencil-square"></i>
+                                              </a>
                                               <form method="POST" action="{{ route('users.destroy', $user) }}" onsubmit="return confirm('Hapus user ini?')">
                                                   @csrf
                                                   @method('DELETE')
-                                                  <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                                  <button
+                                                      type="submit"
+                                                      class="btn btn-sm btn-danger"
+                                                      data-bs-toggle="tooltip"
+                                                      data-bs-placement="top"
+                                                      title="Hapus User"
+                                                      aria-label="Hapus User"
+                                                  >
+                                                      <i class="bi bi-trash"></i>
+                                                  </button>
                                               </form>
                                           </div>
                                       </td>

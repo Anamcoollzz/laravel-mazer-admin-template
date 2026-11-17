@@ -96,15 +96,40 @@
                                           <div class="d-inline-flex gap-1">
                                               <form method="POST" action="{{ route('products.duplicate', $product) }}">
                                                   @csrf
-                                                  <button type="submit" class="btn btn-sm btn-secondary" title="Duplikasi Produk">
-                                                      <i class="bi bi-files"></i> Duplikasi
+                                                  <button
+                                                      type="submit"
+                                                      class="btn btn-sm btn-secondary"
+                                                      data-bs-toggle="tooltip"
+                                                      data-bs-placement="top"
+                                                      title="Duplikasi Produk"
+                                                      aria-label="Duplikasi Produk"
+                                                  >
+                                                      <i class="bi bi-files"></i>
                                                   </button>
                                               </form>
-                                              <a href="{{ route('products.edit', $product) }}" class="btn btn-sm btn-warning">Edit</a>
+                                              <a
+                                                  href="{{ route('products.edit', $product) }}"
+                                                  class="btn btn-sm btn-warning"
+                                                  data-bs-toggle="tooltip"
+                                                  data-bs-placement="top"
+                                                  title="Edit Produk"
+                                                  aria-label="Edit Produk"
+                                              >
+                                                  <i class="bi bi-pencil-square"></i>
+                                              </a>
                                               <form method="POST" action="{{ route('products.destroy', $product) }}" onsubmit="return confirm('Hapus produk ini?')">
                                                   @csrf
                                                   @method('DELETE')
-                                                  <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                                  <button
+                                                      type="submit"
+                                                      class="btn btn-sm btn-danger"
+                                                      data-bs-toggle="tooltip"
+                                                      data-bs-placement="top"
+                                                      title="Hapus Produk"
+                                                      aria-label="Hapus Produk"
+                                                  >
+                                                      <i class="bi bi-trash"></i>
+                                                  </button>
                                               </form>
                                           </div>
                                       </td>
@@ -156,4 +181,7 @@
   <script src="{{ asset('mazzer-assets/extensions/datatables.net/js/jquery.dataTables.min.js') }}"></script>
   <script src="{{ asset('mazzer-assets/extensions/datatables.net-bs5/js/dataTables.bootstrap5.min.js') }}"></script>
   <script src="{{ asset('mazzer-assets/static/js/pages/datatables.js') }}"></script>
+  <script>
+      $('#table1').on('draw.dt', window.initMazerTooltips);
+  </script>
 @endsection

@@ -143,6 +143,15 @@
     <script src="{{ asset('mazzer-assets/static/js/components/dark.js') }}"></script>
     <script src="{{ asset('mazzer-assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('mazzer-assets/compiled/js/app.js') }}"></script>
+    <script>
+        window.initMazerTooltips = () => {
+            document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((el) => {
+                bootstrap.Tooltip.getOrCreateInstance(el);
+            });
+        };
+
+        window.initMazerTooltips();
+    </script>
     @yield('vendor-js')
 </body>
 

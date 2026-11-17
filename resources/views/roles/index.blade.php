@@ -92,12 +92,30 @@
                                       </td>
                                       <td class="text-end">
                                           <div class="d-inline-flex gap-1">
-                                              <a href="{{ route('roles.edit', $role) }}" class="btn btn-sm btn-warning">Edit</a>
+                                              <a
+                                                  href="{{ route('roles.edit', $role) }}"
+                                                  class="btn btn-sm btn-warning"
+                                                  data-bs-toggle="tooltip"
+                                                  data-bs-placement="top"
+                                                  title="Edit Role"
+                                                  aria-label="Edit Role"
+                                              >
+                                                  <i class="bi bi-pencil-square"></i>
+                                              </a>
                                               @if ($role->name !== 'super-admin')
                                                   <form method="POST" action="{{ route('roles.destroy', $role) }}" onsubmit="return confirm('Hapus role ini?')">
                                                       @csrf
                                                       @method('DELETE')
-                                                      <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                                      <button
+                                                          type="submit"
+                                                          class="btn btn-sm btn-danger"
+                                                          data-bs-toggle="tooltip"
+                                                          data-bs-placement="top"
+                                                          title="Hapus Role"
+                                                          aria-label="Hapus Role"
+                                                      >
+                                                          <i class="bi bi-trash"></i>
+                                                      </button>
                                                   </form>
                                               @endif
                                           </div>
