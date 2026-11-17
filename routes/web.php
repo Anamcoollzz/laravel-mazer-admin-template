@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,12 @@ Route::prefix('/app')->group(function () {
     Route::resource('menus', MenuController::class)->except(['show']);
     Route::resource('users', UserController::class)->except(['show']);
     Route::resource('roles', RoleController::class)->except(['show']);
+
+    Route::get('products/template', [ProductController::class, 'template'])->name('products.template');
+    Route::get('products/export', [ProductController::class, 'export'])->name('products.export');
+    Route::post('products/import', [ProductController::class, 'import'])->name('products.import');
+    Route::post('products/{product}/duplicate', [ProductController::class, 'duplicate'])->name('products.duplicate');
+    Route::resource('products', ProductController::class)->except(['show']);
 });
 
 Route::view('/mazer/index.html', 'mazer.index')->name('mazer.index.html');
