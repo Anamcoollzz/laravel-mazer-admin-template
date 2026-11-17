@@ -2,23 +2,18 @@
 
 @section('title', 'Table - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Table</h3>
-                  <p class="text-subtitle text-muted">For user to check they list</p>
+                  <p class="text-subtitle text-muted">Who does not love tables?</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Table</li>
                       </ol>
                   </nav>
@@ -38,8 +33,7 @@
                           <div class="card-body">
                               <p class="card-text">Using the most basic table up, here’s how
                                   <code>.table</code>-based tables look in Bootstrap. You can use any example
-                                  of below table for your table and it can be use with any type of bootstrap
-                                  tables.
+                                  of below table for your table and it can be use with any type of bootstrap tables.
                               </p>
                               <!-- Table with outer spacing -->
                               <div class="table-responsive">
@@ -98,8 +92,7 @@
                           <div class="card-body">
                               <p class="card-text">Using the most basic table up, here’s how
                                   <code>.table</code>-based tables look in Bootstrap. You can use any example
-                                  of below table for your table and it can be use with any type of bootstrap
-                                  tables.
+                                  of below table for your table and it can be use with any type of bootstrap tables.
                               </p>
                           </div>
 
@@ -324,8 +317,7 @@
                               <p>Similar to tables and dark tables, use the modifier classes <code
                                       class="highlighter-rouge">.thead-light</code> or <code
                                       class="highlighter-rouge">.thead-dark</code> to
-                                  make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or
-                                  dark gray.
+                                  make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or dark gray.
                               </p>
                           </div>
                           <!-- table head dark -->
@@ -412,11 +404,9 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p class="card-text">Use <code class="highlighter-rouge">.table-striped</code>
-                                  to add
+                              <p class="card-text">Use <code class="highlighter-rouge">.table-striped</code> to add
                                   zebra-striping to any
-                                  table row within the <code class="highlighter-rouge">&lt;tbody&gt;</code>.
-                                  This styling
+                                  table row within the <code class="highlighter-rouge">&lt;tbody&gt;</code>. This styling
                                   doesn't work in IE8
                                   and below as <code>:nth-child</code> CSS selector isn't supported.</p>
                           </div>
@@ -504,11 +494,9 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p class="card-text">Use <code>.table-dark</code> with
-                                  <code>.table-striped</code> to add
+                              <p class="card-text">Use <code>.table-dark</code> with <code>.table-striped</code> to add
                                   zebra-striping to
-                                  any inverse table row within the <code>&lt;tbody&gt;</code>. This styling
-                                  doesn't work
+                                  any inverse table row within the <code>&lt;tbody&gt;</code>. This styling doesn't work
                                   in
                                   IE8 and below as
                                   <code>:nth-child</code> CSS selector isn't supported.
@@ -598,8 +586,7 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p class="card-text">Add <code>.table-bordered</code> for borders on all sides
-                                  of the table
+                              <p class="card-text">Add <code>.table-bordered</code> for borders on all sides of the table
                                   and
                                   cells. For
                                   Inverse Dark Table, add <code>.table-dark</code> along with
@@ -690,8 +677,7 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p class="card-text">Add <code>.table-borderless</code> for a table without
-                                  borders. It can
+                              <p class="card-text">Add <code>.table-borderless</code> for a table without borders. It can
                                   also
                                   be used on
                                   dark tables.</p>
@@ -780,8 +766,7 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p>Add <code class="highlighter-rouge">.table-hover</code> to enable a hover
-                                  state on table
+                              <p>Add <code class="highlighter-rouge">.table-hover</code> to enable a hover state on table
                                   rows
                                   within a
                                   <code class="highlighter-rouge">&lt;tbody&gt;</code>.
@@ -871,8 +856,7 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p>Use contextual classes to color table rows or individual cells. Read full
-                                  documnetation
+                              <p>Use contextual classes to color table rows or individual cells. Read full documnetation
                                   <a href="https://getbootstrap.com/docs/4.3/content/tables/#contextual-classes"
                                       target="_blank">here.</a>
                               </p>
@@ -1001,19 +985,13 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p>Responsive tables allow tables to be scrolled horizontally with ease. Make
-                                  any table
+                              <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table
                                   responsive across all
-                                  viewports by adding <code class="highlighter-rouge">.table-responsive</code>
-                                  class on
-                                  <code class="highlighter-rouge">.table</code>. Or, pick a maximum breakpoint
-                                  with which
-                                  to
-                                  have a responsive
+                                  viewports by adding a div with the class <code class="highlighter-rouge">.table-responsive</code>
+  								around the table. Or, pick a maximum breakpoint with which to have a responsive
                                   table up to by adding <code
-                                      class="highlighter-rouge"> .table-responsive{-sm|-md|-lg|-xl}</code>.
-                                  Read full
-                                  documnetation <a
+                                      class="highlighter-rouge"> .table-responsive{-sm|-md|-lg|-xl}</code>. Read full
+                                  documentation <a
                                       href="https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables"
                                       target="_blank">here.</a>
                               </p>
@@ -1023,8 +1001,7 @@
                                   <p>Responsive tables make use of <code
                                           class="highlighter-rouge">overflow-y: hidden</code>,
                                       which clips off
-                                      any content that goes beyond the bottom or top edges of the table. In
-                                      particular,
+                                      any content that goes beyond the bottom or top edges of the table. In particular,
                                       this
                                       can clip off
                                       dropdown menus and other third-party widgets.</p>
@@ -1109,9 +1086,4 @@
           </div>
       </section>
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

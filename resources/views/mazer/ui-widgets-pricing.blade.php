@@ -2,23 +2,18 @@
 
 @section('title', 'Pricing - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Pricing</h3>
-                  <p class="text-subtitle text-muted">For user to check they list</p>
+                  <p class="text-subtitle text-muted">Present your plans to your users.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Pricing</li>
                       </ol>
                   </nav>
@@ -40,19 +35,20 @@
                                   <h1 class="price">$100</h1>
                                   <ul>
                                       <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit </li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor amet</li>
                                       <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum sit amet</li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem dolor dolor sit amet</li>
                                   </ul>
                                   <div class="card-footer">
                                       <button class="btn btn-primary btn-block">Order Now</button>
                                   </div>
                               </div>
                           </div>
-                          <div class="col-md-4 px-0">
-                              <div class="card card-highlighted">
+                          <!-- Highlighted Pricing -->
+                          <div class="col-md-4 px-0  position-relative z-1">
+                              <div class="card card-highlighted shadow-lg">
                                   <div class="card-header text-center">
                                       <h4 class="card-title">Enterpreneur</h4>
                                       <p></p>
@@ -83,11 +79,11 @@
                                   <h1 class="price">$100</h1>
                                   <ul>
                                       <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit </li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor amet</li>
                                       <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum sit amet</li>
-                                      <li><i class="bi bi-check-circle"></i>Lorem dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
+                                      <li><i class="bi bi-check-circle"></i>Lorem ipsum dolor sit amet</li>
                                   </ul>
                                   <div class="card-footer">
                                       <button class="btn btn-primary btn-block">Order Now</button>
@@ -100,9 +96,4 @@
           </div>
       </section>
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

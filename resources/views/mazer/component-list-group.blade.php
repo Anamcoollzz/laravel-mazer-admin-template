@@ -2,25 +2,19 @@
 
 @section('title', 'List Group - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>List Group</h3>
-                  <p class="text-subtitle text-muted">List groups are a flexible and powerful component for
-                      displaying a
-                      series of content</p>
+                  <p class="text-subtitle text-muted">List groups are a flexible and powerful component for displaying a
+                      series of content.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">List Group</li>
                       </ol>
                   </nav>
@@ -61,8 +55,7 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p>Add <code>.disabled</code> to a <code>.list-group-item</code> to gray it out
-                                  to appear
+                              <p>Add <code>.disabled</code> to a <code>.list-group-item</code> to gray it out to appear
                                   disabled.</p>
                               <div class="list-group">
                                   <span class="list-group-item">
@@ -72,8 +65,7 @@
                                   <span class="list-group-item disabled">Morbi leo risus</span>
                                   <span class="list-group-item">Porta ac consectetur ac</span>
                                   <span class="list-group-item">Vestibulum at eros</span>
-                                  <span class="list-group-item">Biscuit jelly beans macaroon danish
-                                      pudding</span>
+                                  <span class="list-group-item">Biscuit jelly beans macaroon danish pudding</span>
                                   <span class="list-group-item">Oat cake icing pastry pie carrot</span>
                               </div>
                           </div>
@@ -94,22 +86,17 @@
                       <div class="card-content">
                           <div class="card-body">
                               <div class="list-group">
-                                  <button type="button"
-                                      class="list-group-item list-group-item-action active">Cras justo
+                                  <button type="button" class="list-group-item list-group-item-action active">Cras justo
                                       odio</button>
-                                  <button type="button" class="list-group-item list-group-item-action">Dapibus
-                                      ac
+                                  <button type="button" class="list-group-item list-group-item-action">Dapibus ac
                                       facilisis
                                       in</button>
-                                  <button type="button" class="list-group-item list-group-item-action">Morbi
-                                      leo
+                                  <button type="button" class="list-group-item list-group-item-action">Morbi leo
                                       risus</button>
-                                  <button type="button" class="list-group-item list-group-item-action">Porta
-                                      ac
+                                  <button type="button" class="list-group-item list-group-item-action">Porta ac
                                       consectetur
                                       ac</button>
-                                  <button type="button"
-                                      class="list-group-item list-group-item-action">Vestibulum at
+                                  <button type="button" class="list-group-item list-group-item-action">Vestibulum at
                                       eros</button>
                               </div>
                           </div>
@@ -123,31 +110,25 @@
                       </div>
                       <div class="card-content">
                           <div class="card-body">
-                              <p>Use Utility classes <code>.d-flex</code>
-                                  <code>.justify-content-between</code>
-                                  <code>align-items-center</code> to create space between badge and your
-                                  content
+                              <p>Use Utility classes <code>.d-flex</code> <code>.justify-content-between</code>
+                                  <code>align-items-center</code> to create space between badge and your content
                               </p>
                               <ul class="list-group">
-                                  <li
-                                      class="list-group-item d-flex justify-content-between align-items-center">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
                                       <span> Biscuit jelly beans macaroon danish pudding.</span>
-                                      <span class="badge bg-warning badge-pill badge-round ml-1">8</span>
+                                      <span class="badge bg-warning badge-pill badge-round ms-1">8</span>
                                   </li>
-                                  <li
-                                      class="list-group-item d-flex justify-content-between align-items-center">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
                                       <span> chocolate cheesecake candy</span>
-                                      <span class="badge bg-info badge-pill badge-round ml-1">7</span>
+                                      <span class="badge bg-info badge-pill badge-round ms-1">7</span>
                                   </li>
-                                  <li
-                                      class="list-group-item d-flex justify-content-between align-items-center">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
                                       <span> Oat cake icing pastry pie carrot</span>
-                                      <span class="badge bg-danger badge-pill badge-round ml-1">6</span>
+                                      <span class="badge bg-danger badge-pill badge-round ms-1">6</span>
                                   </li>
-                                  <li
-                                      class="list-group-item d-flex justify-content-between align-items-center">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
                                       <span>space between badgeOat cake icing pastry pie carrot</span>
-                                      <span class="badge bg-secondary badge-pill badge-round ml-1">5</span>
+                                      <span class="badge bg-secondary badge-pill badge-round ms-1">5</span>
                                   </li>
                               </ul>
                           </div>
@@ -168,43 +149,36 @@
                       <div class="card-content">
                           <div class="card-body">
                               <p>
-                                  Place checkboxes and radios within list group items and customize as needed
+                                  Place checkboxes and radios within list group items and customize as needed.
                               </p>
                               <ul class="list-group">
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Cras justo odio
+                                      <input id="checkbox-1" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-1">Cras justo odio</label>
                                   </li>
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Dapibus ac facilisis in
+                                      <input id="checkbox-2" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-2">Dapibus ac facilisis in</label>
                                   </li>
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Morbi leo risus
+                                      <input id="checkbox-3" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-3">Morbi leo risus</label>
                                   </li>
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Porta ac consectetur ac
+                                      <input id="checkbox-4" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-4">Porta ac consectetur ac</label>
                                   </li>
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Vestibulum at eros
+                                      <input id="checkbox-5" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-5">Vestibulum at eros</label>
                                   </li>
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Vestibulum at eros
+                                      <input id="checkbox-6" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-6">Vestibulum at eros</label>
                                   </li>
                                   <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value=""
-                                          aria-label="...">
-                                      Vestibulum at eros
+                                      <input id="checkbox-7" class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                      <label for="checkbox-7">Vestibulum at eros</label>
                                   </li>
                               </ul>
                           </div>
@@ -313,18 +287,16 @@
                       <div class="card-content">
                           <div class="card-body">
                               <p>
-                                  Add <code>.list-group-horizontal</code> to change the layout of list group
-                                  items from
+                                  Add <code>.list-group-horizontal</code> to change the layout of list group items from
                                   vertical to
                                   horizontal across all breakpoints.choose a responsive variantcode <code>
-              .list-group-horizontal-{sm|md|lg|xl}</code> to make a list group horizontal starting at that
+                                      .list-group-horizontal-{sm|md|lg|xl}</code> to make a list group horizontal starting
+                                  at that
                                   breakpoint’s min-width.
                               </p>
-                              <div class="list-group list-group-horizontal-sm mb-1 text-center"
-                                  role="tablist">
-                                  <a class="list-group-item list-group-item-action active"
-                                      id="list-sunday-list" data-bs-toggle="list" href="#list-sunday"
-                                      role="tab">Option 1</a>
+                              <div class="list-group list-group-horizontal-sm mb-1 text-center" role="tablist">
+                                  <a class="list-group-item list-group-item-action active" id="list-sunday-list"
+                                      data-bs-toggle="list" href="#list-sunday" role="tab">Option 1</a>
                                   <a class="list-group-item list-group-item-action" id="list-monday-list"
                                       data-bs-toggle="list" href="#list-monday" role="tab">Option 2</a>
                                   <a class="list-group-item list-group-item-action" id="list-tuesday-list"
@@ -332,70 +304,53 @@
                               </div>
                               <div class="tab-content text-justify">
                                   <div class="tab-pane fade show active" id="list-sunday" role="tabpanel"
-                                      aria-labelledby="list-sunday-list">Irure enim occaecat labore sit qui
-                                      aliquip
+                                      aria-labelledby="list-sunday-list">Irure enim occaecat labore sit qui aliquip
                                       reprehenderit amet
-                                      velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit
-                                      occaecat
+                                      velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat
                                       laboris sunt dolor.
-                                      Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute
-                                      occaecat ea
+                                      Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea
                                       aliquip
                                       sunt amet.
-                                      Aute mollit dolor ut exercitation irure commodo non amet consectetur
-                                      quis amet
+                                      Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet
                                       culpa.
                                       Quis ullamco
-                                      nisi amet qui aute irure eu. Magna labore dolor quis ex labore id
-                                      nostrud deserunt
+                                      nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt
                                       dolor
                                       eiusmod eu
-                                      pariatur culpa mollit in irure Lorem, ipsum dolor sit amet consectetur
-                                      adipisicing
+                                      pariatur culpa mollit in irure Lorem, ipsum dolor sit amet consectetur adipisicing
                                       elit.
                                       Iusto quis
                                       porro doloribus est natus doloremque, eos laudantium
-                                      exercitationem impedit sapiente tenetur soluta reiciendis deserunt!
-                                  </div>
+                                      exercitationem impedit sapiente tenetur soluta reiciendis deserunt!</div>
                                   <div class="tab-pane fade" id="list-monday" role="tabpanel"
                                       aria-labelledby="list-monday-list">Cupidatat
-                                      quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex
-                                      nisi eu do
+                                      quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do
                                       cillum ad laborum.
-                                      Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet
-                                      id ex.
+                                      Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex.
                                       Officia
                                       anim incididunt
-                                      laboris deserunt anim aute dolor incididunt veniam aute dolore do
-                                      exercitation.
+                                      laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation.
                                       Dolor
                                       nisi culpa ex ad
-                                      irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non
-                                      commodo enim culpa
+                                      irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa
                                       commodo veniam
-                                      incididunt veniam ad. Lorem ipsum dolor sit amet consectetur,
-                                      adipisicing elit.
+                                      incididunt veniam ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                       Exercitationem, porro!
                                       Amet soluta tempora eveniet blanditiis alias eos, dolor qui consectetur!
                                   </div>
                                   <div class="tab-pane fade" id="list-tuesday" role="tabpanel"
                                       aria-labelledby="list-tuesday-list">Ut ut
-                                      do pariatur aliquip aliqua aliquip exercitation do nostrud commodo
-                                      reprehenderit
+                                      do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit
                                       aute
                                       ipsum voluptate.
-                                      Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit
-                                      mollit
+                                      Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit
                                       consequat enim tempor.
-                                      Consectetur est minim nostrud nostrud consectetur irure labore voluptate
-                                      irure.
+                                      Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure.
                                       Ipsum id
                                       Lorem sit
-                                      sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit
-                                      eiusmod deserunt.
+                                      sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt.
                                       Consectetur et
-                                      fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur
-                                      cillum. Lorem
+                                      fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum. Lorem
                                       ipsum dolor sit
                                       amet consectetur adipisicing elit. Molestias, inventore!
                                   </div>
@@ -420,112 +375,88 @@
                               <div class="row">
                                   <div class="col-12 col-sm-12 col-md-4">
                                       <div class="list-group" role="tablist">
-                                          <a class="list-group-item list-group-item-action active"
-                                              id="list-home-list" data-bs-toggle="list" href="#list-home"
-                                              role="tab">Home</a>
-                                          <a class="list-group-item list-group-item-action"
-                                              id="list-profile-list" data-bs-toggle="list"
-                                              href="#list-profile" role="tab">Profile</a>
-                                          <a class="list-group-item list-group-item-action"
-                                              id="list-messages-list" data-bs-toggle="list"
-                                              href="#list-messages" role="tab">Messages</a>
-                                          <a class="list-group-item list-group-item-action"
-                                              id="list-settings-list" data-bs-toggle="list"
-                                              href="#list-settings" role="tab">Settings</a>
+                                          <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                              data-bs-toggle="list" href="#list-home" role="tab">Home</a>
+                                          <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                              data-bs-toggle="list" href="#list-profile" role="tab">Profile</a>
+                                          <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                              data-bs-toggle="list" href="#list-messages" role="tab">Messages</a>
+                                          <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                              data-bs-toggle="list" href="#list-settings" role="tab">Settings</a>
                                       </div>
                                   </div>
                                   <div class="col-12 col-sm-12 col-md-8 mt-1">
                                       <div class="tab-content text-justify" id="nav-tabContent">
                                           <div class="tab-pane show active" id="list-home" role="tabpanel"
                                               aria-labelledby="list-home-list">
-                                              Velit aute mollit ipsum ad dolor consectetur nulla officia culpa
-                                              adipisicing
+                                              Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing
                                               exercitation fugiat
-                                              tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident
-                                              ea ut.
+                                              tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut.
                                               Mollit
                                               voluptate
                                               reprehenderit
-                                              occaecat nisi ad non minim tempor sunt voluptate consectetur
-                                              exercitation id
+                                              occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id
                                               ut
                                               nulla. Ea et fugiat
-                                              aliquip nostrud sunt incididunt consectetur culpa aliquip
-                                              eiusmod dolor.
+                                              aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor.
                                               Anim ad
                                               Lorem aliqua in
-                                              cupidatat nisi enim eu nostrud do aliquip veniam minim. Lorem
-                                              ipsum dolor
+                                              cupidatat nisi enim eu nostrud do aliquip veniam minim. Lorem ipsum dolor
                                               sit
                                               amet consectetur,
-                                              adipisicing elit. Aliquam itaque nisi obcaecati doloremque et
-                                              est ex
+                                              adipisicing elit. Aliquam itaque nisi obcaecati doloremque et est ex
                                               possimus
                                               quidem dolorem soluta.
                                           </div>
                                           <div class="tab-pane" id="list-profile" role="tabpanel"
                                               aria-labelledby="list-profile-list">
-                                              Cupidatat quis ad sint excepteur laborum in esse qui. Et
-                                              excepteur
+                                              Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur
                                               consectetur
                                               ex nisi eu do cillum
                                               ad
-                                              laborum. Mollit et eu officia dolore sunt Lorem culpa qui
-                                              commodo velit ex
+                                              laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex
                                               amet
                                               id ex. Officia anim
-                                              incididunt laboris deserunt anim aute dolor incididunt veniam
-                                              aute dolore do
+                                              incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do
                                               exercitation. Dolor
                                               nisi
-                                              culpa ex ad irure in elit eu dolore. Ad laboris ipsum
-                                              reprehenderit irure
+                                              culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure
                                               non
                                               commodo enim culpa
                                               commodo veniam incididunt veniam ad.</div>
                                           <div class="tab-pane" id="list-messages" role="tabpanel"
                                               aria-labelledby="list-messages-list">Ut ut
-                                              do pariatur aliquip aliqua aliquip exercitation do nostrud
-                                              commodo
+                                              do pariatur aliquip aliqua aliquip exercitation do nostrud commodo
                                               reprehenderit
                                               aute ipsum
                                               voluptate.
-                                              Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do
-                                              ut velit
+                                              Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit
                                               mollit
                                               consequat enim
                                               tempor.
-                                              Consectetur est minim nostrud nostrud consectetur irure labore
-                                              voluptate
+                                              Consectetur est minim nostrud nostrud consectetur irure labore voluptate
                                               irure.
                                               Ipsum id Lorem sit
-                                              sint voluptate est pariatur eu ad cupidatat et deserunt culpa
-                                              sit eiusmod
+                                              sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod
                                               deserunt. Consectetur et
-                                              fugiat anim do eiusmod aliquip nulla laborum elit adipisicing
-                                              pariatur
+                                              fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur
                                               cillum.
                                           </div>
                                           <div class="tab-pane" id="list-settings" role="tabpanel"
                                               aria-labelledby="list-settings-list">Irure
-                                              enim occaecat labore sit qui aliquip reprehenderit amet velit.
-                                              Deserunt
+                                              enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt
                                               ullamco
                                               ex elit nostrud ut
-                                              dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi
-                                              eu minim
+                                              dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim
                                               cillum
                                               occaecat aute est
-                                              cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute
-                                              mollit
+                                              cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit
                                               dolor ut
                                               exercitation irure
-                                              commodo non amet consectetur quis amet culpa. Quis ullamco nisi
-                                              amet qui
+                                              commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui
                                               aute
                                               irure eu. Magna labore
-                                              dolor quis ex labore id nostrud deserunt dolor eiusmod eu
-                                              pariatur culpa
+                                              dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa
                                               mollit
                                               in irure</div>
                                       </div>
@@ -539,9 +470,4 @@
       </section>
       <!-- List group navigation ends -->
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

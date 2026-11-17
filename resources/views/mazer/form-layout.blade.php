@@ -2,23 +2,18 @@
 
 @section('title', 'Form Layout - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Form Layout</h3>
-                  <p class="text-subtitle text-muted">Multiple form layout you can use</p>
+                  <p class="text-subtitle text-muted">Multiple form layouts, you can use.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Form Layout</li>
                       </ol>
                   </nav>
@@ -40,45 +35,44 @@
                                   <div class="form-body">
                                       <div class="row">
                                           <div class="col-md-4">
-                                              <label>First Name</label>
+                                              <label for="first-name-horizontal">First Name</label>
                                           </div>
                                           <div class="col-md-8 form-group">
-                                              <input type="text" id="first-name" class="form-control"
-                                                  name="fname" placeholder="First Name">
+                                              <input type="text" id="first-name-horizontal" class="form-control" name="fname"
+                                                  placeholder="First Name">
                                           </div>
                                           <div class="col-md-4">
-                                              <label>Email</label>
+                                              <label for="email-horizontal">Email</label>
                                           </div>
                                           <div class="col-md-8 form-group">
-                                              <input type="email" id="email-id" class="form-control"
-                                                  name="email-id" placeholder="Email">
+                                              <input type="email" id="email-horizontal" class="form-control" name="email-id"
+                                                  placeholder="Email">
                                           </div>
                                           <div class="col-md-4">
-                                              <label>Mobile</label>
+                                              <label for="contact-info-horizontal">Mobile</label>
                                           </div>
                                           <div class="col-md-8 form-group">
-                                              <input type="number" id="contact-info" class="form-control"
-                                                  name="contact" placeholder="Mobile">
+                                              <input type="number" id="contact-info-horizontal" class="form-control" name="contact"
+                                                  placeholder="Mobile">
                                           </div>
                                           <div class="col-md-4">
-                                              <label>Password</label>
+                                              <label for="password-horizontal">Password</label>
                                           </div>
                                           <div class="col-md-8 form-group">
-                                              <input type="password" id="password" class="form-control"
-                                                  name="password" placeholder="Password">
+                                              <input type="password" id="password-horizontal" class="form-control" name="password"
+                                                  placeholder="Password">
                                           </div>
                                           <div class="col-12 col-md-8 offset-md-4 form-group">
                                               <div class='form-check'>
                                                   <div class="checkbox">
-                                                      <input type="checkbox" id="checkbox1"
-                                                          class='form-check-input' checked>
+                                                      <input type="checkbox" id="checkbox1" class='form-check-input'
+                                                          checked>
                                                       <label for="checkbox1">Remember Me</label>
                                                   </div>
                                               </div>
                                           </div>
                                           <div class="col-sm-12 d-flex justify-content-end">
-                                              <button type="submit"
-                                                  class="btn btn-primary me-1 mb-1">Submit</button>
+                                              <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                               <button type="reset"
                                                   class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                           </div>
@@ -100,13 +94,13 @@
                                   <div class="form-body">
                                       <div class="row">
                                           <div class="col-md-4">
-                                              <label>Name</label>
+                                              <label for="first-name-horizontal-icon">Name</label>
                                           </div>
                                           <div class="col-md-8">
                                               <div class="form-group has-icon-left">
                                                   <div class="position-relative">
-                                                      <input type="text" class="form-control"
-                                                          placeholder="Name" id="first-name-icon">
+                                                      <input type="text" class="form-control" placeholder="Name"
+                                                          id="first-name-horizontal-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-person"></i>
                                                       </div>
@@ -114,13 +108,13 @@
                                               </div>
                                           </div>
                                           <div class="col-md-4">
-                                              <label>Email</label>
+                                              <label for="email-horizontal-icon">Email</label>
                                           </div>
                                           <div class="col-md-8">
                                               <div class="form-group has-icon-left">
                                                   <div class="position-relative">
-                                                      <input type="email" class="form-control"
-                                                          placeholder="Email" id="first-name-icon">
+                                                      <input type="email" class="form-control" placeholder="Email"
+                                                          id="email-horizontal-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-envelope"></i>
                                                       </div>
@@ -128,13 +122,12 @@
                                               </div>
                                           </div>
                                           <div class="col-md-4">
-                                              <label>Mobile</label>
+                                              <label for="contact-info-horizontal-icon">Mobile</label>
                                           </div>
                                           <div class="col-md-8">
                                               <div class="form-group has-icon-left">
                                                   <div class="position-relative">
-                                                      <input type="number" class="form-control"
-                                                          placeholder="Mobile">
+                                                      <input type="number" class="form-control" placeholder="Mobile" id="contact-info-horizontal-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-phone"></i>
                                                       </div>
@@ -142,13 +135,12 @@
                                               </div>
                                           </div>
                                           <div class="col-md-4">
-                                              <label>Password</label>
+                                              <label for="password-horizontal-icon">Password</label>
                                           </div>
                                           <div class="col-md-8">
                                               <div class="form-group has-icon-left">
                                                   <div class="position-relative">
-                                                      <input type="password" class="form-control"
-                                                          placeholder="Password">
+                                                      <input type="password" class="form-control" placeholder="Password" id="password-horizontal-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-lock"></i>
                                                       </div>
@@ -158,15 +150,14 @@
                                           <div class="form-group col-md-8 offset-md-4">
                                               <div class='form-check'>
                                                   <div class="checkbox">
-                                                      <input type="checkbox" id="checkbox2"
-                                                          class='form-check-input' checked>
+                                                      <input type="checkbox" id="checkbox2" class='form-check-input'
+                                                          checked>
                                                       <label for="checkbox2">Remember Me</label>
                                                   </div>
                                               </div>
                                           </div>
                                           <div class="col-12 d-flex justify-content-end">
-                                              <button type="submit"
-                                                  class="btn btn-primary me-1 mb-1">Submit</button>
+                                              <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                               <button type="reset"
                                                   class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                           </div>
@@ -197,47 +188,42 @@
                                           <div class="col-12">
                                               <div class="form-group">
                                                   <label for="first-name-vertical">First Name</label>
-                                                  <input type="text" id="first-name-vertical"
-                                                      class="form-control" name="fname"
-                                                      placeholder="First Name">
+                                                  <input type="text" id="first-name-vertical" class="form-control"
+                                                      name="fname" placeholder="First Name">
                                               </div>
                                           </div>
                                           <div class="col-12">
                                               <div class="form-group">
                                                   <label for="email-id-vertical">Email</label>
-                                                  <input type="email" id="email-id-vertical"
-                                                      class="form-control" name="email-id"
-                                                      placeholder="Email">
+                                                  <input type="email" id="email-id-vertical" class="form-control"
+                                                      name="email-id" placeholder="Email">
                                               </div>
                                           </div>
                                           <div class="col-12">
                                               <div class="form-group">
                                                   <label for="contact-info-vertical">Mobile</label>
-                                                  <input type="number" id="contact-info-vertical"
-                                                      class="form-control" name="contact"
-                                                      placeholder="Mobile">
+                                                  <input type="number" id="contact-info-vertical" class="form-control"
+                                                      name="contact" placeholder="Mobile">
                                               </div>
                                           </div>
                                           <div class="col-12">
                                               <div class="form-group">
                                                   <label for="password-vertical">Password</label>
-                                                  <input type="password" id="password-vertical"
-                                                      class="form-control" name="contact"
-                                                      placeholder="Password">
+                                                  <input type="password" id="password-vertical" class="form-control"
+                                                      name="contact" placeholder="Password">
                                               </div>
                                           </div>
                                           <div class="col-12">
                                               <div class='form-check'>
                                                   <div class="checkbox">
-                                                      <input type="checkbox" id="checkbox3"
-                                                          class='form-check-input' checked>
+                                                      <input type="checkbox" id="checkbox3" class='form-check-input'
+                                                          checked>
                                                       <label for="checkbox3">Remember Me</label>
                                                   </div>
                                               </div>
                                           </div>
                                           <div class="col-12 d-flex justify-content-end">
-                                              <button type="submit"
-                                                  class="btn btn-primary me-1 mb-1">Submit</button>
+                                              <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                               <button type="reset"
                                                   class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                           </div>
@@ -263,8 +249,7 @@
                                                   <label for="first-name-icon">First Name</label>
                                                   <div class="position-relative">
                                                       <input type="text" class="form-control"
-                                                          placeholder="Input with icon left"
-                                                          id="first-name-icon">
+                                                          placeholder="Input with icon left" id="first-name-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-person"></i>
                                                       </div>
@@ -276,8 +261,8 @@
                                               <div class="form-group has-icon-left">
                                                   <label for="email-id-icon">Email</label>
                                                   <div class="position-relative">
-                                                      <input type="text" class="form-control"
-                                                          placeholder="Email" id="email-id-icon">
+                                                      <input type="text" class="form-control" placeholder="Email"
+                                                          id="email-id-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-envelope"></i>
                                                       </div>
@@ -288,8 +273,8 @@
                                               <div class="form-group has-icon-left">
                                                   <label for="mobile-id-icon">Mobile</label>
                                                   <div class="position-relative">
-                                                      <input type="text" class="form-control"
-                                                          placeholder="Mobile" id="mobile-id-icon">
+                                                      <input type="text" class="form-control" placeholder="Mobile"
+                                                          id="mobile-id-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-phone"></i>
                                                       </div>
@@ -300,8 +285,8 @@
                                               <div class="form-group has-icon-left">
                                                   <label for="password-id-icon">Password</label>
                                                   <div class="position-relative">
-                                                      <input type="password" class="form-control"
-                                                          placeholder="Password" id="password-id-icon">
+                                                      <input type="password" class="form-control" placeholder="Password"
+                                                          id="password-id-icon">
                                                       <div class="form-control-icon">
                                                           <i class="bi bi-lock"></i>
                                                       </div>
@@ -311,15 +296,14 @@
                                           <div class="col-12">
                                               <div class='form-check'>
                                                   <div class="checkbox mt-2">
-                                                      <input type="checkbox" id="remember-me-v"
-                                                          class='form-check-input' checked>
+                                                      <input type="checkbox" id="remember-me-v" class='form-check-input'
+                                                          checked>
                                                       <label for="remember-me-v">Remember Me</label>
                                                   </div>
                                               </div>
                                           </div>
                                           <div class="col-12 d-flex justify-content-end">
-                                              <button type="submit"
-                                                  class="btn btn-primary me-1 mb-1">Submit</button>
+                                              <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
                                               <button type="reset"
                                                   class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                           </div>
@@ -364,8 +348,8 @@
                                       <div class="col-md-6 col-12">
                                           <div class="form-group">
                                               <label for="city-column">City</label>
-                                              <input type="text" id="city-column" class="form-control"
-                                                  placeholder="City" name="city-column">
+                                              <input type="text" id="city-column" class="form-control" placeholder="City"
+                                                  name="city-column">
                                           </div>
                                       </div>
                                       <div class="col-md-6 col-12">
@@ -392,17 +376,14 @@
                                       <div class="form-group col-12">
                                           <div class='form-check'>
                                               <div class="checkbox">
-                                                  <input type="checkbox" id="checkbox5"
-                                                      class='form-check-input' checked>
+                                                  <input type="checkbox" id="checkbox5" class='form-check-input' checked>
                                                   <label for="checkbox5">Remember Me</label>
                                               </div>
                                           </div>
                                       </div>
                                       <div class="col-12 d-flex justify-content-end">
-                                          <button type="submit"
-                                              class="btn btn-primary me-1 mb-1">Submit</button>
-                                          <button type="reset"
-                                              class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                          <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                          <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                       </div>
                                   </div>
                               </form>
@@ -414,9 +395,4 @@
       </section>
       <!-- // Basic multiple Column Form section end -->
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

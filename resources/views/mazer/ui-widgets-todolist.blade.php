@@ -3,9 +3,8 @@
 @section('title', 'Todo List - Mazer Admin Dashboard')
 
 @section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/dragula/dragula.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('mazzer-assets/extensions/dragula/dragula.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('mazzer-assets/compiled/css/ui-widgets-todolist.css') }}">
 @endsection
 
 @section('page-heading')
@@ -14,12 +13,12 @@
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Todo List</h3>
-                  <p class="text-subtitle text-muted">For user to check they list</p>
+                  <p class="text-subtitle text-muted">A decorated, sortable todo-list implementation.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Todo List</li>
                       </ol>
                   </nav>
@@ -32,8 +31,7 @@
           <div class="row">
               <div class="col-lg-7">
                   <div class="card widget-todo">
-                      <div
-                          class="card-header border-bottom d-flex justify-content-between align-items-center">
+                      <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                           <h4 class="card-title d-flex">
                               <i class="bx bx-check font-medium-5 pl-25 pr-75"></i>Tasks
                           </h4>
@@ -42,8 +40,7 @@
                                   <i class="bx bx-check-circle font-medium-3 me-50"></i>
                                   <div class="dropdown">
                                       <div class="dropdown-toggle me-1" role="button" id="dropdownMenuButton"
-                                          data-bs-toggle="dropdown" aria-haspopup="true"
-                                          aria-expanded="false">All Task
+                                          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Task
                                       </div>
                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                           <a class="dropdown-item" href="#">Option 1</a>
@@ -56,8 +53,7 @@
                                   <i class="bx bx-sort me-50 font-medium-3"></i>
                                   <div class="dropdown">
                                       <div class="dropdown-toggle" role="button" id="dropdownMenuButton2"
-                                          data-bs-toggle="dropdown" aria-haspopup="true"
-                                          aria-expanded="false">All Task
+                                          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Task
                                       </div>
                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                           <a class="dropdown-item" href="#">Option 1</a>
@@ -68,143 +64,125 @@
                               </li>
                           </ul>
                       </div>
-                      <div class="card-body px-0 py-1">
+                      <div class="card-body px-0 py-1 overflow-auto">
                           <ul class="widget-todo-list-wrapper" id="widget-todo-list">
                               <li class="widget-todo-item">
                                   <div
                                       class="widget-todo-title-wrapper d-flex justify-content-between align-items-center mb-50">
-                                      <div class="widget-todo-title-area d-flex align-items-center">
+                                      <div class="widget-todo-title-area d-flex align-items-center gap-2">
                                           <i data-feather="list" class="cursor-move"></i>
                                           <div class="checkbox checkbox-shadow">
-                                              <input type="checkbox" class="form-check-input" id="checkbox1">
-                                              <label for="checkbox1"></label>
+                                              <input type="checkbox" class="form-check-input" id="checkbox-1">
                                           </div>
-                                          <span class="widget-todo-title ml-50">Add SCSS and JS files if
-                                              required</span>
+                                          <label for="checkbox-1" class="widget-todo-title ms-2">Add SCSS and JS files if
+                                              required</label>
                                       </div>
                                       <div class="widget-todo-item-action d-flex align-items-center">
-                                          <div class="badge badge-pill badge-light-success me-1">frontend
-                                          </div>
+                                          <div class="badge badge-pill bg-light-success me-1">frontend</div>
                                           <div class="avatar bg-warning">
-                                              <img src="{{ asset('mazer-assets/images/faces/1.jpg') }}" alt="" srcset="">
+                                              <img src="{{ asset('mazzer-assets/compiled/jpg/1.jpg') }}" alt="" srcset="">
                                           </div>
-                                          <i
-                                              class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
+                                          <i class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
                                       </div>
                                   </div>
                               </li>
                               <li class="widget-todo-item">
                                   <div
                                       class="widget-todo-title-wrapper d-flex justify-content-between align-items-center mb-50">
-                                      <div class="widget-todo-title-area d-flex align-items-center">
+                                      <div class="widget-todo-title-area d-flex align-items-center gap-2">
                                           <i data-feather="list" class="cursor-move"></i>
                                           <div class="checkbox checkbox-shadow">
-                                              <input type="checkbox" class="form-check-input" id="checkbox2">
-                                              <label for="checkbox2"></label>
+                                              <input type="checkbox" class="form-check-input" id="checkbox-2">
                                           </div>
-                                          <span class="widget-todo-title ml-50">Check all the changes that you
-                                              did,
-                                              before you commit</span>
+                                          <label for="checkbox-2" class="widget-todo-title ms-2">Check all the changes that you did,
+                                              before you commit</label>
                                       </div>
                                       <div class="widget-todo-item-action d-flex align-items-center">
-                                          <div class="badge badge-pill badge-light-danger me-1">backend</div>
+                                          <div class="badge badge-pill bg-light-danger me-1">backend</div>
                                           <div class="avatar bg-warning">
-                                              <img src="{{ asset('mazer-assets/images/faces/2.jpg') }}" alt="" srcset="">
+                                              <img src="{{ asset('mazzer-assets/compiled/jpg/2.jpg') }}" alt="" srcset="">
                                           </div>
-                                          <i
-                                              class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
+                                          <i class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
                                       </div>
                                   </div>
                               </li>
                               <li class="widget-todo-item completed">
                                   <div
                                       class="widget-todo-title-wrapper d-flex justify-content-between align-items-center mb-50">
-                                      <div class="widget-todo-title-area d-flex align-items-center">
+                                      <div class="widget-todo-title-area d-flex align-items-center gap-2">
                                           <i data-feather="list" class="cursor-move"></i>
                                           <div class="checkbox checkbox-shadow">
-                                              <input type="checkbox" class="form-check-input" id="checkbox3"
-                                                  checked>
-                                              <label for="checkbox3"></label>
+                                              <input type="checkbox" class="form-check-input" id="checkbox-3" checked>
                                           </div>
-                                          <span class="widget-todo-title ml-50">Dribble, Behance, UpLabs &
-                                              Pinterest
-                                              Post</span>
+                                          <label for="checkbox-3" class="widget-todo-title ms-2">Dribble, Behance, UpLabs & Pinterest
+                                              Post</label>
                                       </div>
                                       <div class="widget-todo-item-action d-flex align-items-center">
-                                          <div class="badge badge-pill badge-light-primary me-1">UI/UX</div>
+                                          <div class="badge badge-pill bg-light-primary me-1">UI/UX</div>
                                           <div class="avatar bg-rgba-primary m-0 me-50">
-                                              <img src="{{ asset('mazer-assets/images/faces/3.jpg') }}" alt="" srcset="">
+                                              <img src="{{ asset('mazzer-assets/compiled/jpg/3.jpg') }}" alt="" srcset="">
                                           </div>
-                                          <i
-                                              class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
+                                          <i class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
                                       </div>
                                   </div>
                               </li>
                               <li class="widget-todo-item">
                                   <div
                                       class="widget-todo-title-wrapper d-flex justify-content-between align-items-center mb-50">
-                                      <div class="widget-todo-title-area d-flex align-items-center">
+                                      <div class="widget-todo-title-area d-flex align-items-center gap-2">
                                           <i data-feather="list" class="cursor-move"></i>
                                           <div class="checkbox checkbox-shadow">
-                                              <input type="checkbox" class="form-check-input" id="checkbox4">
-                                              <label for="checkbox4"></label>
+                                              <input type="checkbox" class="form-check-input" id="checkbox-4">
                                           </div>
-                                          <span class="widget-todo-title ml-50">Fresh Design Web & Responsive
-                                              Miracle</span>
+                                          <label for="checkbox-4" class="widget-todo-title ms-2">Fresh Design Web & Responsive
+                                              Miracle</label>
                                       </div>
                                       <div class="widget-todo-item-action d-flex align-items-center">
-                                          <div class="badge badge-pill badge-light-info me-1">Design</div>
+                                          <div class="badge badge-pill bg-light-info me-1">Design</div>
                                           <div class="avatar bg-warning">
-                                              <img src="{{ asset('mazer-assets/images/faces/4.jpg') }}" alt="" srcset="">
+                                              <img src="{{ asset('mazzer-assets/compiled/jpg/4.jpg') }}" alt="" srcset="">
                                           </div>
-                                          <i
-                                              class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
+                                          <i class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
                                       </div>
                                   </div>
                               </li>
                               <li class="widget-todo-item">
                                   <div
                                       class="widget-todo-title-wrapper d-flex justify-content-between align-items-center mb-50">
-                                      <div class="widget-todo-title-area d-flex align-items-center">
+                                      <div class="widget-todo-title-area d-flex align-items-center gap-2">
                                           <i data-feather="list" class="cursor-move"></i>
                                           <div class="checkbox checkbox-shadow">
-                                              <input type="checkbox" class="form-check-input" id="checkbox5">
-                                              <label for="checkbox5"></label>
+                                              <input type="checkbox" class="form-check-input" id="checkbox-5">
                                           </div>
-                                          <span class="widget-todo-title ml-50">Add Calendar page and source
-                                              and
+                                          <label for="checkbox-5" class="widget-todo-title ms-2">Add Calendar page and source and
                                               credit page in
-                                              documentation</span>
+                                              documentation</label>
                                       </div>
                                       <div class="widget-todo-item-action d-flex align-items-center">
-                                          <div class="badge badge-pill badge-light-warning me-1">Javascript
-                                          </div>
+                                          <div class="badge badge-pill bg-light-warning me-1">Javascript</div>
                                           <div class="avatar bg-warning">
-                                              <img src="{{ asset('mazer-assets/images/faces/5.jpg') }}" alt="" srcset="">
+                                              <img src="{{ asset('mazzer-assets/compiled/jpg/5.jpg') }}" alt="" srcset="">
                                           </div>
-                                          <i
-                                              class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
+                                          <i class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
                                       </div>
                                   </div>
                               </li>
                               <li class="widget-todo-item">
                                   <div
                                       class="widget-todo-title-wrapper d-flex justify-content-between align-items-center mb-50">
-                                      <div class="widget-todo-title-area d-flex align-items-center">
+                                      <div class="widget-todo-title-area d-flex align-items-center gap-2">
                                           <i data-feather="list" class="cursor-move"></i>
                                           <div class="checkbox checkbox-shadow">
-                                              <input type="checkbox" class="form-check-input" id="checkbox6">
-                                              <label for="checkbox6"></label>
+                                              <input type="checkbox" class="form-check-input" id="checkbox-6">
                                           </div>
-                                          <span class="widget-todo-title ml-50">Add Angular Starter-kit</span>
+                                          <label for="checkbox-6" class="widget-todo-title ms-2">Add Angular Starter-kit</label>
                                       </div>
                                       <div class="widget-todo-item-action d-flex align-items-center">
-                                          <div class="badge badge-pill badge-light-primary me-1">UI/UX</div>
+                                          <div class="badge badge-pill bg-light-primary me-1">UI/UX</div>
                                           <div class="avatar bg-warning">
-                                              <img src="{{ asset('mazer-assets/images/faces/1.jpg') }}" alt="" srcset="">
+                                              <img src="{{ asset('mazzer-assets/compiled/jpg/1.jpg') }}" alt="" srcset="">
                                           </div>
-                                          <i
-                                              class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
+                                          <i class="bx bx-dots-vertical-rounded font-medium-3 cursor-pointer"></i>
                                       </div>
                                   </div>
                               </li>
@@ -214,8 +192,7 @@
               </div>
               <div class="col-lg-5">
                   <div class="card widget-todo">
-                      <div
-                          class="card-header border-bottom d-flex justify-content-between align-items-center">
+                      <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                           <h4 class="card-title d-flex">
                               <i class="bx bx-check font-medium-5 pl-25 pr-75"></i>Progress
                           </h4>
@@ -283,11 +260,6 @@
 @endsection
 
 @section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
-
-  <script src="{{ asset('mazer-assets/vendors/dragula/dragula.min.js') }}"></script>
-  <script>
-      dragula([document.getElementById("widget-todo-list")], { moves: function (e, a, t) { return t.classList.contains("cursor-move") } })
-  </script>
+  <script src="{{ asset('mazzer-assets/extensions/dragula/dragula.min.js') }}"></script>
+  <script src="{{ asset('mazzer-assets/static/js/pages/ui-todolist.js') }}"></script>
 @endsection

@@ -2,26 +2,20 @@
 
 @section('title', 'Spinner - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Spinner</h3>
-                  <p class="text-subtitle text-muted">Indicate the loading state of a component or page with
-                      Bootstrap
+                  <p class="text-subtitle text-muted">Indicate the loading state of a component or page with Bootstrap
                       spinners, built entirely with HTML, CSS, and no JavaScript.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                      z<ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Progress</li>
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Spinner</li>
                       </ol>
                   </nav>
               </div>
@@ -97,22 +91,15 @@
                           <h5>Custom Loader</h5>
                       </div>
                       <div class="card-body">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/audio.svg') }}" class="me-4" style="width: 3rem"
+                          <img src="{{ asset('mazzer-assets/compiled/svg/audio.svg') }}" class="me-4" style="width: 3rem" alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/ball-triangle.svg') }}" class="me-4" style="width: 3rem"
                               alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/ball-triangle.svg') }}" class="me-4"
-                              style="width: 3rem" alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/circles.svg') }}" class="me-4" style="width: 3rem"
-                              alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/grid.svg') }}" class="me-4" style="width: 3rem"
-                              alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/hearts.svg') }}" class="me-4" style="width: 3rem"
-                              alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/oval.svg') }}" class="me-4" style="width: 3rem"
-                              alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/puff.svg') }}" class="me-4" style="width: 3rem"
-                              alt="audio">
-                          <img src="{{ asset('mazer-assets/vendors/svg-loaders/rings.svg') }}" class="me-4" style="width: 3rem"
-                              alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/circles.svg') }}" class="me-4" style="width: 3rem" alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/grid.svg') }}" class="me-4" style="width: 3rem" alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/hearts.svg') }}" class="me-4" style="width: 3rem" alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/oval.svg') }}" class="me-4" style="width: 3rem" alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/puff.svg') }}" class="me-4" style="width: 3rem" alt="audio">
+                          <img src="{{ asset('mazzer-assets/compiled/svg/rings.svg') }}" class="me-4" style="width: 3rem" alt="audio">
                       </div>
                   </div>
               </div>
@@ -155,25 +142,21 @@
                       <div class="card-body">
                           <div class="mb-2">
                               <button class="btn btn-primary" type="button" disabled>
-                                  <span class="spinner-border spinner-border-sm" role="status"
-                                      aria-hidden="true"></span>
+                                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                   <span class="visually-hidden">Loading...</span>
                               </button>
                               <button class="btn btn-primary" type="button" disabled>
-                                  <span class="spinner-border spinner-border-sm" role="status"
-                                      aria-hidden="true"></span>
+                                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                   Loading...
                               </button>
                           </div>
                           <div class="mb-2">
                               <button class="btn btn-secondary" type="button" disabled>
-                                  <span class="spinner-grow spinner-grow-sm" role="status"
-                                      aria-hidden="true"></span>
+                                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                                   <span class="visually-hidden">Loading...</span>
                               </button>
                               <button class="btn btn-secondary" type="button" disabled>
-                                  <span class="spinner-grow spinner-grow-sm" role="status"
-                                      aria-hidden="true"></span>
+                                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                                   Processing...
                               </button>
                           </div>
@@ -183,9 +166,4 @@
           </div>
       </section>
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

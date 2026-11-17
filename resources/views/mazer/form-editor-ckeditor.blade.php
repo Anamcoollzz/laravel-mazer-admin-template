@@ -2,23 +2,18 @@
 
 @section('title', 'CKEditor - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>CKEditor </h3>
-                  <p class="text-subtitle text-muted">For user to check they list</p>
+                  <p class="text-subtitle text-muted">Allow your users to provide formatted content with a powerful WYSIWYG editor.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">CKEditor</li>
                       </ol>
                   </nav>
@@ -45,16 +40,6 @@
 @endsection
 
 @section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
-
-  <script src="{{ asset('mazer-assets/vendors/ckeditor/ckeditor.js') }}"></script>
-
-  <script>
-      ClassicEditor
-          .create(document.querySelector('#editor'))
-          .catch(error => {
-              console.error(error);
-          });
-  </script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
+  <script src="{{ asset('mazzer-assets/static/js/pages/ckeditor.js') }}"></script>
 @endsection

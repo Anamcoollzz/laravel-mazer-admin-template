@@ -3,23 +3,21 @@
 @section('title', 'Email Application - Mazer Admin Dashboard')
 
 @section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/css/pages/email.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('mazzer-assets/compiled/css/application-email.css') }}">
 @endsection
 
 @section('page-heading')
-  <div class="page-heading email-application">
+  <div class="page-heading email-application overflow-hidden">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Email Application</h3>
-                  <p class="text-subtitle text-muted">An application for user to check email inbox</p>
+                  <p class="text-subtitle text-muted">A full inbox-ui for you to implement messaging.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Email Application</li>
                       </ol>
                   </nav>
@@ -32,14 +30,14 @@
                   <div class="sidebar-content email-app-sidebar d-flex">
                       <!-- sidebar close icon -->
                       <span class="sidebar-close-icon">
-                          <i class="bx bx-x"></i>
+                          <i class="bi bi-x"></i>
                       </span>
                       <!-- sidebar close icon -->
                       <div class="email-app-menu">
                           <div class="form-group form-group-compose">
                               <!-- compose button  -->
                               <button type="button" class="btn btn-primary btn-block my-4 compose-btn">
-                                  <i class="bx bx-plus"></i>
+                                  <i class="bi bi-plus"></i>
                                   Compose
                               </button>
                           </div>
@@ -51,20 +49,19 @@
 
                                           <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                               <use
-                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#envelope" />
+                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#envelope" />
                                           </svg>
-                                          </i>
                                       </div>
                                       Inbox
                                       <span
-                                          class="badge badge-light-primary badge-pill badge-round float-right mt-50">5</span>
+                                          class="badge bg-light-primary badge-pill badge-round float-right mt-50">5</span>
                                   </a>
                                   <a href="#" class="list-group-item">
                                       <div class="fonticon-wrap d-inline me-3">
 
                                           <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                               <use
-                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#archive" />
+                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#archive" />
                                           </svg>
                                       </div>
                                       Sent
@@ -74,7 +71,7 @@
 
                                           <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                               <use
-                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#pencil" />
+                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#pencil" />
                                           </svg>
                                       </div> Draft
                                   </a>
@@ -82,7 +79,7 @@
                                       <div class="fonticon-wrap d-inline me-3">
 
                                           <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
-                                              <use xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                              <use xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                           </svg>
                                       </div>
                                       Starred
@@ -92,18 +89,18 @@
 
                                           <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                               <use
-                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#info-circle" />
+                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#info-circle" />
                                           </svg>
                                       </div>
                                       Spam
                                       <span
-                                          class="badge badge-light-danger badge-pill badge-round float-right mt-50">3</span>
+                                          class="badge bg-light-danger badge-pill badge-round float-right mt-50">3</span>
                                   </a>
                                   <a href="#" class="list-group-item">
                                       <div class="fonticon-wrap d-inline me-3">
                                           <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                               <use
-                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#trash" />
+                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#trash" />
                                           </svg>
                                       </div>
                                       Trash
@@ -150,8 +147,8 @@
                       <div class="card shadow-none quill-wrapper p-0">
                           <div class="card-header">
                               <h3 class="card-title" id="emailCompose">New Message</h3>
-                              <button type="button" class="close close-icon">
-                                  <i class="bx bx-x"></i>
+                              <button type="button" class="close close-icon email-compose-new-close-btn">
+                                  <i class="bi bi-x"></i>
                               </button>
                           </div>
                           <!-- form start -->
@@ -195,7 +192,7 @@
                                           </div>
                                           <div class="d-flex justify-content-end">
                                               <div class="compose-quill-toolbar pb-0 ql-toolbar ql-snow">
-                                                  <span class="ql-formats mr-0">
+                                                  <span class="ql-formats me-0">
                                                       <button class="ql-bold" type="button"><svg viewBox="0 0 18 18">
                                                               <path class="ql-stroke"
                                                                   d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z">
@@ -249,12 +246,12 @@
                                   </div>
                               </div>
                               <div class="card-footer d-flex justify-content-end pt-0">
-                                  <button type="reset" class="btn btn-light-secondary cancel-btn mr-1">
-                                      <i class="bx bx-x me-3"></i>
+                                  <button type="reset" class="btn btn-light-secondary cancel-btn me-1">
+                                      <i class="bi bi-x me-3"></i>
                                       <span class="d-sm-inline d-none">Cancel</span>
                                   </button>
                                   <button type="submit" class="btn-send btn btn-primary">
-                                      <i class="bx bx-send me-3"></i> <span class="d-sm-inline d-none">Send</span>
+                                      <i class="bi bi-send me-3"></i> <span class="d-sm-inline d-none">Send</span>
                                   </button>
                               </div>
                           </form>
@@ -299,7 +296,7 @@
                                                           <svg class="bi" width="1.5em" height="1.5em"
                                                               fill="currentColor">
                                                               <use
-                                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#trash" />
+                                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#trash" />
                                                           </svg>
                                                       </span>
                                                   </button>
@@ -311,7 +308,7 @@
                                                           <svg class="bi" width="1.5em" height="1.5em"
                                                               fill="currentColor">
                                                               <use
-                                                                  xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#envelope" />
+                                                                  xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#envelope" />
                                                           </svg>
                                                       </span>
                                                   </button>
@@ -327,18 +324,18 @@
                                                               <svg class="bi" width="1.5em" height="1.5em"
                                                                   fill="currentColor">
                                                                   <use
-                                                                      xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#folder" />
+                                                                      xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#folder" />
                                                               </svg>
                                                           </span>
                                                       </button>
                                                       <div class="dropdown-menu dropdown-menu-right"
                                                           aria-labelledby="folder">
-                                                          <a class="dropdown-item" href="#"><i class="bx bx-edit"></i>
+                                                          <a class="dropdown-item" href="#"><i class="bi bi-edit"></i>
                                                               Draft</a>
                                                           <a class="dropdown-item" href="#"><i
-                                                                  class="bx bx-info-circle"></i>Spam</a>
+                                                                  class="bi bi-info-circle"></i>Spam</a>
                                                           <a class="dropdown-item" href="#"><i
-                                                                  class="bx bx-trash"></i>Trash</a>
+                                                                  class="bi bi-trash"></i>Trash</a>
                                                       </div>
                                                   </div>
                                               </li>
@@ -353,7 +350,7 @@
                                                               <svg class="bi" width="1.5em" height="1.5em"
                                                                   fill="currentColor">
                                                                   <use
-                                                                      xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#tag" />
+                                                                      xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#tag" />
                                                               </svg>
                                                           </span>
                                                       </button>
@@ -389,34 +386,36 @@
                                       <!-- action right start here -->
                                       <div
                                           class="action-right d-flex flex-grow-1 align-items-center justify-content-around">
+                                          <div class="sidebar-toggle d-block d-lg-none">
+                                              <button class="btn btn-sm btn-outline-primary">
+                                                  <i class="bi bi-list fs-5" ></i>
+                                              </button>
+                                          </div>
                                           <!-- search bar  -->
                                           <div class="email-fixed-search flex-grow-1">
-                                              <div class="sidebar-toggle d-block d-lg-none">
-                                                  <i class="bx bx-menu"></i>
-                                              </div>
 
                                               <div class="form-group position-relative  mb-0 has-icon-left">
                                                   <input type="text" class="form-control" placeholder="Search email..">
                                                   <div class="form-control-icon">
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#search" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#search" />
                                                       </svg>
                                                   </div>
                                               </div>
                                           </div>
                                           <!-- pagination and page count -->
                                           <span class="d-none d-sm-block">1-10 of 653</span>
-                                          <button class="btn btn-icon email-pagination-prev d-none d-sm-block">
+                                          <button class="btn btn-icon email-pagination-prev action-button d-none d-sm-block">
                                               <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                   <use
-                                                      xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#chevron-left" />
+                                                      xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#chevron-left" />
                                               </svg>
                                           </button>
-                                          <button class="btn btn-icon email-pagination-next d-none d-sm-block">
+                                          <button class="btn btn-icon email-pagination-next action-button d-none d-sm-block">
                                               <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                   <use
-                                                      xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#chevron-right" />
+                                                      xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#chevron-right" />
                                               </svg>
                                           </button>
                                       </div>
@@ -438,13 +437,13 @@
                                                   <span class="favorite text-warning">
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star-fill" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star-fill" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img src="{{ asset('mazer-assets/images/faces/1.jpg') }}" alt="avtar img holder">
+                                                      <img src="{{ asset('mazzer-assets/compiled/jpg/1.jpg') }}" alt="avtar img holder">
                                                   </div>
                                               </div>
                                               <div class="media-body">
@@ -484,13 +483,13 @@
                                                   <span class="favorite">
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/3.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/3.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -532,13 +531,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/7.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/7.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -561,7 +560,7 @@
                                                       </p>
                                                       <div class="mail-meta-item">
                                                           <span class="float-right d-flex align-items-center">
-                                                              <i class="bx bx-paperclip me-3"></i>
+                                                              <i class="bi bi-paperclip me-3"></i>
                                                               <span class="bullet bullet-success bullet-sm"></span>
                                                           </span>
                                                       </div>
@@ -581,13 +580,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/5.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/5.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -611,7 +610,7 @@
                                                       </p>
                                                       <div class="mail-meta-item">
                                                           <span class="float-right d-flex align-items-center">
-                                                              <i class="bx bx-paperclip me-3"></i>
+                                                              <i class="bi bi-paperclip me-3"></i>
                                                               <span class="bullet bullet-warning bullet-sm"></span>
                                                           </span>
                                                       </div>
@@ -631,13 +630,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/3.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/3.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -660,7 +659,7 @@
                                                       </p>
                                                       <div class="mail-meta-item">
                                                           <span class="float-right d-flex align-items-center">
-                                                              <i class="bx bx-paperclip me-3"></i>
+                                                              <i class="bi bi-paperclip me-3"></i>
                                                               <span class="bullet bullet-warning bullet-sm"></span>
                                                           </span>
                                                       </div>
@@ -679,13 +678,13 @@
                                                   <span class="favorite text-warning">
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star-fill" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star-fill" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/8.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/8.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -726,13 +725,13 @@
                                                   <span class="favorite text-warning">
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star-fill" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star-fill" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/5.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/5.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -774,13 +773,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/8.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/8.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -823,13 +822,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/6.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/6.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -871,13 +870,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/5.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/5.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -921,13 +920,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/1.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/1.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -969,13 +968,13 @@
 
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star" />
                                                       </svg>
                                                   </span>
                                               </div>
                                               <div class="pr-50">
                                                   <div class="avatar">
-                                                      <img class="rounded-circle" src="{{ asset('mazer-assets/images/faces/3.jpg') }}"
+                                                      <img class="rounded-circle" src="{{ asset('mazzer-assets/compiled/jpg/3.jpg') }}"
                                                           alt="Generic placeholder image">
                                                   </div>
                                               </div>
@@ -1009,7 +1008,7 @@
 
                                       <!-- no result when nothing to show on list -->
                                       <div class="no-results">
-                                          <i class="bx bx-error-circle font-large-2"></i>
+                                          <i class="bi bi-error-circle font-large-2"></i>
                                           <h5>No Items Found</h5>
                                       </div>
                                       <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
@@ -1035,10 +1034,10 @@
                                       </span>
                                       <h5 class="email-detail-title font-weight-normal mb-0">
                                           Advertising Internet Online
-                                          <span class="badge badge-light-danger badge-pill ms-1">PRODUCT</span>
+                                          <span class="badge bg-light-danger badge-pill ms-1">PRODUCT</span>
                                       </h5>
                                   </div>
-                                  <div class="email-header-right mb-1 ml-2 pl-1">
+                                  <div class="email-header-right mb-1 ms-2 pl-1">
                                       <ul class="list-inline m-0">
                                           <li class="list-inline-item">
                                               <button class="btn btn-icon action-icon">
@@ -1052,7 +1051,7 @@
                                                   <span class="fonticon-wrap">
                                                       <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
                                                           <use
-                                                              xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#envelope" />
+                                                              xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#envelope" />
                                                       </svg>
                                                   </span>
                                               </button>
@@ -1068,11 +1067,11 @@
                                                   </button>
                                                   <div class="dropdown-menu dropdown-menu-right"
                                                       aria-labelledby="open-mail-menu">
-                                                      <a class="dropdown-item" href="#"><i class="bx bx-edit"></i>
+                                                      <a class="dropdown-item" href="#"><i class="bi bi-edit"></i>
                                                           Draft</a>
-                                                      <a class="dropdown-item" href="#"><i class="bx bx-info-circle"></i>
+                                                      <a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i>
                                                           Spam</a>
-                                                      <a class="dropdown-item" href="#"><i class="bx bx-trash"></i>
+                                                      <a class="dropdown-item" href="#"><i class="bi bi-trash"></i>
                                                           Trash</a>
                                                   </div>
                                               </div>
@@ -1116,12 +1115,12 @@
                                           </li>
                                           <li class="list-inline-item">
                                               <button class="btn btn-icon email-pagination-prev action-icon">
-                                                  <i class="bx bx-chevron-left"></i>
+                                                  <i class="bi bi-chevron-left"></i>
                                               </button>
                                           </li>
                                           <li class="list-inline-item">
                                               <button class="btn btn-icon email-pagination-next action-icon">
-                                                  <i class="bx bx-chevron-right"></i>
+                                                  <i class="bi bi-chevron-right"></i>
                                               </button>
                                           </li>
                                       </ul>
@@ -1140,8 +1139,8 @@
                                                       aria-expanded="false" aria-controls="collapse5">
                                                       <div class="collapse-title media">
                                                           <div class="pr-1">
-                                                              <div class="avatar mr-75">
-                                                                  <img src="{{ asset('mazer-assets/images/faces/18.jpg') }}"
+                                                              <div class="avatar me-3">
+                                                                  <img src="{{ asset('mazzer-assets/compiled/jpg/8.jpg') }}"
                                                                       alt="avtar img holder" width="30" height="30">
                                                               </div>
                                                           </div>
@@ -1155,26 +1154,26 @@
                                                       <div class="information d-sm-flex d-none align-items-center">
                                                           <small class="text-muted me-3">15 Jul 2019, 10:30</small>
                                                           <span class="favorite">
-                                                              <i class="bx bx-star me-3"></i>
+                                                              <i class="bi bi-star me-3"></i>
                                                           </span>
                                                           <div class="dropdown">
                                                               <a href="#" class="dropdown-toggle" id="fisrt-open-submenu"
                                                                   data-toggle="dropdown" aria-haspopup="true"
                                                                   aria-expanded="false">
-                                                                  <i class="bx bx-dots-vertical-rounded mr-0"></i>
+                                                                  <i class="bi bi-dots-vertical-rounded me-0"></i>
                                                               </a>
                                                               <div class="dropdown-menu dropdown-menu-right"
                                                                   aria-labelledby="fisrt-open-submenu">
                                                                   <a href="#" class="dropdown-item mail-reply">
-                                                                      <i class="bx bx-share"></i>
+                                                                      <i class="bi bi-share"></i>
                                                                       Reply
                                                                   </a>
                                                                   <a href="#" class="dropdown-item">
-                                                                      <i class="bx bx-redo"></i>
+                                                                      <i class="bi bi-redo"></i>
                                                                       Forward
                                                                   </a>
                                                                   <a href="#" class="dropdown-item">
-                                                                      <i class="bx bx-info-circle"></i>
+                                                                      <i class="bi bi-info-circle"></i>
                                                                       Report Spam
                                                                   </a>
                                                               </div>
@@ -1205,13 +1204,13 @@
                                                               <label class="sidebar-label">Attached Files</label>
                                                               <ul class="list-unstyled mb-0">
                                                                   <li class="cursor-pointer pb-25">
-                                                                      <img src="../../../app-assets/images/icon/psd.png"
+                                                                      <img src="../../../app-assets/static/images/icon/psd.png"
                                                                           alt="psd.png" height="30">
                                                                       <small
                                                                           class="text-muted ms-1 attchement-text">uikit-design.psd</small>
                                                                   </li>
                                                                   <li class="cursor-pointer">
-                                                                      <img src="../../../app-assets/images/icon/sketch.png"
+                                                                      <img src="../../../app-assets/static/images/icon/sketch.png"
                                                                           alt="sketch.png" height="30">
                                                                       <small
                                                                           class="text-muted ms-1 attchement-text">uikit-design.sketch</small>
@@ -1228,8 +1227,8 @@
                                                       aria-expanded="false" aria-controls="collapse6">
                                                       <div class="collapse-title media">
                                                           <div class="pr-1">
-                                                              <div class="avatar mr-75">
-                                                                  <img src="{{ asset('mazer-assets/images/faces/19.jpg') }}"
+                                                              <div class="avatar me-3">
+                                                                  <img src="{{ asset('mazzer-assets/static/images/faces/19.jpg') }}"
                                                                       alt="avtar img holder" width="30" height="30">
                                                               </div>
                                                           </div>
@@ -1241,29 +1240,29 @@
                                                           </div>
                                                       </div>
                                                       <div class="information d-sm-flex d-none align-items-center">
-                                                          <i class="bx bx-paperclip me-3"></i>
+                                                          <i class="bi bi-paperclip me-3"></i>
                                                           <small class="text-muted me-3">10 Jul 2019, 10:30</small>
                                                           <span class="favorite">
-                                                              <i class="bx bx-star me-3"></i>
+                                                              <i class="bi bi-star me-3"></i>
                                                           </span>
                                                           <div class="dropdown">
                                                               <a href="#" class="dropdown-toggle" id="second-open-submenu"
                                                                   data-toggle="dropdown" aria-haspopup="true"
                                                                   aria-expanded="false">
-                                                                  <i class="bx bx-dots-vertical-rounded mr-0"></i>
+                                                                  <i class="bi bi-dots-vertical-rounded me-0"></i>
                                                               </a>
                                                               <div class="dropdown-menu dropdown-menu-right"
                                                                   aria-labelledby="second-open-submenu">
                                                                   <a href="#" class="dropdown-item mail-reply">
-                                                                      <i class="bx bx-share"></i>
+                                                                      <i class="bi bi-share"></i>
                                                                       Reply
                                                                   </a>
                                                                   <a href="#" class="dropdown-item">
-                                                                      <i class="bx bx-redo"></i>
+                                                                      <i class="bi bi-redo"></i>
                                                                       Forward
                                                                   </a>
                                                                   <a href="#" class="dropdown-item">
-                                                                      <i class="bx bx-info-circle"></i>
+                                                                      <i class="bi bi-info-circle"></i>
                                                                       Report Spam
                                                                   </a>
                                                               </div>
@@ -1301,13 +1300,13 @@
                                                               <label class="sidebar-label">Attached Files</label>
                                                               <ul class="list-unstyled mb-0">
                                                                   <li class="cursor-pointer pb-25">
-                                                                      <img src="../../../app-assets/images/icon/psd.png"
+                                                                      <img src="../../../app-assets/static/images/icon/psd.png"
                                                                           alt="psd.png" height="30">
                                                                       <small
                                                                           class="text-muted ms-1 attchement-text">uikit-design.psd</small>
                                                                   </li>
                                                                   <li class="cursor-pointer">
-                                                                      <img src="../../../app-assets/images/icon/sketch.png"
+                                                                      <img src="../../../app-assets/static/images/icon/sketch.png"
                                                                           alt="sketch.png" height="30">
                                                                       <small
                                                                           class="text-muted ms-1 attchement-text">uikit-design.sketch</small>
@@ -1324,8 +1323,8 @@
                                                       aria-expanded="false" aria-controls="collapse7">
                                                       <div class="collapse-title media">
                                                           <div class="pr-1">
-                                                              <div class="avatar mr-75">
-                                                                  <img src="{{ asset('mazer-assets/images/faces/18.jpg') }}"
+                                                              <div class="avatar me-3">
+                                                                  <img src="{{ asset('mazzer-assets/compiled/jpg/8.jpg') }}"
                                                                       alt="avtar img holder" width="30" height="30">
                                                               </div>
                                                           </div>
@@ -1342,27 +1341,27 @@
                                                               <svg class="bi" width="1.5em" height="1.5em"
                                                                   fill="currentColor">
                                                                   <use
-                                                                      xlink:href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.svg') }}#star-fill" />
+                                                                      xlink:href="{{ asset('mazzer-assets/static/images/bootstrap-icons.svg') }}#star-fill" />
                                                               </svg>
                                                           </span>
                                                           <div class="dropdown">
                                                               <a href="#" class="dropdown-toggle" id="third-open-menu"
                                                                   data-toggle="dropdown" aria-haspopup="true"
                                                                   aria-expanded="false">
-                                                                  <i class="bx bx-dots-vertical-rounded mr-0"></i>
+                                                                  <i class="bi bi-dots-vertical-rounded me-0"></i>
                                                               </a>
                                                               <div class="dropdown-menu dropdown-menu-right"
                                                                   aria-labelledby="second-open-submenu">
                                                                   <a href="#" class="dropdown-item mail-reply">
-                                                                      <i class="bx bx-share"></i>
+                                                                      <i class="bi bi-share"></i>
                                                                       Reply
                                                                   </a>
                                                                   <a href="#" class="dropdown-item">
-                                                                      <i class="bx bx-redo"></i>
+                                                                      <i class="bi bi-redo"></i>
                                                                       Forward
                                                                   </a>
                                                                   <a href="#" class="dropdown-item">
-                                                                      <i class="bx bx-info-circle"></i>
+                                                                      <i class="bi bi-info-circle"></i>
                                                                       Report Spam
                                                                   </a>
                                                               </div>
@@ -1397,13 +1396,13 @@
                                                               <label class="sidebar-label">Attached Files</label>
                                                               <ul class="list-unstyled mb-0">
                                                                   <li class="cursor-pointer pb-25">
-                                                                      <img src="../../../app-assets/images/icon/psd.png"
+                                                                      <img src="../../../app-assets/static/images/icon/psd.png"
                                                                           alt="psd.png" height="30">
                                                                       <small
                                                                           class="text-muted ms-1 attchement-text">uikit-design.psd</small>
                                                                   </li>
                                                                   <li class="cursor-pointer">
-                                                                      <img src="../../../app-assets/images/icon/sketch.png"
+                                                                      <img src="../../../app-assets/static/images/icon/sketch.png"
                                                                           alt="sketch.png" height="30">
                                                                       <small
                                                                           class="text-muted ms-1 attchement-text">uikit-design.sketch</small>
@@ -1492,7 +1491,7 @@
                                                               </span>
                                                           </div>
                                                           <button class="btn btn-primary send-btn">
-                                                              <i class="bx bx-send me-3"></i>
+                                                              <i class="bi bi-send me-3"></i>
                                                               <span class="d-none d-sm-inline"> Send</span>
                                                           </button>
                                                       </div>
@@ -1519,6 +1518,18 @@
 @endsection
 
 @section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
+  <script>
+      document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+          document.querySelector('.email-app-sidebar').classList.toggle('show')
+      })
+      document.querySelector('.sidebar-close-icon').addEventListener('click', () => {
+          document.querySelector('.email-app-sidebar').classList.remove('show')
+      })
+      document.querySelector('.compose-btn').addEventListener('click', () => {
+          document.querySelector('.compose-new-mail-sidebar').classList.add('show')
+      })
+      document.querySelector('.email-compose-new-close-btn').addEventListener('click', () => {
+          document.querySelector('.compose-new-mail-sidebar').classList.remove('show')
+      })
+  </script>
 @endsection

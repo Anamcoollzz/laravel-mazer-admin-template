@@ -2,26 +2,20 @@
 
 @section('title', 'Pagination - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Pagination</h3>
-                  <p class="text-subtitle text-muted">Examples for showing pagination to indicate a series of
-                      related
+                  <p class="text-subtitle text-muted">Examples for showing pagination to indicate a series of related
                       content exists across multiple pages.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Navs</li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Pagination</li>
                       </ol>
                   </nav>
               </div>
@@ -81,8 +75,7 @@
                           <h4>Pagination Color </h4>
                       </div>
                       <div class="card-body">
-                          <p>To add pagination with different color option, use class
-                              <code>.pagination-{colorName}</code>
+                          <p>To add pagination with different color options, use class <code>.pagination-{colorName}</code>
                               with <code>.pagination</code> class.</p>
                           <nav aria-label="Page navigation example">
                               <ul class="pagination pagination-danger">
@@ -229,9 +222,4 @@
           </div>
       </section>
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

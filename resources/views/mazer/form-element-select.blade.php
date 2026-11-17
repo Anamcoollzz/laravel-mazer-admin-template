@@ -3,10 +3,7 @@
 @section('title', 'Select - Mazer Admin Dashboard')
 
 @section('vendor-css')
-  <!-- Include Choices CSS -->
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/choices.js/choices.min.css') }}" />
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('mazzer-assets/extensions/choices.js/public/assets/styles/choices.css') }}">
 @endsection
 
 @section('page-heading')
@@ -15,14 +12,13 @@
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Select</h3>
-                  <p class="text-subtitle text-muted">Customize the native &laquo;select&raquo; with custom
-                      CSS that
-                      changes the element’s initial appearance..</p>
+                  <p class="text-subtitle text-muted">Customize the native &laquo;select&raquo; with custom CSS that
+                      changes the element’s initial appearance.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Select</li>
                       </ol>
                   </nav>
@@ -85,8 +81,7 @@
                                   <div class="col-md-6 mb-4">
                                       <h6>Basic Select with Input Group</h6>
                                       <div class="input-group mb-3">
-                                          <label class="input-group-text"
-                                              for="inputGroupSelect01">Options</label>
+                                          <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                           <select class="form-select" id="inputGroupSelect01">
                                               <option selected>Choose...</option>
                                               <option value="1">One</option>
@@ -104,8 +99,7 @@
                                               <option value="2">Two</option>
                                               <option value="3">Three</option>
                                           </select>
-                                          <label class="input-group-text"
-                                              for="inputGroupSelect01">Options</label>
+                                          <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                       </div>
                                   </div>
                               </div>
@@ -130,8 +124,7 @@
                               <div class="row">
                                   <div class="col-md-12">
                                       <div class="alert alert-light-primary">
-                                          <a href="https://choices.org/getting-started/installation"
-                                              target="_blank">Click
+                                          <a href="https://github.com/Choices-js/Choices" target="_blank">Click
                                               here</a> for more information
                                       </div>
                                   </div>
@@ -152,8 +145,7 @@
                                   </div>
                                   <div class="col-md-6 mb-4">
                                       <h6>Single Select with Label</h6>
-                                      <p>Use <code>optgroup</code> attribute for basic choices with Label
-                                          control.</p>
+                                      <p>Use <code>optgroup</code> attribute for basic choices with Label control.</p>
                                       <div class="form-group">
                                           <select class="choices form-select">
                                               <optgroup label="Figures">
@@ -212,8 +204,7 @@
                                   </div>
                                   <div class="col-md-6 mb-4">
                                       <h6>Multiple Select with Label</h6>
-                                      <p>Use <code>optgroup</code> attribute for multiple select box with
-                                          Label control.
+                                      <p>Use <code>optgroup</code> attribute for multiple select box with Label control.
                                       </p>
                                       <div class="form-group">
                                           <select class="choices form-select" multiple="multiple">
@@ -234,12 +225,10 @@
                                   </div>
                                   <div class="col-md-6 mb-4">
                                       <h6>Multiple Select with Remove Button</h6>
-                                      <p>Use <code>.multiple-remove</code> attribute for multiple select box
-                                          with remove
+                                      <p>Use <code>.multiple-remove</code> attribute for multiple select box with remove
                                           button.</p>
                                       <div class="form-group">
-                                          <select class="choices form-select multiple-remove"
-                                              multiple="multiple">
+                                          <select class="choices form-select multiple-remove" multiple="multiple">
                                               <optgroup label="Figures">
                                                   <option value="romboid">Romboid</option>
                                                   <option value="trapeze" selected>Trapeze</option>
@@ -257,12 +246,10 @@
                                   </div>
                                   <div class="col-md-6 mb-4">
                                       <h6>choices with Light Background Options</h6>
-                                      <p>Use <code>.select-light-{colorName}</code> class for light background
-                                          to selected
+                                      <p>Use <code>.select-light-{colorName}</code> class for light background to selected
                                           Options.</p>
                                       <div class="form-group">
-                                          <select class="choices form-select select-light-danger"
-                                              multiple="multiple">
+                                          <select class="choices form-select select-light-danger" multiple="multiple">
                                               <option value="square">Square</option>
                                               <option value="rectangle" selected>Rectangle</option>
                                               <option value="rombo">Rombo</option>
@@ -285,9 +272,6 @@
 @endsection
 
 @section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
-
-  <!-- Include Choices JavaScript -->
-  <script src="{{ asset('mazer-assets/vendors/choices.js/choices.min.js') }}"></script>
+  <script src="{{ asset('mazzer-assets/extensions/choices.js/public/assets/scripts/choices.js') }}"></script>
+  <script src="{{ asset('mazzer-assets/static/js/pages/form-element-select.js') }}"></script>
 @endsection

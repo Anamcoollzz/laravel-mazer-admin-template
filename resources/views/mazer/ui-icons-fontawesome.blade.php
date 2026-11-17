@@ -3,21 +3,20 @@
 @section('title', 'Fontawesome - Mazer Admin Dashboard')
 
 @section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/fontawesome/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('mazzer-assets/extensions/@fortawesome/fontawesome-free/css/all.min.css') }}">
   <style>
-  .fontawesome-icons {
-  text-align: center;
-  }
-  article dl {
-  background-color: rgba(0, 0, 0, .02);
-  padding: 20px;
-  }
-  .fontawesome-icons .the-icon svg {
-  font-size: 24px;
-  }
+      .fontawesome-icons {
+          text-align: center;
+      }
+      article dl {
+          background-color: rgba(0, 0, 0, .02);
+          padding: 20px;
+      }
+      .fontawesome-icons .the-icon {
+          font-size: 24px;
+          line-height: 1.2;
+      }
   </style>
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
 @endsection
 
 @section('page-heading')
@@ -26,12 +25,12 @@
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Fontawesome</h3>
-                  <p class="text-subtitle text-muted">Get over 1,000+ icons with Fontawesome </p>
+                  <p class="text-subtitle text-muted">Get over 1,000+ icons with Fontawesome.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Fontawesome</li>
                       </ol>
                   </nav>
@@ -58,8 +57,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  address-book</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">address-book</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2b9</dd>
                           </dl>
                           <!---->
@@ -68,8 +66,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  address-card</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">address-card</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2bb</dd>
                           </dl>
                           <!---->
@@ -78,8 +75,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">adjust
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">adjust</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f042</dd>
                           </dl>
                           <!---->
@@ -88,8 +84,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  air-freshener</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">air-freshener</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5d0</dd>
                           </dl>
                           <!---->
@@ -98,8 +93,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  align-center</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">align-center</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f037</dd>
                           </dl>
                           <!---->
@@ -108,8 +102,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  align-justify</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">align-justify</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f039</dd>
                           </dl>
                           <!---->
@@ -118,8 +111,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  align-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">align-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f036</dd>
                           </dl>
                           <!---->
@@ -128,8 +120,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  align-right</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">align-right</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f038</dd>
                           </dl>
                           <!---->
@@ -138,8 +129,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  allergies</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">allergies</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f461</dd>
                           </dl>
                           <!---->
@@ -148,8 +138,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ambulance</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ambulance</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f9</dd>
                           </dl>
                           <!---->
@@ -168,8 +157,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">anchor
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">anchor</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f13d</dd>
                           </dl>
                           <!---->
@@ -178,8 +166,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-double-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-double-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f103</dd>
                           </dl>
@@ -189,8 +176,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-double-left
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-double-left
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f100</dd>
                           </dl>
@@ -200,8 +186,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-double-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-double-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f101</dd>
                           </dl>
@@ -211,8 +196,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-double-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-double-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f102</dd>
                           </dl>
                           <!---->
@@ -221,8 +205,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f107</dd>
                           </dl>
                           <!---->
@@ -231,8 +214,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f104</dd>
                           </dl>
                           <!---->
@@ -241,8 +223,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  angle-right</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-right</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f105</dd>
                           </dl>
                           <!---->
@@ -251,8 +232,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-up
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angle-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f106</dd>
                           </dl>
                           <!---->
@@ -261,8 +241,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angry
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">angry</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f556</dd>
                           </dl>
                           <!---->
@@ -271,8 +250,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ankh
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ankh</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f644</dd>
                           </dl>
                           <!---->
@@ -281,8 +259,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  apple-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">apple-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5d1</dd>
                           </dl>
                           <!---->
@@ -291,8 +268,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">archive
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">archive</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f187</dd>
                           </dl>
                           <!---->
@@ -301,8 +277,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">archway
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">archway</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f557</dd>
                           </dl>
                           <!---->
@@ -341,8 +316,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-alt-circle-up
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-alt-circle-up
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f35b</dd>
                           </dl>
@@ -352,8 +326,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-circle-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-circle-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ab</dd>
                           </dl>
@@ -363,8 +336,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-circle-left
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-circle-left
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a8</dd>
                           </dl>
@@ -374,8 +346,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-circle-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-circle-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a9</dd>
                           </dl>
@@ -385,8 +356,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-circle-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-circle-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0aa</dd>
                           </dl>
                           <!---->
@@ -395,8 +365,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f063</dd>
                           </dl>
                           <!---->
@@ -405,8 +374,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f060</dd>
                           </dl>
                           <!---->
@@ -415,8 +383,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrow-right</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-right</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f061</dd>
                           </dl>
                           <!---->
@@ -425,8 +392,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-up
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrow-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f062</dd>
                           </dl>
                           <!---->
@@ -435,8 +401,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrows-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrows-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0b2</dd>
                           </dl>
                           <!---->
@@ -445,8 +410,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrows-alt-h</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrows-alt-h</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f337</dd>
                           </dl>
                           <!---->
@@ -455,8 +419,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  arrows-alt-v</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">arrows-alt-v</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f338</dd>
                           </dl>
                           <!---->
@@ -475,8 +438,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">asterisk
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">asterisk</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f069</dd>
                           </dl>
                           <!---->
@@ -494,8 +456,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">atlas
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">atlas</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f558</dd>
                           </dl>
                           <!---->
@@ -504,8 +465,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">atom
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">atom</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5d2</dd>
                           </dl>
                           <!---->
@@ -514,8 +474,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  audio-description
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">audio-description
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f29e</dd>
                           </dl>
@@ -525,8 +484,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">award
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">award</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f559</dd>
                           </dl>
                           <!---->
@@ -535,8 +493,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">baby
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">baby</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f77c</dd>
                           </dl>
                           <!---->
@@ -545,8 +502,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  baby-carriage</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">baby-carriage</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f77d</dd>
                           </dl>
                           <!---->
@@ -555,8 +511,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  backspace</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">backspace</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f55a</dd>
                           </dl>
                           <!---->
@@ -565,8 +520,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">backward
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">backward</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f04a</dd>
                           </dl>
                           <!---->
@@ -575,8 +529,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bacon
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bacon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7e5</dd>
                           </dl>
                           <!---->
@@ -585,8 +538,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bacteria
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bacteria</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e059</dd>
                           </dl>
                           <!---->
@@ -595,8 +547,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  bacterium</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bacterium</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e05a</dd>
                           </dl>
                           <!---->
@@ -605,8 +556,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bahai
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bahai</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f666</dd>
                           </dl>
                           <!---->
@@ -615,8 +565,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  balance-scale</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">balance-scale</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f24e</dd>
                           </dl>
                           <!---->
@@ -625,8 +574,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  balance-scale-left
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">balance-scale-left
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f515</dd>
                           </dl>
@@ -636,8 +584,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  balance-scale-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">balance-scale-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f516</dd>
                           </dl>
@@ -656,8 +603,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">band-aid
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">band-aid</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f462</dd>
                           </dl>
                           <!---->
@@ -666,8 +612,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">barcode
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">barcode</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f02a</dd>
                           </dl>
                           <!---->
@@ -676,8 +621,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bars
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bars</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c9</dd>
                           </dl>
                           <!---->
@@ -686,8 +630,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  baseball-ball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">baseball-ball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f433</dd>
                           </dl>
                           <!---->
@@ -696,8 +639,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  basketball-ball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">basketball-ball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f434</dd>
                           </dl>
                           <!---->
@@ -706,8 +648,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bath
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bath</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2cd</dd>
                           </dl>
                           <!---->
@@ -716,8 +657,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  battery-empty</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">battery-empty</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f244</dd>
                           </dl>
                           <!---->
@@ -726,8 +666,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  battery-full</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">battery-full</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f240</dd>
                           </dl>
                           <!---->
@@ -736,8 +675,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  battery-half</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">battery-half</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f242</dd>
                           </dl>
                           <!---->
@@ -746,8 +684,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  battery-quarter</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">battery-quarter</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f243</dd>
                           </dl>
                           <!---->
@@ -775,8 +712,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">beer
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">beer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0fc</dd>
                           </dl>
                           <!---->
@@ -785,8 +721,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bell
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bell</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f3</dd>
                           </dl>
                           <!---->
@@ -795,8 +730,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  bell-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bell-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1f6</dd>
                           </dl>
                           <!---->
@@ -805,8 +739,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  bezier-curve</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bezier-curve</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f55b</dd>
                           </dl>
                           <!---->
@@ -815,8 +748,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bible
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bible</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f647</dd>
                           </dl>
                           <!---->
@@ -825,8 +757,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bicycle
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bicycle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f206</dd>
                           </dl>
                           <!---->
@@ -835,8 +766,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">biking
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">biking</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f84a</dd>
                           </dl>
                           <!---->
@@ -845,8 +775,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  binoculars</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">binoculars</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1e5</dd>
                           </dl>
                           <!---->
@@ -855,8 +784,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  biohazard</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">biohazard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f780</dd>
                           </dl>
                           <!---->
@@ -865,8 +793,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  birthday-cake</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">birthday-cake</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1fd</dd>
                           </dl>
                           <!---->
@@ -875,8 +802,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blender
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blender</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f517</dd>
                           </dl>
                           <!---->
@@ -885,8 +811,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  blender-phone</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blender-phone</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6b6</dd>
                           </dl>
                           <!---->
@@ -895,8 +820,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blind
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blind</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f29d</dd>
                           </dl>
                           <!---->
@@ -905,8 +829,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blog
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">blog</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f781</dd>
                           </dl>
                           <!---->
@@ -915,8 +838,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bold
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bold</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f032</dd>
                           </dl>
                           <!---->
@@ -925,8 +847,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bolt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bolt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0e7</dd>
                           </dl>
                           <!---->
@@ -935,8 +856,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bomb
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bomb</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1e2</dd>
                           </dl>
                           <!---->
@@ -945,8 +865,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bone
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bone</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5d7</dd>
                           </dl>
                           <!---->
@@ -955,8 +874,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bong
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bong</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f55c</dd>
                           </dl>
                           <!---->
@@ -965,8 +883,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">book
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">book</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f02d</dd>
                           </dl>
                           <!---->
@@ -975,8 +892,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  book-dead</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">book-dead</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6b7</dd>
                           </dl>
                           <!---->
@@ -985,8 +901,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  book-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">book-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7e6</dd>
                           </dl>
                           <!---->
@@ -995,8 +910,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  book-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">book-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f518</dd>
                           </dl>
                           <!---->
@@ -1005,8 +919,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  book-reader</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">book-reader</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5da</dd>
                           </dl>
                           <!---->
@@ -1015,8 +928,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bookmark
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bookmark</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f02e</dd>
                           </dl>
                           <!---->
@@ -1025,8 +937,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  border-all</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">border-all</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f84c</dd>
                           </dl>
                           <!---->
@@ -1035,8 +946,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  border-none</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">border-none</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f850</dd>
                           </dl>
                           <!---->
@@ -1045,8 +955,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  border-style</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">border-style</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f853</dd>
                           </dl>
                           <!---->
@@ -1055,8 +964,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  bowling-ball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bowling-ball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f436</dd>
                           </dl>
                           <!---->
@@ -1074,8 +982,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">box-open
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">box-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f49e</dd>
                           </dl>
                           <!---->
@@ -1084,8 +991,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  box-tissue</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">box-tissue</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e05b</dd>
                           </dl>
                           <!---->
@@ -1094,8 +1000,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">boxes
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">boxes</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f468</dd>
                           </dl>
                           <!---->
@@ -1104,8 +1009,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">braille
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">braille</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2a1</dd>
                           </dl>
                           <!---->
@@ -1114,8 +1018,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">brain
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">brain</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5dc</dd>
                           </dl>
                           <!---->
@@ -1124,8 +1027,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  bread-slice</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bread-slice</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ec</dd>
                           </dl>
                           <!---->
@@ -1134,8 +1036,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  briefcase</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">briefcase</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0b1</dd>
                           </dl>
                           <!---->
@@ -1144,8 +1045,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  briefcase-medical
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">briefcase-medical
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f469</dd>
                           </dl>
@@ -1155,8 +1055,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  broadcast-tower</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">broadcast-tower</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f519</dd>
                           </dl>
                           <!---->
@@ -1165,8 +1064,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">broom
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">broom</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f51a</dd>
                           </dl>
                           <!---->
@@ -1175,8 +1073,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">brush
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">brush</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f55d</dd>
                           </dl>
                           <!---->
@@ -1194,8 +1091,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">building
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">building</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ad</dd>
                           </dl>
                           <!---->
@@ -1204,8 +1100,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bullhorn
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bullhorn</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a1</dd>
                           </dl>
                           <!---->
@@ -1214,8 +1109,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bullseye
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bullseye</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f140</dd>
                           </dl>
                           <!---->
@@ -1224,8 +1118,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">burn
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">burn</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f46a</dd>
                           </dl>
                           <!---->
@@ -1243,8 +1136,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bus-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">bus-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f55e</dd>
                           </dl>
                           <!---->
@@ -1253,8 +1145,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  business-time</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">business-time</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f64a</dd>
                           </dl>
                           <!---->
@@ -1263,8 +1154,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calculator</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calculator</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ec</dd>
                           </dl>
                           <!---->
@@ -1273,8 +1163,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f133</dd>
                           </dl>
                           <!---->
@@ -1283,8 +1172,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f073</dd>
                           </dl>
                           <!---->
@@ -1293,8 +1181,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-check</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-check</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f274</dd>
                           </dl>
                           <!---->
@@ -1303,8 +1190,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-day</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-day</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f783</dd>
                           </dl>
                           <!---->
@@ -1313,8 +1199,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-minus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-minus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f272</dd>
                           </dl>
                           <!---->
@@ -1323,8 +1208,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-plus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-plus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f271</dd>
                           </dl>
                           <!---->
@@ -1333,8 +1217,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-times</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-times</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f273</dd>
                           </dl>
                           <!---->
@@ -1343,8 +1226,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  calendar-week</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">calendar-week</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f784</dd>
                           </dl>
                           <!---->
@@ -1353,8 +1235,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">camera
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">camera</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f030</dd>
                           </dl>
                           <!---->
@@ -1363,8 +1244,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  camera-retro</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">camera-retro</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f083</dd>
                           </dl>
                           <!---->
@@ -1373,8 +1253,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  campground</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">campground</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6bb</dd>
                           </dl>
                           <!---->
@@ -1383,8 +1262,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  candy-cane</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">candy-cane</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f786</dd>
                           </dl>
                           <!---->
@@ -1393,8 +1271,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cannabis
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cannabis</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f55f</dd>
                           </dl>
                           <!---->
@@ -1403,8 +1280,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">capsules
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">capsules</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f46b</dd>
                           </dl>
                           <!---->
@@ -1422,8 +1298,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">car-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">car-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5de</dd>
                           </dl>
                           <!---->
@@ -1432,8 +1307,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  car-battery</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">car-battery</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5df</dd>
                           </dl>
                           <!---->
@@ -1442,8 +1316,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  car-crash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">car-crash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5e1</dd>
                           </dl>
                           <!---->
@@ -1452,8 +1325,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">car-side
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">car-side</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5e4</dd>
                           </dl>
                           <!---->
@@ -1462,8 +1334,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caravan
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caravan</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f8ff</dd>
                           </dl>
                           <!---->
@@ -1472,8 +1343,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0d7</dd>
                           </dl>
                           <!---->
@@ -1482,8 +1352,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0d9</dd>
                           </dl>
                           <!---->
@@ -1492,8 +1361,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-right</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-right</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0da</dd>
                           </dl>
                           <!---->
@@ -1502,8 +1370,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-square-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-square-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f150</dd>
                           </dl>
@@ -1513,8 +1380,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-square-left
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-square-left
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f191</dd>
                           </dl>
@@ -1524,8 +1390,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-square-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-square-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f152</dd>
                           </dl>
@@ -1535,8 +1400,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  caret-square-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-square-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f151</dd>
                           </dl>
                           <!---->
@@ -1545,8 +1409,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-up
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">caret-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0d8</dd>
                           </dl>
                           <!---->
@@ -1555,8 +1418,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">carrot
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">carrot</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f787</dd>
                           </dl>
                           <!---->
@@ -1565,8 +1427,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cart-arrow-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cart-arrow-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f218</dd>
                           </dl>
                           <!---->
@@ -1575,8 +1436,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cart-plus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cart-plus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f217</dd>
                           </dl>
                           <!---->
@@ -1585,8 +1445,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cash-register</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cash-register</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f788</dd>
                           </dl>
                           <!---->
@@ -1604,8 +1463,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  certificate</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">certificate</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a3</dd>
                           </dl>
                           <!---->
@@ -1614,8 +1472,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chair
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chair</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6c0</dd>
                           </dl>
                           <!---->
@@ -1624,8 +1481,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chalkboard</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chalkboard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f51b</dd>
                           </dl>
                           <!---->
@@ -1634,8 +1490,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chalkboard-teacher
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chalkboard-teacher
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f51c</dd>
                           </dl>
@@ -1645,8 +1500,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  charging-station
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">charging-station
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5e7</dd>
                           </dl>
@@ -1656,8 +1510,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chart-area</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chart-area</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1fe</dd>
                           </dl>
                           <!---->
@@ -1666,8 +1519,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chart-bar</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chart-bar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f080</dd>
                           </dl>
                           <!---->
@@ -1676,8 +1528,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chart-line</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chart-line</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f201</dd>
                           </dl>
                           <!---->
@@ -1686,8 +1537,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chart-pie</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chart-pie</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f200</dd>
                           </dl>
                           <!---->
@@ -1696,8 +1546,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">check
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">check</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f00c</dd>
                           </dl>
                           <!---->
@@ -1706,8 +1555,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  check-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">check-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f058</dd>
                           </dl>
                           <!---->
@@ -1716,8 +1564,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  check-double</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">check-double</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f560</dd>
                           </dl>
                           <!---->
@@ -1726,8 +1573,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  check-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">check-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f14a</dd>
                           </dl>
                           <!---->
@@ -1736,8 +1582,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cheese
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cheese</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ef</dd>
                           </dl>
                           <!---->
@@ -1746,8 +1591,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f439</dd>
                           </dl>
                           <!---->
@@ -1756,8 +1600,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-bishop</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-bishop</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f43a</dd>
                           </dl>
                           <!---->
@@ -1766,8 +1609,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-board</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-board</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f43c</dd>
                           </dl>
                           <!---->
@@ -1776,8 +1618,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-king</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-king</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f43f</dd>
                           </dl>
                           <!---->
@@ -1786,8 +1627,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-knight</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-knight</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f441</dd>
                           </dl>
                           <!---->
@@ -1796,8 +1636,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-pawn</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-pawn</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f443</dd>
                           </dl>
                           <!---->
@@ -1806,8 +1645,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-queen</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-queen</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f445</dd>
                           </dl>
                           <!---->
@@ -1816,8 +1654,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chess-rook</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chess-rook</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f447</dd>
                           </dl>
                           <!---->
@@ -1826,8 +1663,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-circle-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-circle-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f13a</dd>
                           </dl>
@@ -1837,8 +1673,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-circle-left
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-circle-left
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f137</dd>
                           </dl>
@@ -1848,8 +1683,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-circle-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-circle-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f138</dd>
                           </dl>
@@ -1859,8 +1693,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-circle-up
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-circle-up
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f139</dd>
                           </dl>
@@ -1870,8 +1703,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f078</dd>
                           </dl>
                           <!---->
@@ -1880,8 +1712,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f053</dd>
                           </dl>
                           <!---->
@@ -1890,8 +1721,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-right</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-right</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f054</dd>
                           </dl>
                           <!---->
@@ -1900,8 +1730,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  chevron-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">chevron-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f077</dd>
                           </dl>
                           <!---->
@@ -1910,8 +1739,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">child
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">child</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ae</dd>
                           </dl>
                           <!---->
@@ -1920,8 +1748,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">church
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">church</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f51d</dd>
                           </dl>
                           <!---->
@@ -1930,8 +1757,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">circle
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f111</dd>
                           </dl>
                           <!---->
@@ -1940,8 +1766,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  circle-notch</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">circle-notch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ce</dd>
                           </dl>
                           <!---->
@@ -1950,8 +1775,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">city
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">city</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f64f</dd>
                           </dl>
                           <!---->
@@ -1960,8 +1784,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  clinic-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clinic-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7f2</dd>
                           </dl>
                           <!---->
@@ -1970,8 +1793,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  clipboard</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clipboard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f328</dd>
                           </dl>
                           <!---->
@@ -1980,8 +1802,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  clipboard-check</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clipboard-check</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f46c</dd>
                           </dl>
                           <!---->
@@ -1990,8 +1811,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  clipboard-list</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clipboard-list</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f46d</dd>
                           </dl>
                           <!---->
@@ -2000,8 +1820,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clock
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f017</dd>
                           </dl>
                           <!---->
@@ -2010,8 +1829,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clone
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">clone</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f24d</dd>
                           </dl>
                           <!---->
@@ -2020,8 +1838,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  closed-captioning
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">closed-captioning
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f20a</dd>
                           </dl>
@@ -2031,8 +1848,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c2</dd>
                           </dl>
                           <!---->
@@ -2041,8 +1857,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-download-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-download-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f381</dd>
                           </dl>
@@ -2052,8 +1867,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-meatball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-meatball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f73b</dd>
                           </dl>
                           <!---->
@@ -2062,8 +1876,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-moon</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-moon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6c3</dd>
                           </dl>
                           <!---->
@@ -2072,8 +1885,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-moon-rain</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-moon-rain</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f73c</dd>
                           </dl>
                           <!---->
@@ -2082,8 +1894,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-rain</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-rain</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f73d</dd>
                           </dl>
                           <!---->
@@ -2092,8 +1903,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-showers-heavy
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-showers-heavy
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f740</dd>
                           </dl>
@@ -2103,8 +1913,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-sun</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-sun</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6c4</dd>
                           </dl>
                           <!---->
@@ -2113,8 +1922,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-sun-rain</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-sun-rain</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f743</dd>
                           </dl>
                           <!---->
@@ -2123,8 +1931,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cloud-upload-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cloud-upload-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f382</dd>
                           </dl>
@@ -2134,8 +1941,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cocktail
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cocktail</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f561</dd>
                           </dl>
                           <!---->
@@ -2144,8 +1950,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">code
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">code</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f121</dd>
                           </dl>
                           <!---->
@@ -2154,8 +1959,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  code-branch</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">code-branch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f126</dd>
                           </dl>
                           <!---->
@@ -2164,8 +1968,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">coffee
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">coffee</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f4</dd>
                           </dl>
                           <!---->
@@ -2183,8 +1986,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cogs
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cogs</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f085</dd>
                           </dl>
                           <!---->
@@ -2193,8 +1995,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">coins
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">coins</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f51e</dd>
                           </dl>
                           <!---->
@@ -2203,8 +2004,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">columns
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">columns</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0db</dd>
                           </dl>
                           <!---->
@@ -2213,8 +2013,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f075</dd>
                           </dl>
                           <!---->
@@ -2223,8 +2022,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  comment-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f27a</dd>
                           </dl>
                           <!---->
@@ -2233,8 +2031,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  comment-dollar</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment-dollar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f651</dd>
                           </dl>
                           <!---->
@@ -2243,8 +2040,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  comment-dots</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment-dots</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4ad</dd>
                           </dl>
                           <!---->
@@ -2253,8 +2049,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  comment-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7f5</dd>
                           </dl>
                           <!---->
@@ -2263,8 +2058,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  comment-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comment-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4b3</dd>
                           </dl>
                           <!---->
@@ -2273,8 +2067,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comments
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comments</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f086</dd>
                           </dl>
                           <!---->
@@ -2283,8 +2076,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  comments-dollar</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">comments-dollar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f653</dd>
                           </dl>
                           <!---->
@@ -2293,8 +2085,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  compact-disc</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compact-disc</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f51f</dd>
                           </dl>
                           <!---->
@@ -2303,8 +2094,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compass
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compass</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f14e</dd>
                           </dl>
                           <!---->
@@ -2313,8 +2103,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compress
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compress</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f066</dd>
                           </dl>
                           <!---->
@@ -2323,8 +2112,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  compress-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compress-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f422</dd>
                           </dl>
                           <!---->
@@ -2333,8 +2121,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  compress-arrows-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">compress-arrows-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f78c</dd>
                           </dl>
@@ -2344,8 +2131,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  concierge-bell</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">concierge-bell</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f562</dd>
                           </dl>
                           <!---->
@@ -2354,8 +2140,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cookie
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cookie</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f563</dd>
                           </dl>
                           <!---->
@@ -2364,8 +2149,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  cookie-bite</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cookie-bite</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f564</dd>
                           </dl>
                           <!---->
@@ -2374,8 +2158,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">copy
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">copy</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c5</dd>
                           </dl>
                           <!---->
@@ -2384,8 +2167,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  copyright</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">copyright</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1f9</dd>
                           </dl>
                           <!---->
@@ -2394,8 +2176,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">couch
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">couch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4b8</dd>
                           </dl>
                           <!---->
@@ -2404,8 +2185,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  credit-card</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">credit-card</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f09d</dd>
                           </dl>
                           <!---->
@@ -2414,8 +2194,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crop
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crop</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f125</dd>
                           </dl>
                           <!---->
@@ -2424,8 +2203,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crop-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crop-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f565</dd>
                           </dl>
                           <!---->
@@ -2434,8 +2212,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cross
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cross</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f654</dd>
                           </dl>
                           <!---->
@@ -2444,8 +2221,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  crosshairs</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crosshairs</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f05b</dd>
                           </dl>
                           <!---->
@@ -2454,8 +2230,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crow
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crow</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f520</dd>
                           </dl>
                           <!---->
@@ -2464,8 +2239,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crown
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crown</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f521</dd>
                           </dl>
                           <!---->
@@ -2474,8 +2248,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crutch
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">crutch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7f7</dd>
                           </dl>
                           <!---->
@@ -2484,8 +2257,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cube
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cube</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1b2</dd>
                           </dl>
                           <!---->
@@ -2494,8 +2266,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cubes
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">cubes</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1b3</dd>
                           </dl>
                           <!---->
@@ -2513,8 +2284,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">database
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">database</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c0</dd>
                           </dl>
                           <!---->
@@ -2523,8 +2293,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">deaf
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">deaf</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2a4</dd>
                           </dl>
                           <!---->
@@ -2533,8 +2302,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">democrat
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">democrat</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f747</dd>
                           </dl>
                           <!---->
@@ -2543,8 +2311,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">desktop
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">desktop</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f108</dd>
                           </dl>
                           <!---->
@@ -2553,8 +2320,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dharmachakra</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dharmachakra</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f655</dd>
                           </dl>
                           <!---->
@@ -2563,8 +2329,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  diagnoses</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">diagnoses</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f470</dd>
                           </dl>
                           <!---->
@@ -2573,8 +2338,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f522</dd>
                           </dl>
                           <!---->
@@ -2583,8 +2347,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-d20
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-d20</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6cf</dd>
                           </dl>
                           <!---->
@@ -2593,8 +2356,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-d6
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-d6</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6d1</dd>
                           </dl>
                           <!---->
@@ -2603,8 +2365,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dice-five</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-five</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f523</dd>
                           </dl>
                           <!---->
@@ -2613,8 +2374,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dice-four</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-four</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f524</dd>
                           </dl>
                           <!---->
@@ -2623,8 +2383,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-one
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-one</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f525</dd>
                           </dl>
                           <!---->
@@ -2633,8 +2392,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-six
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-six</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f526</dd>
                           </dl>
                           <!---->
@@ -2643,8 +2401,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dice-three</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-three</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f527</dd>
                           </dl>
                           <!---->
@@ -2653,8 +2410,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-two
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dice-two</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f528</dd>
                           </dl>
                           <!---->
@@ -2663,8 +2419,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  digital-tachograph
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">digital-tachograph
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f566</dd>
                           </dl>
@@ -2674,8 +2429,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  directions</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">directions</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5eb</dd>
                           </dl>
                           <!---->
@@ -2684,8 +2438,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">disease
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">disease</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7fa</dd>
                           </dl>
                           <!---->
@@ -2694,8 +2447,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">divide
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">divide</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f529</dd>
                           </dl>
                           <!---->
@@ -2704,8 +2456,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dizzy
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dizzy</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f567</dd>
                           </dl>
                           <!---->
@@ -2732,8 +2483,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dollar-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dollar-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f155</dd>
                           </dl>
                           <!---->
@@ -2742,8 +2492,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dolly
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dolly</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f472</dd>
                           </dl>
                           <!---->
@@ -2752,8 +2501,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dolly-flatbed</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dolly-flatbed</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f474</dd>
                           </dl>
                           <!---->
@@ -2762,8 +2510,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">donate
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">donate</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4b9</dd>
                           </dl>
                           <!---->
@@ -2772,8 +2519,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  door-closed</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">door-closed</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f52a</dd>
                           </dl>
                           <!---->
@@ -2782,8 +2528,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  door-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">door-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f52b</dd>
                           </dl>
                           <!---->
@@ -2792,8 +2537,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dot-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dot-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f192</dd>
                           </dl>
                           <!---->
@@ -2802,8 +2546,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dove
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dove</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4ba</dd>
                           </dl>
                           <!---->
@@ -2812,8 +2555,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">download
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">download</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f019</dd>
                           </dl>
                           <!---->
@@ -2822,8 +2564,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  drafting-compass
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">drafting-compass
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f568</dd>
                           </dl>
@@ -2833,8 +2574,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dragon
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dragon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6d5</dd>
                           </dl>
                           <!---->
@@ -2843,8 +2583,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  draw-polygon</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">draw-polygon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ee</dd>
                           </dl>
                           <!---->
@@ -2853,8 +2592,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">drum
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">drum</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f569</dd>
                           </dl>
                           <!---->
@@ -2863,8 +2601,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  drum-steelpan</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">drum-steelpan</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f56a</dd>
                           </dl>
                           <!---->
@@ -2873,8 +2610,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  drumstick-bite</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">drumstick-bite</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6d7</dd>
                           </dl>
                           <!---->
@@ -2883,8 +2619,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dumbbell
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dumbbell</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f44b</dd>
                           </dl>
                           <!---->
@@ -2893,8 +2628,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dumpster
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dumpster</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f793</dd>
                           </dl>
                           <!---->
@@ -2903,8 +2637,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  dumpster-fire</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dumpster-fire</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f794</dd>
                           </dl>
                           <!---->
@@ -2913,8 +2646,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dungeon
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">dungeon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6d9</dd>
                           </dl>
                           <!---->
@@ -2923,8 +2655,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">edit
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">edit</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f044</dd>
                           </dl>
                           <!---->
@@ -2942,8 +2673,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">eject
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">eject</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f052</dd>
                           </dl>
                           <!---->
@@ -2952,8 +2682,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ellipsis-h</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ellipsis-h</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f141</dd>
                           </dl>
                           <!---->
@@ -2962,8 +2691,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ellipsis-v</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ellipsis-v</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f142</dd>
                           </dl>
                           <!---->
@@ -2972,8 +2700,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">envelope
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">envelope</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0e0</dd>
                           </dl>
                           <!---->
@@ -2982,8 +2709,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  envelope-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">envelope-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2b6</dd>
                           </dl>
                           <!---->
@@ -2992,8 +2718,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  envelope-open-text
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">envelope-open-text
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f658</dd>
                           </dl>
@@ -3003,8 +2728,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  envelope-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">envelope-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f199</dd>
                           </dl>
                           <!---->
@@ -3013,8 +2737,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">equals
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">equals</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f52c</dd>
                           </dl>
                           <!---->
@@ -3023,8 +2746,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">eraser
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">eraser</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f12d</dd>
                           </dl>
                           <!---->
@@ -3033,8 +2755,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ethernet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ethernet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f796</dd>
                           </dl>
                           <!---->
@@ -3043,8 +2764,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  euro-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">euro-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f153</dd>
                           </dl>
                           <!---->
@@ -3053,8 +2773,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  exchange-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">exchange-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f362</dd>
                           </dl>
                           <!---->
@@ -3063,8 +2782,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  exclamation</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">exclamation</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f12a</dd>
                           </dl>
                           <!---->
@@ -3073,8 +2791,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  exclamation-circle
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">exclamation-circle
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f06a</dd>
                           </dl>
@@ -3084,8 +2801,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  exclamation-triangle
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">exclamation-triangle
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f071</dd>
                           </dl>
@@ -3095,8 +2811,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">expand
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">expand</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f065</dd>
                           </dl>
                           <!---->
@@ -3105,8 +2820,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  expand-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">expand-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f424</dd>
                           </dl>
                           <!---->
@@ -3115,8 +2829,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  expand-arrows-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">expand-arrows-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f31e</dd>
                           </dl>
@@ -3126,8 +2839,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  external-link-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">external-link-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f35d</dd>
                           </dl>
@@ -3156,8 +2868,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  eye-dropper</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">eye-dropper</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1fb</dd>
                           </dl>
                           <!---->
@@ -3166,8 +2877,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  eye-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">eye-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f070</dd>
                           </dl>
                           <!---->
@@ -3185,8 +2895,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fast-backward</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fast-backward</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f049</dd>
                           </dl>
                           <!---->
@@ -3195,8 +2904,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fast-forward</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fast-forward</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f050</dd>
                           </dl>
                           <!---->
@@ -3205,8 +2913,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">faucet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">faucet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e005</dd>
                           </dl>
                           <!---->
@@ -3224,8 +2931,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">feather
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">feather</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f52d</dd>
                           </dl>
                           <!---->
@@ -3234,8 +2940,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  feather-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">feather-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f56b</dd>
                           </dl>
                           <!---->
@@ -3244,8 +2949,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">female
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">female</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f182</dd>
                           </dl>
                           <!---->
@@ -3254,8 +2958,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fighter-jet</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fighter-jet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0fb</dd>
                           </dl>
                           <!---->
@@ -3264,8 +2967,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f15b</dd>
                           </dl>
                           <!---->
@@ -3274,8 +2976,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f15c</dd>
                           </dl>
                           <!---->
@@ -3284,8 +2985,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-archive</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-archive</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c6</dd>
                           </dl>
                           <!---->
@@ -3294,8 +2994,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-audio</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-audio</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c7</dd>
                           </dl>
                           <!---->
@@ -3304,8 +3003,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-code</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-code</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c9</dd>
                           </dl>
                           <!---->
@@ -3314,8 +3012,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-contract</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-contract</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f56c</dd>
                           </dl>
                           <!---->
@@ -3324,8 +3021,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-csv
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-csv</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6dd</dd>
                           </dl>
                           <!---->
@@ -3334,8 +3030,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-download</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-download</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f56d</dd>
                           </dl>
                           <!---->
@@ -3344,8 +3039,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-excel</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-excel</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c3</dd>
                           </dl>
                           <!---->
@@ -3354,8 +3048,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-export</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-export</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f56e</dd>
                           </dl>
                           <!---->
@@ -3364,8 +3057,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-image</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-image</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c5</dd>
                           </dl>
                           <!---->
@@ -3374,8 +3066,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-import</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-import</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f56f</dd>
                           </dl>
                           <!---->
@@ -3384,8 +3075,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-invoice</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-invoice</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f570</dd>
                           </dl>
                           <!---->
@@ -3394,8 +3084,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-invoice-dollar
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-invoice-dollar
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f571</dd>
                           </dl>
@@ -3405,8 +3094,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f477</dd>
                           </dl>
                           <!---->
@@ -3415,8 +3103,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-medical-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-medical-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f478</dd>
                           </dl>
@@ -3426,8 +3113,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-pdf
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-pdf</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c1</dd>
                           </dl>
                           <!---->
@@ -3436,8 +3122,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-powerpoint</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-powerpoint</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c4</dd>
                           </dl>
                           <!---->
@@ -3446,8 +3131,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-prescription
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-prescription
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f572</dd>
                           </dl>
@@ -3457,8 +3141,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-signature</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-signature</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f573</dd>
                           </dl>
                           <!---->
@@ -3467,8 +3150,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-upload</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-upload</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f574</dd>
                           </dl>
                           <!---->
@@ -3477,8 +3159,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-video</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-video</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c8</dd>
                           </dl>
                           <!---->
@@ -3487,8 +3168,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  file-word</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">file-word</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1c2</dd>
                           </dl>
                           <!---->
@@ -3497,8 +3177,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fill
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fill</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f575</dd>
                           </dl>
                           <!---->
@@ -3507,8 +3186,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fill-drip</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fill-drip</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f576</dd>
                           </dl>
                           <!---->
@@ -3517,8 +3195,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">film
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">film</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f008</dd>
                           </dl>
                           <!---->
@@ -3527,8 +3204,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">filter
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">filter</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0b0</dd>
                           </dl>
                           <!---->
@@ -3537,8 +3213,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fingerprint</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fingerprint</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f577</dd>
                           </dl>
                           <!---->
@@ -3547,8 +3222,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fire
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fire</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f06d</dd>
                           </dl>
                           <!---->
@@ -3557,8 +3231,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fire-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fire-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7e4</dd>
                           </dl>
                           <!---->
@@ -3567,8 +3240,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fire-extinguisher
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fire-extinguisher
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f134</dd>
                           </dl>
@@ -3578,8 +3250,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  first-aid</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">first-aid</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f479</dd>
                           </dl>
                           <!---->
@@ -3588,8 +3259,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fish
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fish</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f578</dd>
                           </dl>
                           <!---->
@@ -3598,8 +3268,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  fist-raised</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">fist-raised</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6de</dd>
                           </dl>
                           <!---->
@@ -3608,8 +3277,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flag
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flag</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f024</dd>
                           </dl>
                           <!---->
@@ -3618,8 +3286,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  flag-checkered</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flag-checkered</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f11e</dd>
                           </dl>
                           <!---->
@@ -3628,8 +3295,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flag-usa
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flag-usa</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f74d</dd>
                           </dl>
                           <!---->
@@ -3638,8 +3304,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flask
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flask</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c3</dd>
                           </dl>
                           <!---->
@@ -3648,8 +3313,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flushed
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">flushed</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f579</dd>
                           </dl>
                           <!---->
@@ -3658,8 +3322,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">folder
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">folder</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f07b</dd>
                           </dl>
                           <!---->
@@ -3668,8 +3331,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  folder-minus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">folder-minus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f65d</dd>
                           </dl>
                           <!---->
@@ -3678,8 +3340,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  folder-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">folder-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f07c</dd>
                           </dl>
                           <!---->
@@ -3688,8 +3349,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  folder-plus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">folder-plus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f65e</dd>
                           </dl>
                           <!---->
@@ -3698,8 +3358,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">font
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">font</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f031</dd>
                           </dl>
                           <!---->
@@ -3708,8 +3367,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  football-ball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">football-ball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f44e</dd>
                           </dl>
                           <!---->
@@ -3718,8 +3376,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">forward
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">forward</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f04e</dd>
                           </dl>
                           <!---->
@@ -3728,8 +3385,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">frog
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">frog</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f52e</dd>
                           </dl>
                           <!---->
@@ -3738,8 +3394,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">frown
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">frown</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f119</dd>
                           </dl>
                           <!---->
@@ -3748,8 +3403,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  frown-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">frown-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f57a</dd>
                           </dl>
                           <!---->
@@ -3758,8 +3412,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  funnel-dollar</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">funnel-dollar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f662</dd>
                           </dl>
                           <!---->
@@ -3768,8 +3421,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">futbol
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">futbol</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1e3</dd>
                           </dl>
                           <!---->
@@ -3778,8 +3430,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gamepad
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gamepad</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f11b</dd>
                           </dl>
                           <!---->
@@ -3788,8 +3439,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gas-pump
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gas-pump</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f52f</dd>
                           </dl>
                           <!---->
@@ -3798,8 +3448,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gavel
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gavel</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0e3</dd>
                           </dl>
                           <!---->
@@ -3817,8 +3466,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  genderless</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">genderless</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f22d</dd>
                           </dl>
                           <!---->
@@ -3827,8 +3475,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ghost
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ghost</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6e2</dd>
                           </dl>
                           <!---->
@@ -3837,8 +3484,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gift
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gift</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f06b</dd>
                           </dl>
                           <!---->
@@ -3847,8 +3493,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gifts
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gifts</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f79c</dd>
                           </dl>
                           <!---->
@@ -3857,8 +3502,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  glass-cheers</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">glass-cheers</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f79f</dd>
                           </dl>
                           <!---->
@@ -3867,8 +3511,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  glass-martini</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">glass-martini</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f000</dd>
                           </dl>
                           <!---->
@@ -3877,8 +3520,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  glass-martini-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">glass-martini-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f57b</dd>
                           </dl>
@@ -3888,8 +3530,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  glass-whiskey</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">glass-whiskey</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7a0</dd>
                           </dl>
                           <!---->
@@ -3898,8 +3539,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">glasses
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">glasses</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f530</dd>
                           </dl>
                           <!---->
@@ -3908,8 +3548,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">globe
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">globe</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ac</dd>
                           </dl>
                           <!---->
@@ -3918,8 +3557,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  globe-africa</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">globe-africa</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f57c</dd>
                           </dl>
                           <!---->
@@ -3928,8 +3566,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  globe-americas</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">globe-americas</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f57d</dd>
                           </dl>
                           <!---->
@@ -3938,8 +3575,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  globe-asia</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">globe-asia</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f57e</dd>
                           </dl>
                           <!---->
@@ -3948,8 +3584,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  globe-europe</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">globe-europe</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7a2</dd>
                           </dl>
                           <!---->
@@ -3958,8 +3593,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  golf-ball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">golf-ball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f450</dd>
                           </dl>
                           <!---->
@@ -3968,8 +3602,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gopuram
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">gopuram</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f664</dd>
                           </dl>
                           <!---->
@@ -3978,8 +3611,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  graduation-cap</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">graduation-cap</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f19d</dd>
                           </dl>
                           <!---->
@@ -3988,8 +3620,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  greater-than</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">greater-than</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f531</dd>
                           </dl>
                           <!---->
@@ -3998,8 +3629,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  greater-than-equal
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">greater-than-equal
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f532</dd>
                           </dl>
@@ -4009,8 +3639,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grimace
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grimace</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f57f</dd>
                           </dl>
                           <!---->
@@ -4019,8 +3648,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f580</dd>
                           </dl>
                           <!---->
@@ -4029,8 +3657,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f581</dd>
                           </dl>
                           <!---->
@@ -4039,8 +3666,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-beam</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-beam</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f582</dd>
                           </dl>
                           <!---->
@@ -4049,8 +3675,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-beam-sweat</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-beam-sweat</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f583</dd>
                           </dl>
                           <!---->
@@ -4059,8 +3684,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-hearts</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-hearts</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f584</dd>
                           </dl>
                           <!---->
@@ -4069,8 +3693,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-squint</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-squint</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f585</dd>
                           </dl>
                           <!---->
@@ -4079,8 +3702,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-squint-tears
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-squint-tears
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f586</dd>
                           </dl>
@@ -4090,8 +3712,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-stars</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-stars</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f587</dd>
                           </dl>
                           <!---->
@@ -4100,8 +3721,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-tears</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-tears</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f588</dd>
                           </dl>
                           <!---->
@@ -4110,8 +3730,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-tongue</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-tongue</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f589</dd>
                           </dl>
                           <!---->
@@ -4120,8 +3739,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-tongue-squint
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-tongue-squint
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f58a</dd>
                           </dl>
@@ -4131,8 +3749,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-tongue-wink
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-tongue-wink
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f58b</dd>
                           </dl>
@@ -4142,8 +3759,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grin-wink</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grin-wink</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f58c</dd>
                           </dl>
                           <!---->
@@ -4152,8 +3768,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grip-horizontal</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grip-horizontal</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f58d</dd>
                           </dl>
                           <!---->
@@ -4162,8 +3777,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grip-lines</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grip-lines</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7a4</dd>
                           </dl>
                           <!---->
@@ -4172,8 +3786,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grip-lines-vertical
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grip-lines-vertical
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7a5</dd>
                           </dl>
@@ -4183,8 +3796,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  grip-vertical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">grip-vertical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f58e</dd>
                           </dl>
                           <!---->
@@ -4193,8 +3805,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">guitar
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">guitar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7a6</dd>
                           </dl>
                           <!---->
@@ -4203,8 +3814,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">h-square
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">h-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0fd</dd>
                           </dl>
                           <!---->
@@ -4213,8 +3823,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hamburger</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hamburger</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f805</dd>
                           </dl>
                           <!---->
@@ -4223,8 +3832,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hammer
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hammer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6e3</dd>
                           </dl>
                           <!---->
@@ -4233,8 +3841,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hamsa
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hamsa</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f665</dd>
                           </dl>
                           <!---->
@@ -4243,8 +3850,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-holding</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-holding</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4bd</dd>
                           </dl>
                           <!---->
@@ -4253,8 +3859,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-holding-heart
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-holding-heart
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4be</dd>
                           </dl>
@@ -4264,8 +3869,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-holding-medical
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-holding-medical
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e05c</dd>
                           </dl>
@@ -4275,8 +3879,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-holding-usd
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-holding-usd
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4c0</dd>
                           </dl>
@@ -4286,8 +3889,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-holding-water
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-holding-water
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4c1</dd>
                           </dl>
@@ -4297,8 +3899,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-lizard</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-lizard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f258</dd>
                           </dl>
                           <!---->
@@ -4307,8 +3908,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-middle-finger
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-middle-finger
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f806</dd>
                           </dl>
@@ -4318,8 +3918,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-paper</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-paper</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f256</dd>
                           </dl>
                           <!---->
@@ -4328,8 +3927,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-peace</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-peace</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f25b</dd>
                           </dl>
                           <!---->
@@ -4338,8 +3936,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-point-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-point-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a7</dd>
                           </dl>
                           <!---->
@@ -4348,8 +3945,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-point-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-point-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a5</dd>
                           </dl>
                           <!---->
@@ -4358,8 +3954,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-point-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-point-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a4</dd>
                           </dl>
@@ -4369,8 +3964,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-point-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-point-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0a6</dd>
                           </dl>
                           <!---->
@@ -4379,8 +3973,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-pointer</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-pointer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f25a</dd>
                           </dl>
                           <!---->
@@ -4389,8 +3982,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-rock</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-rock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f255</dd>
                           </dl>
                           <!---->
@@ -4399,8 +3991,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-scissors</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-scissors</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f257</dd>
                           </dl>
                           <!---->
@@ -4409,8 +4000,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-sparkles</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-sparkles</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e05d</dd>
                           </dl>
                           <!---->
@@ -4419,8 +4009,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hand-spock</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hand-spock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f259</dd>
                           </dl>
                           <!---->
@@ -4429,8 +4018,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hands
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hands</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4c2</dd>
                           </dl>
                           <!---->
@@ -4439,8 +4027,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hands-helping</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hands-helping</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4c4</dd>
                           </dl>
                           <!---->
@@ -4449,8 +4036,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hands-wash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hands-wash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e05e</dd>
                           </dl>
                           <!---->
@@ -4459,8 +4045,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  handshake</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">handshake</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2b5</dd>
                           </dl>
                           <!---->
@@ -4469,8 +4054,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  handshake-alt-slash
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">handshake-alt-slash
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e05f</dd>
                           </dl>
@@ -4480,8 +4064,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  handshake-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">handshake-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e060</dd>
                           </dl>
                           <!---->
@@ -4490,8 +4073,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hanukiah
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hanukiah</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6e6</dd>
                           </dl>
                           <!---->
@@ -4500,8 +4082,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hard-hat
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hard-hat</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f807</dd>
                           </dl>
                           <!---->
@@ -4510,8 +4091,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hashtag
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hashtag</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f292</dd>
                           </dl>
                           <!---->
@@ -4520,8 +4100,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hat-cowboy</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hat-cowboy</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f8c0</dd>
                           </dl>
                           <!---->
@@ -4530,8 +4109,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hat-cowboy-side</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hat-cowboy-side</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f8c1</dd>
                           </dl>
                           <!---->
@@ -4540,8 +4118,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hat-wizard</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hat-wizard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6e8</dd>
                           </dl>
                           <!---->
@@ -4559,8 +4136,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  head-side-cough</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">head-side-cough</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e061</dd>
                           </dl>
                           <!---->
@@ -4579,8 +4155,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  head-side-mask</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">head-side-mask</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e063</dd>
                           </dl>
                           <!---->
@@ -4589,8 +4164,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  head-side-virus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">head-side-virus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e064</dd>
                           </dl>
                           <!---->
@@ -4599,8 +4173,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">heading
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">heading</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1dc</dd>
                           </dl>
                           <!---->
@@ -4609,8 +4182,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  headphones</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">headphones</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f025</dd>
                           </dl>
                           <!---->
@@ -4619,8 +4191,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  headphones-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">headphones-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f58f</dd>
                           </dl>
                           <!---->
@@ -4629,8 +4200,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">headset
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">headset</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f590</dd>
                           </dl>
                           <!---->
@@ -4639,8 +4209,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">heart
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">heart</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f004</dd>
                           </dl>
                           <!---->
@@ -4649,8 +4218,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  heart-broken</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">heart-broken</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7a9</dd>
                           </dl>
                           <!---->
@@ -4659,8 +4227,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  heartbeat</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">heartbeat</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f21e</dd>
                           </dl>
                           <!---->
@@ -4669,8 +4236,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  helicopter</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">helicopter</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f533</dd>
                           </dl>
                           <!---->
@@ -4679,8 +4245,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  highlighter</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">highlighter</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f591</dd>
                           </dl>
                           <!---->
@@ -4689,8 +4254,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hiking
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hiking</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6ec</dd>
                           </dl>
                           <!---->
@@ -4699,8 +4263,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hippo
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hippo</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6ed</dd>
                           </dl>
                           <!---->
@@ -4709,8 +4272,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">history
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">history</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1da</dd>
                           </dl>
                           <!---->
@@ -4719,8 +4281,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hockey-puck</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hockey-puck</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f453</dd>
                           </dl>
                           <!---->
@@ -4729,8 +4290,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  holly-berry</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">holly-berry</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7aa</dd>
                           </dl>
                           <!---->
@@ -4739,8 +4299,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">home
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">home</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f015</dd>
                           </dl>
                           <!---->
@@ -4749,8 +4308,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">horse
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">horse</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6f0</dd>
                           </dl>
                           <!---->
@@ -4759,8 +4317,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  horse-head</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">horse-head</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ab</dd>
                           </dl>
                           <!---->
@@ -4769,8 +4326,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hospital
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hospital</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f8</dd>
                           </dl>
                           <!---->
@@ -4779,8 +4335,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hospital-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hospital-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f47d</dd>
                           </dl>
                           <!---->
@@ -4789,8 +4344,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hospital-symbol</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hospital-symbol</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f47e</dd>
                           </dl>
                           <!---->
@@ -4799,8 +4353,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hospital-user</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hospital-user</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f80d</dd>
                           </dl>
                           <!---->
@@ -4809,8 +4362,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hot-tub
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hot-tub</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f593</dd>
                           </dl>
                           <!---->
@@ -4819,8 +4371,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hotdog
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hotdog</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f80f</dd>
                           </dl>
                           <!---->
@@ -4829,8 +4380,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hotel
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hotel</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f594</dd>
                           </dl>
                           <!---->
@@ -4839,8 +4389,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hourglass</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hourglass</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f254</dd>
                           </dl>
                           <!---->
@@ -4849,8 +4398,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hourglass-end</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hourglass-end</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f253</dd>
                           </dl>
                           <!---->
@@ -4859,8 +4407,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hourglass-half</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hourglass-half</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f252</dd>
                           </dl>
                           <!---->
@@ -4869,8 +4416,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  hourglass-start</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hourglass-start</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f251</dd>
                           </dl>
                           <!---->
@@ -4879,8 +4425,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  house-damage</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">house-damage</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6f1</dd>
                           </dl>
                           <!---->
@@ -4889,8 +4434,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  house-user</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">house-user</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e065</dd>
                           </dl>
                           <!---->
@@ -4899,8 +4443,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hryvnia
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">hryvnia</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6f2</dd>
                           </dl>
                           <!---->
@@ -4909,8 +4452,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">i-cursor
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">i-cursor</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f246</dd>
                           </dl>
                           <!---->
@@ -4919,8 +4461,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ice-cream</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ice-cream</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f810</dd>
                           </dl>
                           <!---->
@@ -4929,8 +4470,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">icicles
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">icicles</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ad</dd>
                           </dl>
                           <!---->
@@ -4939,8 +4479,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">icons
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">icons</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f86d</dd>
                           </dl>
                           <!---->
@@ -4949,8 +4488,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">id-badge
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">id-badge</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2c1</dd>
                           </dl>
                           <!---->
@@ -4959,8 +4497,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">id-card
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">id-card</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2c2</dd>
                           </dl>
                           <!---->
@@ -4969,8 +4506,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  id-card-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">id-card-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f47f</dd>
                           </dl>
                           <!---->
@@ -4979,8 +4515,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">igloo
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">igloo</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ae</dd>
                           </dl>
                           <!---->
@@ -4989,8 +4524,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">image
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">image</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f03e</dd>
                           </dl>
                           <!---->
@@ -4999,8 +4533,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">images
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">images</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f302</dd>
                           </dl>
                           <!---->
@@ -5009,8 +4542,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">inbox
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">inbox</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f01c</dd>
                           </dl>
                           <!---->
@@ -5019,8 +4551,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">indent
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">indent</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f03c</dd>
                           </dl>
                           <!---->
@@ -5029,8 +4560,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">industry
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">industry</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f275</dd>
                           </dl>
                           <!---->
@@ -5039,8 +4569,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">infinity
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">infinity</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f534</dd>
                           </dl>
                           <!---->
@@ -5049,8 +4578,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">info
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">info</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f129</dd>
                           </dl>
                           <!---->
@@ -5059,8 +4587,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  info-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">info-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f05a</dd>
                           </dl>
                           <!---->
@@ -5069,8 +4596,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">italic
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">italic</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f033</dd>
                           </dl>
                           <!---->
@@ -5079,8 +4605,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">jedi
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">jedi</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f669</dd>
                           </dl>
                           <!---->
@@ -5089,8 +4614,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">joint
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">joint</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f595</dd>
                           </dl>
                           <!---->
@@ -5099,8 +4623,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  journal-whills</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">journal-whills</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f66a</dd>
                           </dl>
                           <!---->
@@ -5109,8 +4632,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kaaba
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kaaba</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f66b</dd>
                           </dl>
                           <!---->
@@ -5128,8 +4650,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">keyboard
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">keyboard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f11c</dd>
                           </dl>
                           <!---->
@@ -5138,8 +4659,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">khanda
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">khanda</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f66d</dd>
                           </dl>
                           <!---->
@@ -5148,8 +4668,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kiss
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kiss</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f596</dd>
                           </dl>
                           <!---->
@@ -5158,8 +4677,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  kiss-beam</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kiss-beam</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f597</dd>
                           </dl>
                           <!---->
@@ -5168,8 +4686,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  kiss-wink-heart</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kiss-wink-heart</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f598</dd>
                           </dl>
                           <!---->
@@ -5178,8 +4695,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  kiwi-bird</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">kiwi-bird</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f535</dd>
                           </dl>
                           <!---->
@@ -5188,8 +4704,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">landmark
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">landmark</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f66f</dd>
                           </dl>
                           <!---->
@@ -5198,8 +4713,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">language
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">language</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ab</dd>
                           </dl>
                           <!---->
@@ -5208,8 +4722,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laptop
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laptop</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f109</dd>
                           </dl>
                           <!---->
@@ -5218,8 +4731,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  laptop-code</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laptop-code</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5fc</dd>
                           </dl>
                           <!---->
@@ -5228,8 +4740,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  laptop-house</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laptop-house</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e066</dd>
                           </dl>
                           <!---->
@@ -5238,8 +4749,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  laptop-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laptop-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f812</dd>
                           </dl>
                           <!---->
@@ -5248,8 +4758,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laugh
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laugh</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f599</dd>
                           </dl>
                           <!---->
@@ -5258,8 +4767,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  laugh-beam</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laugh-beam</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f59a</dd>
                           </dl>
                           <!---->
@@ -5268,8 +4776,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  laugh-squint</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laugh-squint</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f59b</dd>
                           </dl>
                           <!---->
@@ -5278,8 +4785,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  laugh-wink</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">laugh-wink</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f59c</dd>
                           </dl>
                           <!---->
@@ -5288,8 +4794,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  layer-group</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">layer-group</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5fd</dd>
                           </dl>
                           <!---->
@@ -5298,8 +4803,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">leaf
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">leaf</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f06c</dd>
                           </dl>
                           <!---->
@@ -5308,8 +4812,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lemon
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lemon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f094</dd>
                           </dl>
                           <!---->
@@ -5318,8 +4821,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  less-than</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">less-than</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f536</dd>
                           </dl>
                           <!---->
@@ -5328,8 +4830,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  less-than-equal</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">less-than-equal</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f537</dd>
                           </dl>
                           <!---->
@@ -5338,8 +4839,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  level-down-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">level-down-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3be</dd>
                           </dl>
                           <!---->
@@ -5348,8 +4848,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  level-up-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">level-up-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3bf</dd>
                           </dl>
                           <!---->
@@ -5358,8 +4857,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  life-ring</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">life-ring</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1cd</dd>
                           </dl>
                           <!---->
@@ -5368,8 +4866,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  lightbulb</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lightbulb</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0eb</dd>
                           </dl>
                           <!---->
@@ -5378,8 +4875,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">link
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">link</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c1</dd>
                           </dl>
                           <!---->
@@ -5388,8 +4884,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  lira-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lira-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f195</dd>
                           </dl>
                           <!---->
@@ -5398,8 +4893,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f03a</dd>
                           </dl>
                           <!---->
@@ -5408,8 +4902,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f022</dd>
                           </dl>
                           <!---->
@@ -5418,8 +4911,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list-ol
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list-ol</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0cb</dd>
                           </dl>
                           <!---->
@@ -5428,8 +4920,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list-ul
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">list-ul</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ca</dd>
                           </dl>
                           <!---->
@@ -5438,8 +4929,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  location-arrow</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">location-arrow</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f124</dd>
                           </dl>
                           <!---->
@@ -5448,8 +4938,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lock
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f023</dd>
                           </dl>
                           <!---->
@@ -5458,8 +4947,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  lock-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lock-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3c1</dd>
                           </dl>
                           <!---->
@@ -5468,8 +4956,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  long-arrow-alt-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">long-arrow-alt-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f309</dd>
                           </dl>
@@ -5479,8 +4966,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  long-arrow-alt-left
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">long-arrow-alt-left
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f30a</dd>
                           </dl>
@@ -5490,8 +4976,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  long-arrow-alt-right
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">long-arrow-alt-right
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f30b</dd>
                           </dl>
@@ -5501,8 +4986,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  long-arrow-alt-up
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">long-arrow-alt-up
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f30c</dd>
                           </dl>
@@ -5512,8 +4996,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  low-vision</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">low-vision</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2a8</dd>
                           </dl>
                           <!---->
@@ -5522,8 +5005,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  luggage-cart</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">luggage-cart</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f59d</dd>
                           </dl>
                           <!---->
@@ -5532,8 +5014,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lungs
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lungs</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f604</dd>
                           </dl>
                           <!---->
@@ -5542,8 +5023,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  lungs-virus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">lungs-virus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e067</dd>
                           </dl>
                           <!---->
@@ -5552,8 +5032,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">magic
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">magic</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0d0</dd>
                           </dl>
                           <!---->
@@ -5562,8 +5041,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">magnet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">magnet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f076</dd>
                           </dl>
                           <!---->
@@ -5572,8 +5050,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mail-bulk</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mail-bulk</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f674</dd>
                           </dl>
                           <!---->
@@ -5582,8 +5059,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">male
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">male</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f183</dd>
                           </dl>
                           <!---->
@@ -5601,8 +5077,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  map-marked</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-marked</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f59f</dd>
                           </dl>
                           <!---->
@@ -5611,8 +5086,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  map-marked-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-marked-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a0</dd>
                           </dl>
                           <!---->
@@ -5621,8 +5095,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  map-marker</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-marker</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f041</dd>
                           </dl>
                           <!---->
@@ -5631,8 +5104,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  map-marker-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-marker-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3c5</dd>
                           </dl>
                           <!---->
@@ -5641,8 +5113,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-pin
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-pin</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f276</dd>
                           </dl>
                           <!---->
@@ -5651,8 +5122,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  map-signs</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">map-signs</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f277</dd>
                           </dl>
                           <!---->
@@ -5661,8 +5131,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">marker
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">marker</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a1</dd>
                           </dl>
                           <!---->
@@ -5671,8 +5140,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mars
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mars</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f222</dd>
                           </dl>
                           <!---->
@@ -5681,8 +5149,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mars-double</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mars-double</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f227</dd>
                           </dl>
                           <!---->
@@ -5691,8 +5158,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mars-stroke</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mars-stroke</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f229</dd>
                           </dl>
                           <!---->
@@ -5701,8 +5167,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mars-stroke-h</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mars-stroke-h</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f22b</dd>
                           </dl>
                           <!---->
@@ -5711,8 +5176,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mars-stroke-v</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mars-stroke-v</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f22a</dd>
                           </dl>
                           <!---->
@@ -5721,8 +5185,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mask
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mask</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6fa</dd>
                           </dl>
                           <!---->
@@ -5731,8 +5194,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">medal
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">medal</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a2</dd>
                           </dl>
                           <!---->
@@ -5741,8 +5203,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">medkit
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">medkit</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0fa</dd>
                           </dl>
                           <!---->
@@ -5760,8 +5221,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  meh-blank</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">meh-blank</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a4</dd>
                           </dl>
                           <!---->
@@ -5770,8 +5230,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  meh-rolling-eyes
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">meh-rolling-eyes
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a5</dd>
                           </dl>
@@ -5781,8 +5240,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">memory
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">memory</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f538</dd>
                           </dl>
                           <!---->
@@ -5791,8 +5249,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">menorah
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">menorah</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f676</dd>
                           </dl>
                           <!---->
@@ -5801,8 +5258,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mercury
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mercury</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f223</dd>
                           </dl>
                           <!---->
@@ -5811,8 +5267,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">meteor
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">meteor</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f753</dd>
                           </dl>
                           <!---->
@@ -5821,8 +5276,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  microchip</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">microchip</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2db</dd>
                           </dl>
                           <!---->
@@ -5831,8 +5285,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  microphone</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">microphone</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f130</dd>
                           </dl>
                           <!---->
@@ -5841,8 +5294,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  microphone-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">microphone-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3c9</dd>
                           </dl>
                           <!---->
@@ -5851,8 +5303,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  microphone-alt-slash
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">microphone-alt-slash
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f539</dd>
                           </dl>
@@ -5862,8 +5313,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  microphone-slash
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">microphone-slash
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f131</dd>
                           </dl>
@@ -5873,8 +5323,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  microscope</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">microscope</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f610</dd>
                           </dl>
                           <!---->
@@ -5883,8 +5332,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">minus
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">minus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f068</dd>
                           </dl>
                           <!---->
@@ -5893,8 +5341,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  minus-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">minus-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f056</dd>
                           </dl>
                           <!---->
@@ -5903,8 +5350,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  minus-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">minus-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f146</dd>
                           </dl>
                           <!---->
@@ -5913,8 +5359,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mitten
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mitten</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7b5</dd>
                           </dl>
                           <!---->
@@ -5923,8 +5368,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mobile
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mobile</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f10b</dd>
                           </dl>
                           <!---->
@@ -5933,8 +5377,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mobile-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mobile-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3cd</dd>
                           </dl>
                           <!---->
@@ -5943,8 +5386,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  money-bill</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">money-bill</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0d6</dd>
                           </dl>
                           <!---->
@@ -5953,8 +5395,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  money-bill-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">money-bill-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3d1</dd>
                           </dl>
                           <!---->
@@ -5963,8 +5404,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  money-bill-wave</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">money-bill-wave</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f53a</dd>
                           </dl>
                           <!---->
@@ -5973,8 +5413,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  money-bill-wave-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">money-bill-wave-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f53b</dd>
                           </dl>
@@ -5984,8 +5423,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  money-check</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">money-check</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f53c</dd>
                           </dl>
                           <!---->
@@ -5994,8 +5432,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  money-check-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">money-check-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f53d</dd>
                           </dl>
                           <!---->
@@ -6004,8 +5441,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">monument
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">monument</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a6</dd>
                           </dl>
                           <!---->
@@ -6014,8 +5450,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">moon
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">moon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f186</dd>
                           </dl>
                           <!---->
@@ -6024,8 +5459,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mortar-pestle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mortar-pestle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5a7</dd>
                           </dl>
                           <!---->
@@ -6034,8 +5468,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mosque
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mosque</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f678</dd>
                           </dl>
                           <!---->
@@ -6044,8 +5477,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  motorcycle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">motorcycle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f21c</dd>
                           </dl>
                           <!---->
@@ -6054,8 +5486,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mountain
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mountain</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6fc</dd>
                           </dl>
                           <!---->
@@ -6064,8 +5495,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mouse
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mouse</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f8cc</dd>
                           </dl>
                           <!---->
@@ -6074,8 +5504,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  mouse-pointer</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mouse-pointer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f245</dd>
                           </dl>
                           <!---->
@@ -6084,8 +5513,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mug-hot
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">mug-hot</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7b6</dd>
                           </dl>
                           <!---->
@@ -6094,8 +5522,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">music
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">music</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f001</dd>
                           </dl>
                           <!---->
@@ -6104,8 +5531,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  network-wired</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">network-wired</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6ff</dd>
                           </dl>
                           <!---->
@@ -6114,8 +5540,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">neuter
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">neuter</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f22c</dd>
                           </dl>
                           <!---->
@@ -6124,8 +5549,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  newspaper</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">newspaper</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ea</dd>
                           </dl>
                           <!---->
@@ -6134,8 +5558,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  not-equal</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">not-equal</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f53e</dd>
                           </dl>
                           <!---->
@@ -6144,8 +5567,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  notes-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">notes-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f481</dd>
                           </dl>
                           <!---->
@@ -6154,8 +5576,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  object-group</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">object-group</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f247</dd>
                           </dl>
                           <!---->
@@ -6164,8 +5585,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  object-ungroup</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">object-ungroup</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f248</dd>
                           </dl>
                           <!---->
@@ -6174,8 +5594,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">oil-can
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">oil-can</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f613</dd>
                           </dl>
                           <!---->
@@ -6193,8 +5612,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">otter
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">otter</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f700</dd>
                           </dl>
                           <!---->
@@ -6203,8 +5621,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">outdent
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">outdent</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f03b</dd>
                           </dl>
                           <!---->
@@ -6213,8 +5630,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pager
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pager</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f815</dd>
                           </dl>
                           <!---->
@@ -6223,8 +5639,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  paint-brush</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paint-brush</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1fc</dd>
                           </dl>
                           <!---->
@@ -6233,8 +5648,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  paint-roller</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paint-roller</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5aa</dd>
                           </dl>
                           <!---->
@@ -6243,8 +5657,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">palette
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">palette</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f53f</dd>
                           </dl>
                           <!---->
@@ -6253,8 +5666,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pallet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pallet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f482</dd>
                           </dl>
                           <!---->
@@ -6263,8 +5675,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  paper-plane</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paper-plane</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1d8</dd>
                           </dl>
                           <!---->
@@ -6273,8 +5684,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  paperclip</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paperclip</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c6</dd>
                           </dl>
                           <!---->
@@ -6283,8 +5693,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  parachute-box</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">parachute-box</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4cd</dd>
                           </dl>
                           <!---->
@@ -6293,8 +5702,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  paragraph</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paragraph</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1dd</dd>
                           </dl>
                           <!---->
@@ -6303,8 +5711,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">parking
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">parking</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f540</dd>
                           </dl>
                           <!---->
@@ -6313,8 +5720,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">passport
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">passport</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ab</dd>
                           </dl>
                           <!---->
@@ -6323,8 +5729,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pastafarianism</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pastafarianism</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f67b</dd>
                           </dl>
                           <!---->
@@ -6333,8 +5738,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paste
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">paste</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ea</dd>
                           </dl>
                           <!---->
@@ -6343,8 +5747,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pause
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pause</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f04c</dd>
                           </dl>
                           <!---->
@@ -6353,8 +5756,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pause-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pause-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f28b</dd>
                           </dl>
                           <!---->
@@ -6372,8 +5774,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">peace
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">peace</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f67c</dd>
                           </dl>
                           <!---->
@@ -6391,8 +5792,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pen-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pen-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f305</dd>
                           </dl>
                           <!---->
@@ -6401,8 +5801,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pen-fancy</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pen-fancy</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ac</dd>
                           </dl>
                           <!---->
@@ -6411,8 +5810,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pen-nib
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pen-nib</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ad</dd>
                           </dl>
                           <!---->
@@ -6421,8 +5819,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pen-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pen-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f14b</dd>
                           </dl>
                           <!---->
@@ -6431,8 +5828,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pencil-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pencil-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f303</dd>
                           </dl>
                           <!---->
@@ -6441,8 +5837,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pencil-ruler</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pencil-ruler</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ae</dd>
                           </dl>
                           <!---->
@@ -6451,8 +5846,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  people-arrows</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">people-arrows</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e068</dd>
                           </dl>
                           <!---->
@@ -6461,8 +5855,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  people-carry</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">people-carry</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4ce</dd>
                           </dl>
                           <!---->
@@ -6471,8 +5864,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pepper-hot</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pepper-hot</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f816</dd>
                           </dl>
                           <!---->
@@ -6481,8 +5873,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">percent
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">percent</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f295</dd>
                           </dl>
                           <!---->
@@ -6491,8 +5882,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  percentage</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">percentage</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f541</dd>
                           </dl>
                           <!---->
@@ -6501,8 +5891,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  person-booth</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">person-booth</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f756</dd>
                           </dl>
                           <!---->
@@ -6511,8 +5900,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f095</dd>
                           </dl>
                           <!---->
@@ -6521,8 +5909,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  phone-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f879</dd>
                           </dl>
                           <!---->
@@ -6531,8 +5918,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  phone-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3dd</dd>
                           </dl>
                           <!---->
@@ -6541,8 +5927,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  phone-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f098</dd>
                           </dl>
                           <!---->
@@ -6551,8 +5936,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  phone-square-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone-square-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f87b</dd>
                           </dl>
@@ -6562,8 +5946,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  phone-volume</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">phone-volume</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2a0</dd>
                           </dl>
                           <!---->
@@ -6572,8 +5955,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  photo-video</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">photo-video</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f87c</dd>
                           </dl>
                           <!---->
@@ -6582,8 +5964,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  piggy-bank</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">piggy-bank</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4d3</dd>
                           </dl>
                           <!---->
@@ -6592,8 +5973,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pills
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pills</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f484</dd>
                           </dl>
                           <!---->
@@ -6602,8 +5982,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pizza-slice</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pizza-slice</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f818</dd>
                           </dl>
                           <!---->
@@ -6612,8 +5991,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  place-of-worship
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">place-of-worship
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f67f</dd>
                           </dl>
@@ -6623,8 +6001,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plane
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plane</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f072</dd>
                           </dl>
                           <!---->
@@ -6633,8 +6010,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  plane-arrival</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plane-arrival</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5af</dd>
                           </dl>
                           <!---->
@@ -6643,8 +6019,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  plane-departure</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plane-departure</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b0</dd>
                           </dl>
                           <!---->
@@ -6653,8 +6028,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  plane-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plane-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e069</dd>
                           </dl>
                           <!---->
@@ -6663,8 +6037,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">play
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">play</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f04b</dd>
                           </dl>
                           <!---->
@@ -6673,8 +6046,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  play-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">play-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f144</dd>
                           </dl>
                           <!---->
@@ -6683,8 +6055,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plug
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plug</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1e6</dd>
                           </dl>
                           <!---->
@@ -6693,8 +6064,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plus
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f067</dd>
                           </dl>
                           <!---->
@@ -6703,8 +6073,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  plus-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plus-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f055</dd>
                           </dl>
                           <!---->
@@ -6713,8 +6082,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  plus-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">plus-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0fe</dd>
                           </dl>
                           <!---->
@@ -6723,8 +6091,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">podcast
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">podcast</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2ce</dd>
                           </dl>
                           <!---->
@@ -6733,8 +6100,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poll
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poll</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f681</dd>
                           </dl>
                           <!---->
@@ -6743,8 +6109,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poll-h
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poll-h</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f682</dd>
                           </dl>
                           <!---->
@@ -6762,8 +6127,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  poo-storm</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poo-storm</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f75a</dd>
                           </dl>
                           <!---->
@@ -6772,8 +6136,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poop
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">poop</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f619</dd>
                           </dl>
                           <!---->
@@ -6782,8 +6145,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">portrait
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">portrait</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3e0</dd>
                           </dl>
                           <!---->
@@ -6792,8 +6154,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pound-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pound-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f154</dd>
                           </dl>
                           <!---->
@@ -6802,8 +6163,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  power-off</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">power-off</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f011</dd>
                           </dl>
                           <!---->
@@ -6812,8 +6172,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pray
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pray</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f683</dd>
                           </dl>
                           <!---->
@@ -6822,8 +6181,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  praying-hands</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">praying-hands</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f684</dd>
                           </dl>
                           <!---->
@@ -6832,8 +6190,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  prescription</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">prescription</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b1</dd>
                           </dl>
                           <!---->
@@ -6842,8 +6199,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  prescription-bottle
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">prescription-bottle
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f485</dd>
                           </dl>
@@ -6863,8 +6219,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">print
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">print</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f02f</dd>
                           </dl>
                           <!---->
@@ -6873,8 +6228,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  procedures</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">procedures</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f487</dd>
                           </dl>
                           <!---->
@@ -6883,8 +6237,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  project-diagram</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">project-diagram</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f542</dd>
                           </dl>
                           <!---->
@@ -6893,8 +6246,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pump-medical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pump-medical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e06a</dd>
                           </dl>
                           <!---->
@@ -6903,8 +6255,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  pump-soap</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">pump-soap</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e06b</dd>
                           </dl>
                           <!---->
@@ -6913,8 +6264,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  puzzle-piece</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">puzzle-piece</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f12e</dd>
                           </dl>
                           <!---->
@@ -6923,8 +6273,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">qrcode
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">qrcode</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f029</dd>
                           </dl>
                           <!---->
@@ -6933,8 +6282,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">question
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">question</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f128</dd>
                           </dl>
                           <!---->
@@ -6943,8 +6291,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  question-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">question-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f059</dd>
                           </dl>
                           <!---->
@@ -6953,8 +6300,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  quidditch</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">quidditch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f458</dd>
                           </dl>
                           <!---->
@@ -6963,8 +6309,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  quote-left</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">quote-left</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f10d</dd>
                           </dl>
                           <!---->
@@ -6973,8 +6318,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  quote-right</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">quote-right</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f10e</dd>
                           </dl>
                           <!---->
@@ -6983,8 +6327,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">quran
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">quran</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f687</dd>
                           </dl>
                           <!---->
@@ -6993,8 +6336,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  radiation</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">radiation</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7b9</dd>
                           </dl>
                           <!---->
@@ -7003,8 +6345,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  radiation-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">radiation-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ba</dd>
                           </dl>
                           <!---->
@@ -7013,8 +6354,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">rainbow
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">rainbow</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f75b</dd>
                           </dl>
                           <!---->
@@ -7023,8 +6363,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">random
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">random</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f074</dd>
                           </dl>
                           <!---->
@@ -7033,8 +6372,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">receipt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">receipt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f543</dd>
                           </dl>
                           <!---->
@@ -7043,8 +6381,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  record-vinyl</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">record-vinyl</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f8d9</dd>
                           </dl>
                           <!---->
@@ -7053,8 +6390,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">recycle
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">recycle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1b8</dd>
                           </dl>
                           <!---->
@@ -7063,8 +6399,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">redo
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">redo</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f01e</dd>
                           </dl>
                           <!---->
@@ -7073,8 +6408,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">redo-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">redo-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2f9</dd>
                           </dl>
                           <!---->
@@ -7083,8 +6417,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  registered</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">registered</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f25d</dd>
                           </dl>
                           <!---->
@@ -7093,8 +6426,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  remove-format</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">remove-format</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f87d</dd>
                           </dl>
                           <!---->
@@ -7103,8 +6435,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">reply
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">reply</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3e5</dd>
                           </dl>
                           <!---->
@@ -7113,8 +6444,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  reply-all</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">reply-all</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f122</dd>
                           </dl>
                           <!---->
@@ -7123,8 +6453,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  republican</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">republican</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f75e</dd>
                           </dl>
                           <!---->
@@ -7133,8 +6462,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">restroom
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">restroom</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7bd</dd>
                           </dl>
                           <!---->
@@ -7143,8 +6471,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">retweet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">retweet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f079</dd>
                           </dl>
                           <!---->
@@ -7153,8 +6480,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ribbon
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ribbon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4d6</dd>
                           </dl>
                           <!---->
@@ -7163,8 +6489,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ring
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ring</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f70b</dd>
                           </dl>
                           <!---->
@@ -7173,8 +6498,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">road
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">road</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f018</dd>
                           </dl>
                           <!---->
@@ -7183,8 +6507,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">robot
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">robot</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f544</dd>
                           </dl>
                           <!---->
@@ -7193,8 +6516,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">rocket
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">rocket</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f135</dd>
                           </dl>
                           <!---->
@@ -7203,8 +6525,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">route
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">route</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4d7</dd>
                           </dl>
                           <!---->
@@ -7222,8 +6543,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  rss-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">rss-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f143</dd>
                           </dl>
                           <!---->
@@ -7232,8 +6552,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ruble-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ruble-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f158</dd>
                           </dl>
                           <!---->
@@ -7242,8 +6561,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ruler
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ruler</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f545</dd>
                           </dl>
                           <!---->
@@ -7252,8 +6570,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ruler-combined</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ruler-combined</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f546</dd>
                           </dl>
                           <!---->
@@ -7262,8 +6579,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ruler-horizontal
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ruler-horizontal
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f547</dd>
                           </dl>
@@ -7273,8 +6589,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ruler-vertical</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ruler-vertical</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f548</dd>
                           </dl>
                           <!---->
@@ -7283,8 +6598,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">running
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">running</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f70c</dd>
                           </dl>
                           <!---->
@@ -7293,8 +6607,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  rupee-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">rupee-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f156</dd>
                           </dl>
                           <!---->
@@ -7303,8 +6616,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sad-cry
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sad-cry</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b3</dd>
                           </dl>
                           <!---->
@@ -7313,8 +6625,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sad-tear
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sad-tear</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b4</dd>
                           </dl>
                           <!---->
@@ -7323,8 +6634,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  satellite</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">satellite</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7bf</dd>
                           </dl>
                           <!---->
@@ -7333,8 +6643,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  satellite-dish</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">satellite-dish</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7c0</dd>
                           </dl>
                           <!---->
@@ -7343,8 +6652,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">save
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">save</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c7</dd>
                           </dl>
                           <!---->
@@ -7353,8 +6661,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">school
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">school</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f549</dd>
                           </dl>
                           <!---->
@@ -7363,8 +6670,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  screwdriver</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">screwdriver</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f54a</dd>
                           </dl>
                           <!---->
@@ -7373,8 +6679,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">scroll
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">scroll</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f70e</dd>
                           </dl>
                           <!---->
@@ -7383,8 +6688,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sd-card
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sd-card</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7c2</dd>
                           </dl>
                           <!---->
@@ -7393,8 +6697,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">search
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">search</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f002</dd>
                           </dl>
                           <!---->
@@ -7403,8 +6706,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  search-dollar</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">search-dollar</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f688</dd>
                           </dl>
                           <!---->
@@ -7413,8 +6715,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  search-location</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">search-location</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f689</dd>
                           </dl>
                           <!---->
@@ -7423,8 +6724,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  search-minus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">search-minus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f010</dd>
                           </dl>
                           <!---->
@@ -7433,8 +6733,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  search-plus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">search-plus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f00e</dd>
                           </dl>
                           <!---->
@@ -7443,8 +6742,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">seedling
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">seedling</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4d8</dd>
                           </dl>
                           <!---->
@@ -7453,8 +6751,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">server
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">server</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f233</dd>
                           </dl>
                           <!---->
@@ -7463,8 +6760,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shapes
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shapes</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f61f</dd>
                           </dl>
                           <!---->
@@ -7473,8 +6769,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">share
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">share</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f064</dd>
                           </dl>
                           <!---->
@@ -7483,8 +6778,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  share-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">share-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1e0</dd>
                           </dl>
                           <!---->
@@ -7493,8 +6787,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  share-alt-square
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">share-alt-square
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1e1</dd>
                           </dl>
@@ -7504,8 +6797,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  share-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">share-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f14d</dd>
                           </dl>
                           <!---->
@@ -7514,8 +6806,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shekel-sign</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shekel-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f20b</dd>
                           </dl>
                           <!---->
@@ -7524,8 +6815,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shield-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shield-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3ed</dd>
                           </dl>
                           <!---->
@@ -7534,8 +6824,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shield-virus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shield-virus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e06c</dd>
                           </dl>
                           <!---->
@@ -7544,8 +6833,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ship
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ship</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f21a</dd>
                           </dl>
                           <!---->
@@ -7554,8 +6842,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shipping-fast</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shipping-fast</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f48b</dd>
                           </dl>
                           <!---->
@@ -7564,8 +6851,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shoe-prints</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shoe-prints</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f54b</dd>
                           </dl>
                           <!---->
@@ -7574,8 +6860,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shopping-bag</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shopping-bag</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f290</dd>
                           </dl>
                           <!---->
@@ -7584,8 +6869,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shopping-basket</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shopping-basket</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f291</dd>
                           </dl>
                           <!---->
@@ -7594,8 +6878,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shopping-cart</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shopping-cart</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f07a</dd>
                           </dl>
                           <!---->
@@ -7604,8 +6887,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shower
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shower</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2cc</dd>
                           </dl>
                           <!---->
@@ -7614,8 +6896,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  shuttle-van</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">shuttle-van</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b6</dd>
                           </dl>
                           <!---->
@@ -7624,8 +6905,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sign
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4d9</dd>
                           </dl>
                           <!---->
@@ -7634,8 +6914,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sign-in-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sign-in-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2f6</dd>
                           </dl>
                           <!---->
@@ -7644,8 +6923,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sign-language</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sign-language</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2a7</dd>
                           </dl>
                           <!---->
@@ -7654,8 +6932,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sign-out-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sign-out-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2f5</dd>
                           </dl>
                           <!---->
@@ -7664,8 +6941,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">signal
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">signal</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f012</dd>
                           </dl>
                           <!---->
@@ -7674,8 +6950,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  signature</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">signature</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b7</dd>
                           </dl>
                           <!---->
@@ -7684,8 +6959,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sim-card
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sim-card</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7c4</dd>
                           </dl>
                           <!---->
@@ -7694,8 +6968,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sink
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sink</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e06d</dd>
                           </dl>
                           <!---->
@@ -7704,8 +6977,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sitemap
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sitemap</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0e8</dd>
                           </dl>
                           <!---->
@@ -7714,8 +6986,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skating
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skating</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7c5</dd>
                           </dl>
                           <!---->
@@ -7724,8 +6995,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skiing
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skiing</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7c9</dd>
                           </dl>
                           <!---->
@@ -7734,8 +7004,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  skiing-nordic</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skiing-nordic</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ca</dd>
                           </dl>
                           <!---->
@@ -7744,8 +7013,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skull
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skull</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f54c</dd>
                           </dl>
                           <!---->
@@ -7754,8 +7022,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  skull-crossbones
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">skull-crossbones
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f714</dd>
                           </dl>
@@ -7765,8 +7032,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">slash
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f715</dd>
                           </dl>
                           <!---->
@@ -7775,8 +7041,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sleigh
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sleigh</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7cc</dd>
                           </dl>
                           <!---->
@@ -7785,8 +7050,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sliders-h</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sliders-h</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1de</dd>
                           </dl>
                           <!---->
@@ -7795,8 +7059,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smile
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smile</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f118</dd>
                           </dl>
                           <!---->
@@ -7805,8 +7068,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  smile-beam</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smile-beam</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5b8</dd>
                           </dl>
                           <!---->
@@ -7815,8 +7077,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  smile-wink</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smile-wink</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4da</dd>
                           </dl>
                           <!---->
@@ -7825,8 +7086,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smog
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smog</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f75f</dd>
                           </dl>
                           <!---->
@@ -7835,8 +7095,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smoking
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smoking</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f48d</dd>
                           </dl>
                           <!---->
@@ -7845,8 +7104,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  smoking-ban</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">smoking-ban</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f54d</dd>
                           </dl>
                           <!---->
@@ -7864,8 +7122,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  snowboarding</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">snowboarding</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7ce</dd>
                           </dl>
                           <!---->
@@ -7874,8 +7131,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  snowflake</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">snowflake</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2dc</dd>
                           </dl>
                           <!---->
@@ -7884,8 +7140,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">snowman
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">snowman</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7d0</dd>
                           </dl>
                           <!---->
@@ -7894,8 +7149,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">snowplow
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">snowplow</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7d2</dd>
                           </dl>
                           <!---->
@@ -7904,8 +7158,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">soap
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">soap</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e06e</dd>
                           </dl>
                           <!---->
@@ -7914,8 +7167,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">socks
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">socks</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f696</dd>
                           </dl>
                           <!---->
@@ -7924,8 +7176,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  solar-panel</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">solar-panel</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ba</dd>
                           </dl>
                           <!---->
@@ -7934,8 +7185,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0dc</dd>
                           </dl>
                           <!---->
@@ -7944,8 +7194,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-alpha-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-alpha-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f15d</dd>
                           </dl>
                           <!---->
@@ -7954,8 +7203,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-alpha-down-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-alpha-down-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f881</dd>
                           </dl>
@@ -7965,8 +7213,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-alpha-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-alpha-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f15e</dd>
                           </dl>
                           <!---->
@@ -7975,8 +7222,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-alpha-up-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-alpha-up-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f882</dd>
                           </dl>
@@ -7986,8 +7232,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-amount-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-amount-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f160</dd>
                           </dl>
@@ -7997,8 +7242,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-amount-down-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-amount-down-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f884</dd>
                           </dl>
@@ -8008,8 +7252,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-amount-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-amount-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f161</dd>
                           </dl>
                           <!---->
@@ -8018,8 +7261,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-amount-up-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-amount-up-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f885</dd>
                           </dl>
@@ -8029,8 +7271,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0dd</dd>
                           </dl>
                           <!---->
@@ -8039,8 +7280,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-numeric-down
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-numeric-down
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f162</dd>
                           </dl>
@@ -8060,8 +7300,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-numeric-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-numeric-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f163</dd>
                           </dl>
                           <!---->
@@ -8070,8 +7309,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sort-numeric-up-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-numeric-up-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f887</dd>
                           </dl>
@@ -8081,8 +7319,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-up
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sort-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0de</dd>
                           </dl>
                           <!---->
@@ -8100,8 +7337,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  space-shuttle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">space-shuttle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f197</dd>
                           </dl>
                           <!---->
@@ -8110,8 +7346,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  spell-check</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">spell-check</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f891</dd>
                           </dl>
                           <!---->
@@ -8120,8 +7355,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">spider
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">spider</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f717</dd>
                           </dl>
                           <!---->
@@ -8130,8 +7364,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">spinner
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">spinner</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f110</dd>
                           </dl>
                           <!---->
@@ -8140,8 +7373,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">splotch
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">splotch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5bc</dd>
                           </dl>
                           <!---->
@@ -8150,8 +7382,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  spray-can</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">spray-can</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5bd</dd>
                           </dl>
                           <!---->
@@ -8160,8 +7391,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">square
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c8</dd>
                           </dl>
                           <!---->
@@ -8170,8 +7400,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  square-full</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">square-full</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f45c</dd>
                           </dl>
                           <!---->
@@ -8180,8 +7409,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  square-root-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">square-root-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f698</dd>
                           </dl>
                           <!---->
@@ -8190,8 +7418,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stamp
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stamp</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5bf</dd>
                           </dl>
                           <!---->
@@ -8200,8 +7427,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f005</dd>
                           </dl>
                           <!---->
@@ -8210,8 +7436,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  star-and-crescent
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star-and-crescent
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f699</dd>
                           </dl>
@@ -8221,8 +7446,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  star-half</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star-half</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f089</dd>
                           </dl>
                           <!---->
@@ -8231,8 +7455,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  star-half-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star-half-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c0</dd>
                           </dl>
                           <!---->
@@ -8241,8 +7464,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  star-of-david</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star-of-david</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f69a</dd>
                           </dl>
                           <!---->
@@ -8251,8 +7473,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  star-of-life</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">star-of-life</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f621</dd>
                           </dl>
                           <!---->
@@ -8261,8 +7482,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  step-backward</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">step-backward</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f048</dd>
                           </dl>
                           <!---->
@@ -8271,8 +7491,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  step-forward</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">step-forward</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f051</dd>
                           </dl>
                           <!---->
@@ -8281,8 +7500,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  stethoscope</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stethoscope</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f1</dd>
                           </dl>
                           <!---->
@@ -8291,8 +7509,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  sticky-note</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sticky-note</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f249</dd>
                           </dl>
                           <!---->
@@ -8301,8 +7518,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stop
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stop</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f04d</dd>
                           </dl>
                           <!---->
@@ -8311,8 +7527,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  stop-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stop-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f28d</dd>
                           </dl>
                           <!---->
@@ -8321,8 +7536,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  stopwatch</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stopwatch</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2f2</dd>
                           </dl>
                           <!---->
@@ -8331,8 +7545,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  stopwatch-20</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stopwatch-20</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e06f</dd>
                           </dl>
                           <!---->
@@ -8341,8 +7554,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">store
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">store</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f54e</dd>
                           </dl>
                           <!---->
@@ -8351,8 +7563,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  store-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">store-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f54f</dd>
                           </dl>
                           <!---->
@@ -8361,8 +7572,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  store-alt-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">store-alt-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e070</dd>
                           </dl>
                           <!---->
@@ -8371,8 +7581,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  store-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">store-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e071</dd>
                           </dl>
                           <!---->
@@ -8381,8 +7590,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stream
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stream</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f550</dd>
                           </dl>
                           <!---->
@@ -8391,8 +7599,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  street-view</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">street-view</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f21d</dd>
                           </dl>
                           <!---->
@@ -8401,8 +7608,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  strikethrough</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">strikethrough</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0cc</dd>
                           </dl>
                           <!---->
@@ -8411,8 +7617,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  stroopwafel</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">stroopwafel</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f551</dd>
                           </dl>
                           <!---->
@@ -8421,8 +7626,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  subscript</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">subscript</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f12c</dd>
                           </dl>
                           <!---->
@@ -8431,8 +7635,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">subway
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">subway</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f239</dd>
                           </dl>
                           <!---->
@@ -8441,8 +7644,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">suitcase
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">suitcase</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f2</dd>
                           </dl>
                           <!---->
@@ -8451,8 +7653,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  suitcase-rolling
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">suitcase-rolling
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c1</dd>
                           </dl>
@@ -8471,8 +7672,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  superscript</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">superscript</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f12b</dd>
                           </dl>
                           <!---->
@@ -8481,8 +7681,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">surprise
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">surprise</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c2</dd>
                           </dl>
                           <!---->
@@ -8491,8 +7690,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  swatchbook</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">swatchbook</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c3</dd>
                           </dl>
                           <!---->
@@ -8501,8 +7699,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">swimmer
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">swimmer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c4</dd>
                           </dl>
                           <!---->
@@ -8511,8 +7708,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  swimming-pool</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">swimming-pool</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c5</dd>
                           </dl>
                           <!---->
@@ -8521,8 +7717,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  synagogue</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">synagogue</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f69b</dd>
                           </dl>
                           <!---->
@@ -8531,8 +7726,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sync
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sync</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f021</dd>
                           </dl>
                           <!---->
@@ -8541,8 +7735,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sync-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">sync-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2f1</dd>
                           </dl>
                           <!---->
@@ -8551,8 +7744,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">syringe
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">syringe</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f48e</dd>
                           </dl>
                           <!---->
@@ -8561,8 +7753,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">table
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">table</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ce</dd>
                           </dl>
                           <!---->
@@ -8571,8 +7762,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  table-tennis</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">table-tennis</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f45d</dd>
                           </dl>
                           <!---->
@@ -8581,8 +7771,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tablet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tablet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f10a</dd>
                           </dl>
                           <!---->
@@ -8591,8 +7780,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  tablet-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tablet-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3fa</dd>
                           </dl>
                           <!---->
@@ -8601,8 +7789,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tablets
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tablets</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f490</dd>
                           </dl>
                           <!---->
@@ -8611,8 +7798,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  tachometer-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tachometer-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3fd</dd>
                           </dl>
                           <!---->
@@ -8630,8 +7816,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tags
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tags</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f02c</dd>
                           </dl>
                           <!---->
@@ -8640,8 +7825,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tape
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tape</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4db</dd>
                           </dl>
                           <!---->
@@ -8650,8 +7834,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tasks
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tasks</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ae</dd>
                           </dl>
                           <!---->
@@ -8660,8 +7843,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">taxi
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">taxi</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1ba</dd>
                           </dl>
                           <!---->
@@ -8670,8 +7852,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">teeth
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">teeth</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f62e</dd>
                           </dl>
                           <!---->
@@ -8680,8 +7861,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  teeth-open</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">teeth-open</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f62f</dd>
                           </dl>
                           <!---->
@@ -8690,8 +7870,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  temperature-high
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">temperature-high
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f769</dd>
                           </dl>
@@ -8701,8 +7880,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  temperature-low</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">temperature-low</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f76b</dd>
                           </dl>
                           <!---->
@@ -8711,8 +7889,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tenge
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tenge</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7d7</dd>
                           </dl>
                           <!---->
@@ -8721,8 +7898,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">terminal
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">terminal</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f120</dd>
                           </dl>
                           <!---->
@@ -8731,8 +7907,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  text-height</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">text-height</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f034</dd>
                           </dl>
                           <!---->
@@ -8741,8 +7916,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  text-width</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">text-width</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f035</dd>
                           </dl>
                           <!---->
@@ -8760,8 +7934,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">th-large
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">th-large</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f009</dd>
                           </dl>
                           <!---->
@@ -8770,8 +7943,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">th-list
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">th-list</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f00b</dd>
                           </dl>
                           <!---->
@@ -8780,8 +7952,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  theater-masks</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">theater-masks</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f630</dd>
                           </dl>
                           <!---->
@@ -8790,8 +7961,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thermometer</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thermometer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f491</dd>
                           </dl>
                           <!---->
@@ -8800,8 +7970,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thermometer-empty
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thermometer-empty
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2cb</dd>
                           </dl>
@@ -8811,8 +7980,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thermometer-full
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thermometer-full
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2c7</dd>
                           </dl>
@@ -8822,8 +7990,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thermometer-half
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thermometer-half
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2c9</dd>
                           </dl>
@@ -8833,8 +8000,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thermometer-quarter
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thermometer-quarter
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2ca</dd>
                           </dl>
@@ -8854,8 +8020,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thumbs-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thumbs-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f165</dd>
                           </dl>
                           <!---->
@@ -8864,8 +8029,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thumbs-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thumbs-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f164</dd>
                           </dl>
                           <!---->
@@ -8874,8 +8038,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  thumbtack</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">thumbtack</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f08d</dd>
                           </dl>
                           <!---->
@@ -8884,8 +8047,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  ticket-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">ticket-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f3ff</dd>
                           </dl>
                           <!---->
@@ -8894,8 +8056,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">times
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">times</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f00d</dd>
                           </dl>
                           <!---->
@@ -8904,8 +8065,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  times-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">times-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f057</dd>
                           </dl>
                           <!---->
@@ -8914,8 +8074,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tint
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tint</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f043</dd>
                           </dl>
                           <!---->
@@ -8924,8 +8083,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  tint-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tint-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c7</dd>
                           </dl>
                           <!---->
@@ -8934,8 +8092,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tired
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tired</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c8</dd>
                           </dl>
                           <!---->
@@ -8944,8 +8101,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  toggle-off</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toggle-off</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f204</dd>
                           </dl>
                           <!---->
@@ -8954,8 +8110,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  toggle-on</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toggle-on</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f205</dd>
                           </dl>
                           <!---->
@@ -8964,8 +8119,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toilet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toilet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7d8</dd>
                           </dl>
                           <!---->
@@ -8974,8 +8128,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  toilet-paper</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toilet-paper</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f71e</dd>
                           </dl>
                           <!---->
@@ -8984,8 +8137,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  toilet-paper-slash
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toilet-paper-slash
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e072</dd>
                           </dl>
@@ -8995,8 +8147,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toolbox
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">toolbox</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f552</dd>
                           </dl>
                           <!---->
@@ -9005,8 +8156,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tools
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tools</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7d9</dd>
                           </dl>
                           <!---->
@@ -9015,8 +8165,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tooth
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tooth</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5c9</dd>
                           </dl>
                           <!---->
@@ -9025,8 +8174,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">torah
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">torah</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6a0</dd>
                           </dl>
                           <!---->
@@ -9035,8 +8183,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  torii-gate</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">torii-gate</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6a1</dd>
                           </dl>
                           <!---->
@@ -9045,8 +8192,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tractor
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tractor</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f722</dd>
                           </dl>
                           <!---->
@@ -9055,8 +8201,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  trademark</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trademark</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f25c</dd>
                           </dl>
                           <!---->
@@ -9065,8 +8210,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  traffic-light</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">traffic-light</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f637</dd>
                           </dl>
                           <!---->
@@ -9075,8 +8219,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trailer
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trailer</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e041</dd>
                           </dl>
                           <!---->
@@ -9085,8 +8228,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">train
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">train</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f238</dd>
                           </dl>
                           <!---->
@@ -9095,8 +8237,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tram
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tram</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f7da</dd>
                           </dl>
                           <!---->
@@ -9105,8 +8246,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  transgender</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">transgender</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f224</dd>
                           </dl>
                           <!---->
@@ -9115,8 +8255,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  transgender-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">transgender-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f225</dd>
                           </dl>
                           <!---->
@@ -9125,8 +8264,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trash
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1f8</dd>
                           </dl>
                           <!---->
@@ -9135,8 +8273,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  trash-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trash-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2ed</dd>
                           </dl>
                           <!---->
@@ -9145,8 +8282,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  trash-restore</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trash-restore</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f829</dd>
                           </dl>
                           <!---->
@@ -9155,8 +8291,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  trash-restore-alt
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trash-restore-alt
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f82a</dd>
                           </dl>
@@ -9166,8 +8301,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tree
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tree</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1bb</dd>
                           </dl>
                           <!---->
@@ -9176,8 +8310,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trophy
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">trophy</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f091</dd>
                           </dl>
                           <!---->
@@ -9186,8 +8319,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">truck
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">truck</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0d1</dd>
                           </dl>
                           <!---->
@@ -9196,8 +8328,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  truck-loading</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">truck-loading</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4de</dd>
                           </dl>
                           <!---->
@@ -9206,8 +8337,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  truck-monster</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">truck-monster</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f63b</dd>
                           </dl>
                           <!---->
@@ -9216,8 +8346,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  truck-moving</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">truck-moving</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4df</dd>
                           </dl>
                           <!---->
@@ -9226,8 +8355,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  truck-pickup</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">truck-pickup</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f63c</dd>
                           </dl>
                           <!---->
@@ -9236,8 +8364,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tshirt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">tshirt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f553</dd>
                           </dl>
                           <!---->
@@ -9264,8 +8391,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">umbrella
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">umbrella</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0e9</dd>
                           </dl>
                           <!---->
@@ -9274,8 +8400,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  umbrella-beach</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">umbrella-beach</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ca</dd>
                           </dl>
                           <!---->
@@ -9284,8 +8409,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  underline</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">underline</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0cd</dd>
                           </dl>
                           <!---->
@@ -9294,8 +8418,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">undo
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">undo</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0e2</dd>
                           </dl>
                           <!---->
@@ -9304,8 +8427,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">undo-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">undo-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2ea</dd>
                           </dl>
                           <!---->
@@ -9314,8 +8436,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  universal-access
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">universal-access
                               </dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f29a</dd>
                           </dl>
@@ -9325,8 +8446,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  university</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">university</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f19c</dd>
                           </dl>
                           <!---->
@@ -9335,8 +8455,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">unlink
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">unlink</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f127</dd>
                           </dl>
                           <!---->
@@ -9345,8 +8464,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">unlock
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">unlock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f09c</dd>
                           </dl>
                           <!---->
@@ -9355,8 +8473,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  unlock-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">unlock-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f13e</dd>
                           </dl>
                           <!---->
@@ -9365,8 +8482,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">upload
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">upload</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f093</dd>
                           </dl>
                           <!---->
@@ -9375,8 +8491,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f007</dd>
                           </dl>
                           <!---->
@@ -9385,8 +8500,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-alt
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f406</dd>
                           </dl>
                           <!---->
@@ -9395,8 +8509,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-alt-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-alt-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4fa</dd>
                           </dl>
                           <!---->
@@ -9405,8 +8518,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-astronaut</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-astronaut</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4fb</dd>
                           </dl>
                           <!---->
@@ -9415,8 +8527,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-check</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-check</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4fc</dd>
                           </dl>
                           <!---->
@@ -9425,8 +8536,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-circle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-circle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2bd</dd>
                           </dl>
                           <!---->
@@ -9435,8 +8545,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-clock</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-clock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4fd</dd>
                           </dl>
                           <!---->
@@ -9445,8 +8554,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-cog
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-cog</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4fe</dd>
                           </dl>
                           <!---->
@@ -9455,8 +8563,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-edit</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-edit</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4ff</dd>
                           </dl>
                           <!---->
@@ -9465,8 +8572,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-friends</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-friends</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f500</dd>
                           </dl>
                           <!---->
@@ -9475,8 +8581,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-graduate</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-graduate</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f501</dd>
                           </dl>
                           <!---->
@@ -9485,8 +8590,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-injured</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-injured</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f728</dd>
                           </dl>
                           <!---->
@@ -9495,8 +8599,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-lock</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-lock</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f502</dd>
                           </dl>
                           <!---->
@@ -9505,8 +8608,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-md
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-md</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0f0</dd>
                           </dl>
                           <!---->
@@ -9515,8 +8617,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-minus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-minus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f503</dd>
                           </dl>
                           <!---->
@@ -9525,8 +8626,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-ninja</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-ninja</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f504</dd>
                           </dl>
                           <!---->
@@ -9535,8 +8635,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-nurse</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-nurse</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f82f</dd>
                           </dl>
                           <!---->
@@ -9545,8 +8644,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-plus</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-plus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f234</dd>
                           </dl>
                           <!---->
@@ -9555,8 +8653,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-secret</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-secret</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f21b</dd>
                           </dl>
                           <!---->
@@ -9565,8 +8662,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-shield</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-shield</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f505</dd>
                           </dl>
                           <!---->
@@ -9575,8 +8671,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f506</dd>
                           </dl>
                           <!---->
@@ -9585,8 +8680,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-tag
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-tag</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f507</dd>
                           </dl>
                           <!---->
@@ -9595,8 +8689,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-tie
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-tie</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f508</dd>
                           </dl>
                           <!---->
@@ -9605,8 +8698,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  user-times</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">user-times</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f235</dd>
                           </dl>
                           <!---->
@@ -9615,8 +8707,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">users
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">users</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0c0</dd>
                           </dl>
                           <!---->
@@ -9625,8 +8716,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  users-cog</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">users-cog</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f509</dd>
                           </dl>
                           <!---->
@@ -9635,8 +8725,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  users-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">users-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e073</dd>
                           </dl>
                           <!---->
@@ -9645,8 +8734,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  utensil-spoon</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">utensil-spoon</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2e5</dd>
                           </dl>
                           <!---->
@@ -9655,8 +8743,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">utensils
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">utensils</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2e7</dd>
                           </dl>
                           <!---->
@@ -9665,8 +8752,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  vector-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vector-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5cb</dd>
                           </dl>
                           <!---->
@@ -9675,8 +8761,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">venus
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">venus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f221</dd>
                           </dl>
                           <!---->
@@ -9685,8 +8770,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  venus-double</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">venus-double</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f226</dd>
                           </dl>
                           <!---->
@@ -9695,8 +8779,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  venus-mars</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">venus-mars</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f228</dd>
                           </dl>
                           <!---->
@@ -9705,8 +8788,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vial
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vial</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f492</dd>
                           </dl>
                           <!---->
@@ -9715,8 +8797,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vials
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vials</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f493</dd>
                           </dl>
                           <!---->
@@ -9725,8 +8806,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">video
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">video</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f03d</dd>
                           </dl>
                           <!---->
@@ -9735,8 +8815,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  video-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">video-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4e2</dd>
                           </dl>
                           <!---->
@@ -9745,8 +8824,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vihara
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vihara</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6a7</dd>
                           </dl>
                           <!---->
@@ -9755,8 +8833,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">virus
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">virus</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e074</dd>
                           </dl>
                           <!---->
@@ -9765,8 +8842,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  virus-slash</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">virus-slash</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e075</dd>
                           </dl>
                           <!---->
@@ -9775,8 +8851,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">viruses
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">viruses</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">e076</dd>
                           </dl>
                           <!---->
@@ -9785,8 +8860,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  voicemail</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">voicemail</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f897</dd>
                           </dl>
                           <!---->
@@ -9795,8 +8869,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  volleyball-ball</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">volleyball-ball</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f45f</dd>
                           </dl>
                           <!---->
@@ -9805,8 +8878,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  volume-down</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">volume-down</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f027</dd>
                           </dl>
                           <!---->
@@ -9815,8 +8887,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  volume-mute</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">volume-mute</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6a9</dd>
                           </dl>
                           <!---->
@@ -9825,8 +8896,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  volume-off</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">volume-off</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f026</dd>
                           </dl>
                           <!---->
@@ -9835,8 +8905,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  volume-up</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">volume-up</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f028</dd>
                           </dl>
                           <!---->
@@ -9845,8 +8914,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vote-yea
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vote-yea</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f772</dd>
                           </dl>
                           <!---->
@@ -9855,8 +8923,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  vr-cardboard</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">vr-cardboard</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f729</dd>
                           </dl>
                           <!---->
@@ -9865,8 +8932,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">walking
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">walking</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f554</dd>
                           </dl>
                           <!---->
@@ -9875,8 +8941,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wallet
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wallet</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f555</dd>
                           </dl>
                           <!---->
@@ -9885,8 +8950,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  warehouse</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">warehouse</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f494</dd>
                           </dl>
                           <!---->
@@ -9895,8 +8959,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">water
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">water</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f773</dd>
                           </dl>
                           <!---->
@@ -9905,8 +8968,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  wave-square</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wave-square</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f83e</dd>
                           </dl>
                           <!---->
@@ -9915,8 +8977,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">weight
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">weight</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f496</dd>
                           </dl>
                           <!---->
@@ -9925,8 +8986,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  weight-hanging</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">weight-hanging</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5cd</dd>
                           </dl>
                           <!---->
@@ -9935,8 +8995,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  wheelchair</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wheelchair</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f193</dd>
                           </dl>
                           <!---->
@@ -9945,8 +9004,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wifi
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wifi</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f1eb</dd>
                           </dl>
                           <!---->
@@ -9955,8 +9013,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wind
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wind</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f72e</dd>
                           </dl>
                           <!---->
@@ -9965,8 +9022,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  window-close</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">window-close</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f410</dd>
                           </dl>
                           <!---->
@@ -9975,8 +9031,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  window-maximize</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">window-maximize</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2d0</dd>
                           </dl>
                           <!---->
@@ -9985,8 +9040,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  window-minimize</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">window-minimize</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2d1</dd>
                           </dl>
                           <!---->
@@ -9995,8 +9049,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  window-restore</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">window-restore</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f2d2</dd>
                           </dl>
                           <!---->
@@ -10005,8 +9058,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  wine-bottle</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wine-bottle</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f72f</dd>
                           </dl>
                           <!---->
@@ -10015,8 +9067,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  wine-glass</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wine-glass</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f4e3</dd>
                           </dl>
                           <!---->
@@ -10025,8 +9076,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">
-                                  wine-glass-alt</dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wine-glass-alt</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f5ce</dd>
                           </dl>
                           <!---->
@@ -10035,8 +9085,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">won-sign
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">won-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f159</dd>
                           </dl>
                           <!---->
@@ -10045,8 +9094,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wrench
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">wrench</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f0ad</dd>
                           </dl>
                           <!---->
@@ -10055,8 +9103,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">x-ray
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">x-ray</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f497</dd>
                           </dl>
                           <!---->
@@ -10065,8 +9112,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">yen-sign
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">yen-sign</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f157</dd>
                           </dl>
                           <!---->
@@ -10075,8 +9121,7 @@
                           class="icon col-6 col-md-3 col-lg-2 pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr">
                           <dl class="dt w-100 ma0 pa0">
                               <dt class="the-icon"><span class="fa-fw select-all fas"></span></dt>
-                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">yin-yang
-                              </dd>
+                              <dd class="mt-2 text-sm select-all word-wrap dtc v-top tl f2 icon-name">yin-yang</dd>
                               <dd class="text-xs text-muted gray5 dtc v-top tr f2 icon-unicode">f6ad</dd>
                           </dl>
                           <!---->
@@ -10086,11 +9131,4 @@
           </div>
       </section>
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
-
-  <script src="{{ asset('mazer-assets/vendors/fontawesome/all.min.js') }}"></script>
 @endsection

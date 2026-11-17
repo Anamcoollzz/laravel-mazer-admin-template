@@ -2,23 +2,18 @@
 
 @section('title', 'Textarea - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Textarea</h3>
-                  <p class="text-subtitle text-muted">Big input where you can input a lot of text</p>
+                  <p class="text-subtitle text-muted">Multi-line input where you can input a lot of text.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Textarea</li>
                       </ol>
                   </nav>
@@ -35,10 +30,8 @@
                       </div>
                       <div class="card-body">
                           <div class="form-group mb-3">
-                              <label for="exampleFormControlTextarea1" class="form-label">Example
-                                  textarea</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1"
-                                  rows="3"></textarea>
+                              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                           </div>
                       </div>
                   </div>
@@ -72,8 +65,7 @@
                       </div>
                       <div class="card-body">
                           <div class="form-group with-title mb-3">
-                              <textarea class="form-control" id="exampleFormControlTextarea1"
-                                  rows="3"></textarea>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                               <label>Your experience</label>
                           </div>
                       </div>
@@ -82,9 +74,4 @@
           </div>
       </section>
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection

@@ -3,8 +3,7 @@
 @section('title', 'JS Vector Map - Mazer Admin Dashboard')
 
 @section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('mazzer-assets/extensions/jsvectormap/css/jsvectormap.min.css') }}"/>
 @endsection
 
 @section('page-heading')
@@ -13,12 +12,12 @@
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>JS Vector Map</h3>
-                  <p class="text-subtitle text-muted">An application for user </p>
+                  <p class="text-subtitle text-muted">We use the <a href="https://github.com/themustafaomar/jsvectormap" target="_blank">Jsvectormap</a> plugin to create vector maps.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">JS Vector Map</li>
                       </ol>
                   </nav>
@@ -30,11 +29,10 @@
               <div class="col-12">
                   <div class="card">
                       <div class="card-header">
-                          <h5 class="card-title">Coming Soon!</h5>
+                          <h5 class="card-title">World Map</h5>
                       </div>
                       <div class="card-body">
-                          If you want to contribute. Check out this <a href="https://github.com/zuramai/mazer"
-                              target="_blank">template repository</a>.
+                          <div id="world-map" class="w-100" style="height: 450px;"></div>
                       </div>
                   </div>
               </div>
@@ -44,6 +42,7 @@
 @endsection
 
 @section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('mazzer-assets/extensions/jsvectormap/js/jsvectormap.min.js') }}"></script>
+  <script src="{{ asset('mazzer-assets/extensions/jsvectormap/maps/world.js') }}"></script>
+  <script src="{{ asset('mazzer-assets/static/js/pages/jsvectormap.js') }}"></script>
 @endsection

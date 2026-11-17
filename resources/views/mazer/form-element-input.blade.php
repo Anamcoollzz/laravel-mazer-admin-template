@@ -2,25 +2,19 @@
 
 @section('title', 'Input - Mazer Admin Dashboard')
 
-@section('vendor-css')
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">
-  <link rel="stylesheet" href="{{ asset('mazer-assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
-@endsection
-
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
                   <h3>Input</h3>
-                  <p class="text-subtitle text-muted">Give textual form controls like input upgrade with
-                      custom styles,
+                  <p class="text-subtitle text-muted">Give textual form controls like input upgrade with custom styles,
                       sizing, focus states, and more.</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Input</li>
                       </ol>
                   </nav>
@@ -38,8 +32,7 @@
                       <div class="col-md-6">
                           <div class="form-group">
                               <label for="basicInput">Basic Input</label>
-                              <input type="text" class="form-control" id="basicInput"
-                                  placeholder="Enter email">
+                              <input type="text" class="form-control" id="basicInput" placeholder="Enter email">
                           </div>
 
                           <div class="form-group">
@@ -51,18 +44,17 @@
                           <div class="form-group">
                               <label for="helperText">With Helper Text</label>
                               <input type="text" id="helperText" class="form-control" placeholder="Name">
-                              <p><small class="text-muted">Find helper text here for given textbox.</small>
-                              </p>
+                              <p><small class="text-muted">Find helper text here for given textbox.</small></p>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
                               <label for="disabledInput">Disabled Input</label>
-                              <input type="text" class="form-control" id="disabledInput"
-                                  placeholder="Disabled Text" disabled>
+                              <input type="text" class="form-control" id="disabledInput" placeholder="Disabled Text"
+                                  disabled>
                           </div>
                           <div class="form-group">
-                              <label for="disabledInput">Readonly Input</label>
+                              <label for="readonlyInput">Readonly Input</label>
                               <input type="text" class="form-control" id="readonlyInput" readonly="readonly"
                                   value="You can't update me :P">
                           </div>
@@ -90,8 +82,7 @@
                           <div class="row">
                               <div class="col-12">
                                   <p>To set rounded border to input box, use <code>.round</code> class and
-                                      to set square border to input box, use <code>.sqaure</code> class
-                                      alongwith
+                                      to set square border to input box, use <code>.sqaure</code> class alongwith
                                       <code>.form-control</code> class.
                                   </p>
                               </div>
@@ -129,15 +120,14 @@
                       <div class="card-body">
                           <div class="row">
                               <div class="col-12">
-                                  <p>To make label in center of form-control, use <code>.col-form-label</code>
-                                      class with
+                                  <p>To make label in center of form-control, use <code>.col-form-label</code> class with
                                       <code>&lt;label&gt;</code> element. This is default bootstrap class.
                                   </p>
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group row align-items-center">
                                       <div class="col-lg-2 col-3">
-                                          <label class="col-form-label">First Name</label>
+                                          <label class="col-form-label" for="first-name">First Name</label>
                                       </div>
                                       <div class="col-lg-10 col-9">
                                           <input type="text" id="first-name" class="form-control" name="fname"
@@ -148,7 +138,7 @@
                               <div class="col-md-6">
                                   <div class="form-group row align-items-center">
                                       <div class="col-lg-2 col-3">
-                                          <label class="col-form-label">Last Name</label>
+                                          <label class="col-form-label" for="last-name">Last Name</label>
                                       </div>
                                       <div class="col-lg-10 col-9">
                                           <input type="text" id="last-name" class="form-control" name="fname"
@@ -177,8 +167,7 @@
                           <div class="row">
                               <div class="col-lg-6 col-md-12">
                                   <div class="mb-3">
-                                      <label for="formFile" class="form-label">Default file input
-                                          example</label>
+                                      <label for="formFile" class="form-label">Default file input example</label>
                                       <input class="form-control" type="file" id="formFile">
                                   </div>
                                   <div class="mb-3">
@@ -187,21 +176,18 @@
                                       <input class="form-control" type="file" id="formFileMultiple" multiple>
                                   </div>
                                   <div class="mb-3">
-                                      <label for="formFileDisabled" class="form-label">Disabled file input
-                                          example</label>
+                                      <label for="formFileDisabled" class="form-label">Disabled file input example</label>
                                       <input class="form-control" type="file" id="formFileDisabled" disabled>
                                   </div>
                               </div>
                               <div class="col-lg-6 col-md-12">
 
                                   <div class="mb-3">
-                                      <label for="formFileSm" class="form-label">Small file input
-                                          example</label>
+                                      <label for="formFileSm" class="form-label">Small file input example</label>
                                       <input class="form-control form-control-sm" id="formFileSm" type="file">
                                   </div>
                                   <div>
-                                      <label for="formFileLg" class="form-label">Large file input
-                                          example</label>
+                                      <label for="formFileLg" class="form-label">Large file input example</label>
                                       <input class="form-control form-control-lg" id="formFileLg" type="file">
                                   </div>
                               </div>
@@ -234,8 +220,7 @@
                               <div class="col-sm-6">
                                   <h6>Left Icon</h6>
                                   <div class="form-group position-relative has-icon-left">
-                                      <input type="text" class="form-control"
-                                          placeholder="Input with icon left">
+                                      <input type="text" class="form-control is-invalid" placeholder="Input with icon left">
                                       <div class="form-control-icon">
                                           <i class="bi bi-person"></i>
                                       </div>
@@ -244,8 +229,7 @@
                               <div class="col-sm-6">
                                   <h6>Right Icon</h6>
                                   <div class="form-group position-relative has-icon-right">
-                                      <input type="text" class="form-control"
-                                          placeholder="Icon Right, Default Input">
+                                      <input type="text" class="form-control" placeholder="Icon Right, Default Input">
                                       <div class="form-control-icon">
                                           <i class="bi bi-bookmarks"></i>
                                       </div>
@@ -271,15 +255,13 @@
                       <div class="card-body">
                           <div class="row">
                               <div class="col-12">
-                                  <p>For different sizes of Input, Use classes like
-                                      <code>.form-control-lg</code> &amp;
+                                  <p>For different sizes of Input, Use classes like <code>.form-control-lg</code> &amp;
                                       <code>.form-control-sm</code> for Large, Small input box.
                                   </p>
                               </div>
                               <div class="col-sm-4">
                                   <h6>Large</h6>
-                                  <input class="form-control form-control-lg" type="text"
-                                      placeholder="Large Input">
+                                  <input class="form-control form-control-lg" type="text" placeholder="Large Input">
                               </div>
                               <div class="col-sm-4">
                                   <h6>Default</h6>
@@ -287,8 +269,7 @@
                               </div>
                               <div class="col-sm-4">
                                   <h6>Small</h6>
-                                  <input class="form-control form-control-sm" type="text"
-                                      placeholder="Small Input">
+                                  <input class="form-control form-control-sm" type="text" placeholder="Small Input">
                               </div>
                           </div>
                       </div>
@@ -310,17 +291,15 @@
                       <div class="card-body">
                           <div class="row">
                               <div class="col-12">
-                                  <p>You can indicate invalid and valid form fields with
-                                      <code>.is-invalid</code> and
-                                      <code>.is-valid</code>. Note that <code>.invalid-feedback</code> is also
-                                      supported
+                                  <p>You can indicate invalid and valid form fields with <code>.is-invalid</code> and
+                                      <code>.is-valid</code>. Note that <code>.invalid-feedback</code> is also supported
                                       with these classes.
                                   </p>
                               </div>
                               <div class="col-sm-6">
                                   <label for="valid-state">Valid State</label>
-                                  <input type="text" class="form-control is-valid" id="valid-state"
-                                      placeholder="Valid" value="Valid" required>
+                                  <input type="text" class="form-control is-valid" id="valid-state" placeholder="Valid"
+                                      value="Valid" required>
                                   <div class="valid-feedback">
                                       <i class="bx bx-radio-circle"></i>
                                       This is valid state.
@@ -344,9 +323,4 @@
       <!-- validations end -->
 
   </div>
-@endsection
-
-@section('vendor-js')
-  <script src="{{ asset('mazer-assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ asset('mazer-assets/js/bootstrap.bundle.min.js') }}"></script>
 @endsection
