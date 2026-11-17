@@ -36,6 +36,7 @@ class AuthController extends Controller
         }
 
         $request->session()->regenerate();
+        $request->user()?->forceFill(['last_logged_in' => now()])->save();
 
         return redirect()->intended(route('mazer.index.html'));
     }
@@ -59,6 +60,7 @@ class AuthController extends Controller
             'name' => $validated['name'],
             'email' => $validated['email'],
             'password' => $validated['password'],
+            'last_logged_in' => now(),
         ]);
 
         if (Role::query()->where('name', 'user')->exists()) {

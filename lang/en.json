@@ -91,6 +91,7 @@
     "Kelola item menu sidebar sesuai struktur Mazer.": "Manage sidebar menu items following the Mazer structure.",
     "Kelola role dan permission menggunakan Spatie Permission.": "Manage roles and permissions using Spatie Permission.",
     "Konfirmasi Password": "Confirm Password",
+    "Last Logged In": "Last Logged In",
     "Log in": "Log in",
     "Log in with your data that you entered during registration.": "Log in with your data that you entered during registration.",
     "Log in.": "Log in.",

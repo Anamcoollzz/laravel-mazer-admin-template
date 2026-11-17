@@ -143,9 +143,13 @@
                                     </div>
                                 </div>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 11rem;">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 14rem;">
                                 <li>
-                                    <h6 class="dropdown-header">{{ __('Hello, :name!', ['name' => auth()->user()->name]) }}</h6>
+                                    <h6 class="dropdown-header pb-1">{{ __('Hello, :name!', ['name' => auth()->user()->name]) }}</h6>
+                                    <p class="px-3 mb-1 text-muted small">
+                                        <i class="bi bi-clock me-1"></i>{{ __('Last Logged In') }}:
+                                        {{ auth()->user()->last_logged_in?->format('d M Y H:i') ?? '-' }}
+                                    </p>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="{{ route('profile.edit') }}">

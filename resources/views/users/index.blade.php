@@ -78,6 +78,7 @@
                                   <th>{{ __('Nama') }}</th>
                                   <th>{{ __('Email') }}</th>
                                   <th>{{ __('Roles') }}</th>
+                                  <th>{{ __('Last Logged In') }}</th>
                                   <th>{{ __('Dibuat') }}</th>
                                   <th class="text-end">{{ __('Aksi') }}</th>
                               </tr>
@@ -102,6 +103,7 @@
                                               <span class="text-muted">-</span>
                                           @endforelse
                                       </td>
+                                      <td>{{ $user->last_logged_in?->format('d M Y H:i') ?? '-' }}</td>
                                       <td>{{ $user->created_at?->format('d M Y') }}</td>
                                       <td class="text-end">
                                           <div class="d-inline-flex gap-1">
@@ -134,7 +136,7 @@
                                   </tr>
                               @empty
                                   <tr>
-                                      <td colspan="6" class="text-center text-muted py-4">{{ __('Belum ada data user.') }}</td>
+                                      <td colspan="7" class="text-center text-muted py-4">{{ __('Belum ada data user.') }}</td>
                                   </tr>
                               @endforelse
                           </tbody>
