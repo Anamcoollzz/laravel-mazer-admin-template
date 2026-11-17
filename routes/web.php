@@ -1,11 +1,15 @@
 <?php
 
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/mazer/index.html');
 
 Route::resource('menus', MenuController::class)->except(['show']);
+Route::resource('users', UserController::class)->except(['show']);
+Route::resource('roles', RoleController::class)->except(['show']);
 
 Route::view('/mazer/index.html', 'mazer.index')->name('mazer.index.html');
 

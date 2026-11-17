@@ -1,0 +1,97 @@
+@php
+    $assignedRoles = old('roles', $user->exists ? $user->roles->pluck('name')->all() : []);
+@endphp
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <label for="name" class="form-label">Nama <span class="text-danger">*</span></label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            value="{{ old('name', $user->name) }}"
+            class="form-control @error('name') is-invalid @enderror"
+            placeholder="Nama lengkap"
+            required
+        >
+        @error('name')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="col-md-6">
+        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            value="{{ old('email', $user->email) }}"
+            class="form-control @error('email') is-invalid @enderror"
+            placeholder="user@example.com"
+            required
+        >
+        @error('email')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="col-md-6">
+        <label for="password" class="form-label">
+            Password @if (! $user->exists) <span class="text-danger">*</span> @else <small class="text-muted">(kosongkan jika tidak diubah)</small> @endif
+        </label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control @error('password') is-invalid @enderror"
+            @required(! $user->exists)
+        >
+        @error('password')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="col-md-6">
+        <label for="password_confirmation" class="form-label">
+            Konfirmasi Password @if (! $user->exists) <span class="text-danger">*</span> @endif
+        </label>
+        <input
+            type="password"
+            id="password_confirmation"
+            name="password_confirmation"
+            class="form-control"
+            @required(! $user->exists)
+        >
+    </div>
+
+    <div class="col-12">
+        <label class="form-label d-block">Roles</label>
+        <div class="row g-2">
+            @forelse ($roles as $role)
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-check">
+                        <input
+                            class="form-check-input @error('roles') is-invalid @enderror"
+                            type="checkbox"
+                            name="roles[]"
+                            value="{{ $role->name }}"
+                            id="role_{{ $role->id }}"
+                            @checked(in_array($role->name, $assignedRoles, true))
+                        >
+                        <label class="form-check-label" for="role_{{ $role->id }}">
+                            {{ $role->name }}
+                        </label>
+                    </div>
+                </div>
+            @empty
+                <div class="col-12 text-muted">Belum ada role tersedia.</div>
+            @endforelse
+        </div>
+        @error('roles')
+            <div class="text-danger small mt-1">{{ $message }}</div>
+        @enderror
+        @error('roles.*')
+            <div class="text-danger small mt-1">{{ $message }}</div>
+        @enderror
+    </div>
+</div>

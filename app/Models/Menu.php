@@ -105,8 +105,11 @@ class Menu extends Model
      */
     public function isCurrentlyActive(): bool
     {
-        if ($this->route_pattern && request()->routeIs($this->route_pattern)) {
-            return true;
+        if ($this->route_pattern) {
+            $patterns = array_map('trim', explode(',', $this->route_pattern));
+            if (request()->routeIs($patterns)) {
+                return true;
+            }
         }
 
         if ($this->route_name && request()->routeIs($this->route_name)) {
