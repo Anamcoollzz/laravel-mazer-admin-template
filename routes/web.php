@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
@@ -7,9 +8,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/mazer/index.html');
 
-Route::resource('menus', MenuController::class)->except(['show']);
-Route::resource('users', UserController::class)->except(['show']);
-Route::resource('roles', RoleController::class)->except(['show']);
+Route::prefix('app/auth')->name('app.auth.')->group(function (): void {
+    Route::middleware('guest')->group(function (): void {
+        Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+        Route::post('/login', [AuthController::class, 'login'])->name('login.attempt');
+        Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+        Route::post('/register', [AuthController::class, 'register'])->name('register.store');
+    });
+
+    Route::post('/logout', [AuthController::class, 'logout'])
+        ->middleware('auth')
+        ->name('logout');
+});
+
+Route::prefix('/app')->group(function () {
+    Route::resource('menus', MenuController::class)->except(['show']);
+    Route::resource('users', UserController::class)->except(['show']);
+    Route::resource('roles', RoleController::class)->except(['show']);
+});
 
 Route::view('/mazer/index.html', 'mazer.index')->name('mazer.index.html');
 
