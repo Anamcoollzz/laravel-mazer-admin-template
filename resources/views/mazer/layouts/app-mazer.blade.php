@@ -60,10 +60,15 @@
                 <div class="sidebar-menu">
                     <ul class="menu">
                         @foreach ($sidebarMenus as $menu)
+                            @continue(! $menu->isVisibleTo(auth()->user()))
                             @if ($menu->isTitle())
                                 <li class="sidebar-title">{{ $menu->title }}</li>
                             @elseif ($menu->children->isNotEmpty())
-                                @php($isMenuActive = $menu->isCurrentlyActive())
+                                @php
+                                    $visibleChildren = $menu->children->filter(fn ($child) => $child->isVisibleTo(auth()->user()));
+                                    $isMenuActive = $menu->isCurrentlyActive();
+                                @endphp
+                                @continue($visibleChildren->isEmpty())
                                 <li class="sidebar-item {{ $isMenuActive ? 'active' : '' }} has-sub">
                                     <a href="{{ $menu->resolvedHref() }}" class="sidebar-link">
                                         @if ($menu->icon)
@@ -72,13 +77,17 @@
                                         <span>{{ $menu->title }}</span>
                                     </a>
                                     <ul class="submenu {{ $isMenuActive ? 'active' : '' }}">
-                                        @foreach ($menu->children as $child)
+                                        @foreach ($visibleChildren as $child)
                                             @if ($child->children->isNotEmpty())
-                                                @php($isChildActive = $child->isCurrentlyActive())
+                                                @php
+                                                    $visibleGrandchildren = $child->children->filter(fn ($grandchild) => $grandchild->isVisibleTo(auth()->user()));
+                                                    $isChildActive = $child->isCurrentlyActive();
+                                                @endphp
+                                                @continue($visibleGrandchildren->isEmpty())
                                                 <li class="submenu-item {{ $isChildActive ? 'active' : '' }} has-sub">
                                                     <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->title }}</a>
                                                     <ul class="submenu submenu-level-2 {{ $isChildActive ? 'active' : '' }}">
-                                                        @foreach ($child->children as $grandchild)
+                                                        @foreach ($visibleGrandchildren as $grandchild)
                                                             <li class="submenu-item {{ $grandchild->isCurrentlyActive() ? 'active' : '' }}">
                                                                 <a href="{{ $grandchild->resolvedHref() }}" class="submenu-link">{{ $grandchild->title }}</a>
                                                             </li>

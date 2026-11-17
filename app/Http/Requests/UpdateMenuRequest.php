@@ -51,6 +51,7 @@ class UpdateMenuRequest extends FormRequest
             'route_name' => ['nullable', 'string', 'max:255'],
             'url' => ['nullable', 'string', 'max:2048'],
             'route_pattern' => ['nullable', 'string', 'max:255'],
+            'permission_name' => ['nullable', 'string', 'max:255', Rule::exists('permissions', 'name')],
             'order' => ['required', 'integer', 'min:0'],
             'is_active' => ['required', 'boolean'],
         ];

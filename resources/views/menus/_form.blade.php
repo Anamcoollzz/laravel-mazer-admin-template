@@ -101,7 +101,22 @@
         @enderror
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
+        <label for="permission_name" class="form-label">Permission (Opsional)</label>
+        <select id="permission_name" name="permission_name" class="form-select @error('permission_name') is-invalid @enderror">
+            <option value="">-- Public (Tanpa Permission) --</option>
+            @foreach ($permissions as $permission)
+                <option value="{{ $permission }}" @selected(old('permission_name', $menu->permission_name) === $permission)>
+                    {{ $permission }}
+                </option>
+            @endforeach
+        </select>
+        @error('permission_name')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="col-md-4">
         <label for="order" class="form-label">Order <span class="text-danger">*</span></label>
         <input
             type="number"
@@ -117,7 +132,7 @@
         @enderror
     </div>
 
-    <div class="col-md-6 d-flex align-items-end">
+    <div class="col-md-4 d-flex align-items-end">
         <div class="form-check form-switch mb-2">
             <input
                 class="form-check-input"

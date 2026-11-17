@@ -72,6 +72,7 @@
                                   <th>Parent</th>
                                   <th>Icon</th>
                                   <th>Route / URL</th>
+                                  <th>Permission</th>
                                   <th>Status</th>
                                   <th class="text-end">Aksi</th>
                               </tr>
@@ -110,6 +111,13 @@
                                           @endif
                                       </td>
                                       <td>
+                                          @if ($menu->permission_name)
+                                              <span class="badge bg-light-warning text-warning">{{ $menu->permission_name }}</span>
+                                          @else
+                                              -
+                                          @endif
+                                      </td>
+                                      <td>
                                           <span class="badge {{ $menu->is_active ? 'bg-success' : 'bg-secondary' }}">
                                               {{ $menu->is_active ? 'Active' : 'Inactive' }}
                                           </span>
@@ -127,7 +135,7 @@
                                   </tr>
                               @empty
                                   <tr>
-                                      <td colspan="8" class="text-center text-muted py-4">Belum ada data menu.</td>
+                                      <td colspan="9" class="text-center text-muted py-4">Belum ada data menu.</td>
                                   </tr>
                               @endforelse
                           </tbody>

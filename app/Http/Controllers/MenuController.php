@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Spatie\Permission\Models\Permission;
 
 class MenuController extends Controller
 {
@@ -27,7 +28,8 @@ class MenuController extends Controller
                 $query->where(function ($q) use ($search): void {
                     $q->where('title', 'like', "%{$search}%")
                         ->orWhere('route_name', 'like', "%{$search}%")
-                        ->orWhere('url', 'like', "%{$search}%");
+                        ->orWhere('url', 'like', "%{$search}%")
+                        ->orWhere('permission_name', 'like', "%{$search}%");
                 });
             })
             ->when($type !== '', fn ($query) => $query->where('type', $type))
@@ -53,6 +55,7 @@ class MenuController extends Controller
         return view('menus.create', [
             'menu' => new Menu(['type' => Menu::TypeItem, 'order' => 0, 'is_active' => true]),
             'parentOptions' => $this->parentOptions(),
+            'permissions' => Permission::query()->orderBy('name')->pluck('name'),
         ]);
     }
 
@@ -75,6 +78,7 @@ class MenuController extends Controller
         return view('menus.edit', [
             'menu' => $menu,
             'parentOptions' => $this->parentOptions($menu->id),
+            'permissions' => Permission::query()->orderBy('name')->pluck('name'),
         ]);
     }
 

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Database\Factories\MenuFactory;
+use Illuminate\Contracts\Auth\Access\Authorizable;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Route;
     'route_name',
     'url',
     'route_pattern',
+    'permission_name',
     'order',
     'is_active',
 ])]
@@ -121,5 +123,17 @@ class Menu extends Model
         }
 
         return false;
+    }
+
+    /**
+     * Determine whether the menu item is visible to the given user.
+     */
+    public function isVisibleTo(?Authorizable $user): bool
+    {
+        if (! $this->permission_name) {
+            return true;
+        }
+
+        return $user?->can($this->permission_name) ?? false;
     }
 }
