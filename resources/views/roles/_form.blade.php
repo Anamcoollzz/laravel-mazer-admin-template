@@ -4,14 +4,14 @@
 
 <div class="row g-3">
     <div class="col-md-6">
-        <label for="name" class="form-label">Nama Role <span class="text-danger">*</span></label>
+        <label for="name" class="form-label">{{ __('Nama Role') }} <span class="text-danger">*</span></label>
         <input
             type="text"
             id="name"
             name="name"
             value="{{ old('name', $role->name) }}"
             class="form-control @error('name') is-invalid @enderror"
-            placeholder="Contoh: editor"
+            placeholder="{{ __('Contoh: editor') }}"
             required
         >
         @error('name')
@@ -20,7 +20,7 @@
     </div>
 
     <div class="col-12">
-        <label class="form-label d-block">Permissions</label>
+        <label class="form-label d-block">{{ __('Permissions') }}</label>
         <div class="row g-2">
             @forelse ($permissions as $permission)
                 <div class="col-sm-6 col-md-4 col-lg-3">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             @empty
-                <div class="col-12 text-muted">Belum ada permission tersedia.</div>
+                <div class="col-12 text-muted">{{ __('Belum ada permission tersedia.') }}</div>
             @endforelse
         </div>
         @error('permissions')

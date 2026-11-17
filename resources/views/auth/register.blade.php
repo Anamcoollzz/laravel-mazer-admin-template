@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Mazer Admin Dashboard</title>
+    <title>{{ __('Register') }} - {{ config('app.name', 'Mazer Admin Dashboard') }}</title>
 
     <link rel="shortcut icon" href="{{ asset('mazzer-assets/compiled/svg/favicon.svg') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('mazzer-assets/compiled/css/app.css') }}">
@@ -21,8 +21,8 @@
                     <div class="auth-logo">
                         <a href="{{ route('mazer.index.html') }}"><img src="{{ asset('mazzer-assets/compiled/svg/logo.svg') }}" alt="Logo"></a>
                     </div>
-                    <h1 class="auth-title">Sign Up</h1>
-                    <p class="auth-subtitle mb-5">Input your data to register to our website.</p>
+                    <h1 class="auth-title">{{ __('Sign Up') }}</h1>
+                    <p class="auth-subtitle mb-5">{{ __('Input your data to register to our website.') }}</p>
 
                     <form method="POST" action="{{ route('app.auth.register.store') }}">
                         @csrf
@@ -32,7 +32,7 @@
                                 name="email"
                                 value="{{ old('email') }}"
                                 class="form-control form-control-xl @error('email') is-invalid @enderror"
-                                placeholder="Email"
+                                placeholder="{{ __('Email') }}"
                                 required
                                 autofocus
                             >
@@ -50,7 +50,7 @@
                                 name="name"
                                 value="{{ old('name') }}"
                                 class="form-control form-control-xl @error('name') is-invalid @enderror"
-                                placeholder="Name"
+                                placeholder="{{ __('Name') }}"
                                 required
                             >
                             <div class="form-control-icon">
@@ -66,7 +66,7 @@
                                 type="password"
                                 name="password"
                                 class="form-control form-control-xl @error('password') is-invalid @enderror"
-                                placeholder="Password"
+                                placeholder="{{ __('Password') }}"
                                 required
                             >
                             <div class="form-control-icon">
@@ -82,7 +82,7 @@
                                 type="password"
                                 name="password_confirmation"
                                 class="form-control form-control-xl"
-                                placeholder="Confirm Password"
+                                placeholder="{{ __('Confirm Password') }}"
                                 required
                             >
                             <div class="form-control-icon">
@@ -90,13 +90,13 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Sign Up</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">{{ __('Sign Up') }}</button>
                     </form>
 
                     <div class="text-center mt-5 text-lg fs-4">
                         <p class="text-gray-600">
-                            Already have an account?
-                            <a href="{{ route('app.auth.login') }}" class="font-bold">Log in</a>.
+                            {{ __('Already have an account?') }}
+                            <a href="{{ route('app.auth.login') }}" class="font-bold">{{ __('Log in') }}</a>.
                         </p>
                     </div>
                 </div>

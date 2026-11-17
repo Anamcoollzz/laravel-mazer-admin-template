@@ -1,13 +1,13 @@
 <div class="row g-3">
     <div class="col-md-6">
-        <label for="sku" class="form-label">SKU <span class="text-danger">*</span></label>
+        <label for="sku" class="form-label">{{ __('SKU') }} <span class="text-danger">*</span></label>
         <input
             type="text"
             id="sku"
             name="sku"
             value="{{ old('sku', $product->sku) }}"
             class="form-control @error('sku') is-invalid @enderror"
-            placeholder="Contoh: PRD-0001"
+            placeholder="{{ __('Contoh: PRD-0001') }}"
             required
         >
         @error('sku')
@@ -16,14 +16,14 @@
     </div>
 
     <div class="col-md-6">
-        <label for="name" class="form-label">Nama Produk <span class="text-danger">*</span></label>
+        <label for="name" class="form-label">{{ __('Nama Produk') }} <span class="text-danger">*</span></label>
         <input
             type="text"
             id="name"
             name="name"
             value="{{ old('name', $product->name) }}"
             class="form-control @error('name') is-invalid @enderror"
-            placeholder="Nama produk"
+            placeholder="{{ __('Nama produk') }}"
             required
         >
         @error('name')
@@ -32,14 +32,14 @@
     </div>
 
     <div class="col-md-4">
-        <label for="category" class="form-label">Kategori</label>
+        <label for="category" class="form-label">{{ __('Kategori') }}</label>
         <input
             type="text"
             id="category"
             name="category"
             value="{{ old('category', $product->category) }}"
             class="form-control @error('category') is-invalid @enderror"
-            placeholder="Contoh: Electronics"
+            placeholder="{{ __('Contoh: Electronics') }}"
         >
         @error('category')
             <div class="invalid-feedback">{{ $message }}</div>
@@ -47,7 +47,7 @@
     </div>
 
     <div class="col-md-4">
-        <label for="price" class="form-label">Harga <span class="text-danger">*</span></label>
+        <label for="price" class="form-label">{{ __('Harga') }} <span class="text-danger">*</span></label>
         <input
             type="number"
             id="price"
@@ -64,7 +64,7 @@
     </div>
 
     <div class="col-md-4">
-        <label for="stock" class="form-label">Stok <span class="text-danger">*</span></label>
+        <label for="stock" class="form-label">{{ __('Stok') }} <span class="text-danger">*</span></label>
         <input
             type="number"
             id="stock"
@@ -80,13 +80,13 @@
     </div>
 
     <div class="col-12">
-        <label for="description" class="form-label">Deskripsi</label>
+        <label for="description" class="form-label">{{ __('Deskripsi') }}</label>
         <textarea
             id="description"
             name="description"
             rows="3"
             class="form-control @error('description') is-invalid @enderror"
-            placeholder="Deskripsi produk..."
+            placeholder="{{ __('Deskripsi produk...') }}"
         >{{ old('description', $product->description) }}</textarea>
         @error('description')
             <div class="invalid-feedback">{{ $message }}</div>
@@ -103,7 +103,7 @@
                 value="1"
                 @checked(old('is_active', $product->is_active ?? true))
             >
-            <label class="form-check-label" for="is_active">Active</label>
+            <label class="form-check-label" for="is_active">{{ __('Active') }}</label>
         </div>
     </div>
 </div>

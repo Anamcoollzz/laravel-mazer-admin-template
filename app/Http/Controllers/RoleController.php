@@ -59,7 +59,7 @@ class RoleController extends Controller
         $role->syncPermissions($validated['permissions'] ?? []);
 
         return to_route('roles.index')
-            ->with('success', 'Role berhasil ditambahkan.');
+            ->with('success', __('Role berhasil ditambahkan.'));
     }
 
     /**
@@ -89,7 +89,7 @@ class RoleController extends Controller
         $role->syncPermissions($validated['permissions'] ?? []);
 
         return to_route('roles.index')
-            ->with('success', 'Role berhasil diperbarui.');
+            ->with('success', __('Role berhasil diperbarui.'));
     }
 
     /**
@@ -99,12 +99,12 @@ class RoleController extends Controller
     {
         if ($role->name === 'super-admin') {
             return to_route('roles.index')
-                ->with('error', 'Role super-admin tidak dapat dihapus.');
+                ->with('error', __('Role super-admin tidak dapat dihapus.'));
         }
 
         $role->delete();
 
         return to_route('roles.index')
-            ->with('success', 'Role berhasil dihapus.');
+            ->with('success', __('Role berhasil dihapus.'));
     }
 }

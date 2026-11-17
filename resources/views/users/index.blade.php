@@ -1,20 +1,20 @@
 @extends('mazer.layouts.app-mazer')
 
-@section('title', 'Users - Mazer Admin Dashboard')
+@section('title', __('Users') . ' - ' . config('app.name', 'Mazer Admin Dashboard'))
 
 @section('page-heading')
   <div class="page-heading">
       <div class="page-title">
           <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                  <h3>User Management</h3>
-                  <p class="text-subtitle text-muted">Kelola data user dan role Spatie.</p>
+                  <h3>{{ __('User Management') }}</h3>
+                  <p class="text-subtitle text-muted">{{ __('Kelola data user dan role Spatie.') }}</p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">Dashboard</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Users</li>
+                          <li class="breadcrumb-item"><a href="{{ route('mazer.index.html') }}">{{ __('Dashboard') }}</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">{{ __('Users') }}</li>
                       </ol>
                   </nav>
               </div>
@@ -24,23 +24,23 @@
       @if (session('success'))
           <div class="alert alert-success alert-dismissible fade show" role="alert">
               {{ session('success') }}
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('Close') }}"></button>
           </div>
       @endif
 
       @if (session('error'))
           <div class="alert alert-danger alert-dismissible fade show" role="alert">
               {{ session('error') }}
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('Close') }}"></button>
           </div>
       @endif
 
       <section class="section">
           <div class="card">
               <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
-                  <h4 class="card-title mb-0">Daftar User</h4>
+                  <h4 class="card-title mb-0">{{ __('Daftar User') }}</h4>
                   <a href="{{ route('users.create') }}" class="btn btn-primary">
-                      <i class="bi bi-plus-lg"></i> Tambah User
+                      <i class="bi bi-plus-lg"></i> {{ __('Tambah User') }}
                   </a>
               </div>
               <div class="card-body">
@@ -51,21 +51,21 @@
                               name="search"
                               value="{{ $search }}"
                               class="form-control"
-                              placeholder="Cari nama atau email..."
+                              placeholder="{{ __('Cari nama atau email...') }}"
                           >
                       </div>
                       <div class="col-md-3">
                           <select name="role" class="form-select">
-                              <option value="">Semua Role</option>
+                              <option value="">{{ __('Semua Role') }}</option>
                               @foreach ($roles as $role)
                                   <option value="{{ $role->name }}" @selected($selectedRole === $role->name)>{{ $role->name }}</option>
                               @endforeach
                           </select>
                       </div>
                       <div class="col-md-4 d-flex gap-2">
-                          <button type="submit" class="btn btn-outline-primary">Filter</button>
+                          <button type="submit" class="btn btn-outline-primary">{{ __('Filter') }}</button>
                           @if ($search !== '' || $selectedRole !== '')
-                              <a href="{{ route('users.index') }}" class="btn btn-outline-secondary">Reset</a>
+                              <a href="{{ route('users.index') }}" class="btn btn-outline-secondary">{{ __('Reset') }}</a>
                           @endif
                       </div>
                   </form>
@@ -75,11 +75,11 @@
                           <thead>
                               <tr>
                                   <th>#</th>
-                                  <th>Nama</th>
-                                  <th>Email</th>
-                                  <th>Roles</th>
-                                  <th>Dibuat</th>
-                                  <th class="text-end">Aksi</th>
+                                  <th>{{ __('Nama') }}</th>
+                                  <th>{{ __('Email') }}</th>
+                                  <th>{{ __('Roles') }}</th>
+                                  <th>{{ __('Dibuat') }}</th>
+                                  <th class="text-end">{{ __('Aksi') }}</th>
                               </tr>
                           </thead>
                           <tbody>
@@ -103,12 +103,12 @@
                                                   class="btn btn-sm btn-warning"
                                                   data-bs-toggle="tooltip"
                                                   data-bs-placement="top"
-                                                  title="Edit User"
-                                                  aria-label="Edit User"
+                                                  title="{{ __('Edit User') }}"
+                                                  aria-label="{{ __('Edit User') }}"
                                               >
                                                   <i class="bi bi-pencil-square"></i>
                                               </a>
-                                              <form method="POST" action="{{ route('users.destroy', $user) }}" onsubmit="return confirm('Hapus user ini?')">
+                                              <form method="POST" action="{{ route('users.destroy', $user) }}" onsubmit="return confirm('{{ __('Hapus user ini?') }}')">
                                                   @csrf
                                                   @method('DELETE')
                                                   <button
@@ -116,8 +116,8 @@
                                                       class="btn btn-sm btn-danger"
                                                       data-bs-toggle="tooltip"
                                                       data-bs-placement="top"
-                                                      title="Hapus User"
-                                                      aria-label="Hapus User"
+                                                      title="{{ __('Hapus User') }}"
+                                                      aria-label="{{ __('Hapus User') }}"
                                                   >
                                                       <i class="bi bi-trash"></i>
                                                   </button>
@@ -127,7 +127,7 @@
                                   </tr>
                               @empty
                                   <tr>
-                                      <td colspan="6" class="text-center text-muted py-4">Belum ada data user.</td>
+                                      <td colspan="6" class="text-center text-muted py-4">{{ __('Belum ada data user.') }}</td>
                                   </tr>
                               @endforelse
                           </tbody>

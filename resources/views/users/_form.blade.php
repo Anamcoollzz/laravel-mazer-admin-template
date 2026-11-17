@@ -4,14 +4,14 @@
 
 <div class="row g-3">
     <div class="col-md-6">
-        <label for="name" class="form-label">Nama <span class="text-danger">*</span></label>
+        <label for="name" class="form-label">{{ __('Nama') }} <span class="text-danger">*</span></label>
         <input
             type="text"
             id="name"
             name="name"
             value="{{ old('name', $user->name) }}"
             class="form-control @error('name') is-invalid @enderror"
-            placeholder="Nama lengkap"
+            placeholder="{{ __('Nama lengkap') }}"
             required
         >
         @error('name')
@@ -20,14 +20,14 @@
     </div>
 
     <div class="col-md-6">
-        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+        <label for="email" class="form-label">{{ __('Email') }} <span class="text-danger">*</span></label>
         <input
             type="email"
             id="email"
             name="email"
             value="{{ old('email', $user->email) }}"
             class="form-control @error('email') is-invalid @enderror"
-            placeholder="user@example.com"
+            placeholder="{{ __('user@example.com') }}"
             required
         >
         @error('email')
@@ -37,7 +37,7 @@
 
     <div class="col-md-6">
         <label for="password" class="form-label">
-            Password @if (! $user->exists) <span class="text-danger">*</span> @else <small class="text-muted">(kosongkan jika tidak diubah)</small> @endif
+            {{ __('Password') }} @if (! $user->exists) <span class="text-danger">*</span> @else <small class="text-muted">({{ __('kosongkan jika tidak diubah') }})</small> @endif
         </label>
         <input
             type="password"
@@ -53,7 +53,7 @@
 
     <div class="col-md-6">
         <label for="password_confirmation" class="form-label">
-            Konfirmasi Password @if (! $user->exists) <span class="text-danger">*</span> @endif
+            {{ __('Konfirmasi Password') }} @if (! $user->exists) <span class="text-danger">*</span> @endif
         </label>
         <input
             type="password"
@@ -65,7 +65,7 @@
     </div>
 
     <div class="col-12">
-        <label class="form-label d-block">Roles</label>
+        <label class="form-label d-block">{{ __('Roles') }}</label>
         <div class="row g-2">
             @forelse ($roles as $role)
                 <div class="col-sm-6 col-md-4 col-lg-3">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             @empty
-                <div class="col-12 text-muted">Belum ada role tersedia.</div>
+                <div class="col-12 text-muted">{{ __('Belum ada role tersedia.') }}</div>
             @endforelse
         </div>
         @error('roles')

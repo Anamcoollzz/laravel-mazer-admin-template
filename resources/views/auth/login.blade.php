@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Mazer Admin Dashboard</title>
+    <title>{{ __('Login') }} - {{ config('app.name', 'Mazer Admin Dashboard') }}</title>
 
     <link rel="shortcut icon" href="{{ asset('mazzer-assets/compiled/svg/favicon.svg') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('mazzer-assets/compiled/css/app.css') }}">
@@ -21,8 +21,8 @@
                     <div class="auth-logo">
                         <a href="{{ route('mazer.index.html') }}"><img src="{{ asset('mazzer-assets/compiled/svg/logo.svg') }}" alt="Logo"></a>
                     </div>
-                    <h1 class="auth-title">Log in.</h1>
-                    <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p>
+                    <h1 class="auth-title">{{ __('Log in.') }}</h1>
+                    <p class="auth-subtitle mb-5">{{ __('Log in with your data that you entered during registration.') }}</p>
 
                     <form method="POST" action="{{ route('app.auth.login.attempt') }}">
                         @csrf
@@ -32,7 +32,7 @@
                                 name="email"
                                 value="{{ old('email') }}"
                                 class="form-control form-control-xl @error('email') is-invalid @enderror"
-                                placeholder="Email"
+                                placeholder="{{ __('Email') }}"
                                 required
                                 autofocus
                             >
@@ -49,7 +49,7 @@
                                 type="password"
                                 name="password"
                                 class="form-control form-control-xl @error('password') is-invalid @enderror"
-                                placeholder="Password"
+                                placeholder="{{ __('Password') }}"
                                 required
                             >
                             <div class="form-control-icon">
@@ -70,17 +70,17 @@
                                 @checked(old('remember'))
                             >
                             <label class="form-check-label text-gray-600" for="remember">
-                                Keep me logged in
+                                {{ __('Keep me logged in') }}
                             </label>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Log in</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">{{ __('Log in') }}</button>
                     </form>
 
                     <div class="text-center mt-5 text-lg fs-4">
                         <p class="text-gray-600">
-                            Don't have an account?
-                            <a href="{{ route('app.auth.register') }}" class="font-bold">Sign up</a>.
+                            {{ __("Don't have an account?") }}
+                            <a href="{{ route('app.auth.register') }}" class="font-bold">{{ __('Sign up') }}</a>.
                         </p>
                     </div>
                 </div>

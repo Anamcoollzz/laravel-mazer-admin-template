@@ -70,7 +70,7 @@ class UserController extends Controller
         $user->syncRoles($validated['roles'] ?? []);
 
         return to_route('users.index')
-            ->with('success', 'User berhasil ditambahkan.');
+            ->with('success', __('User berhasil ditambahkan.'));
     }
 
     /**
@@ -106,7 +106,7 @@ class UserController extends Controller
         $user->syncRoles($validated['roles'] ?? []);
 
         return to_route('users.index')
-            ->with('success', 'User berhasil diperbarui.');
+            ->with('success', __('User berhasil diperbarui.'));
     }
 
     /**
@@ -116,12 +116,12 @@ class UserController extends Controller
     {
         if ($request->user()?->is($user)) {
             return to_route('users.index')
-                ->with('error', 'User yang sedang login tidak dapat dihapus.');
+                ->with('error', __('User yang sedang login tidak dapat dihapus.'));
         }
 
         $user->delete();
 
         return to_route('users.index')
-            ->with('success', 'User berhasil dihapus.');
+            ->with('success', __('User berhasil dihapus.'));
     }
 }

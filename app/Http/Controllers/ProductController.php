@@ -49,7 +49,7 @@ class ProductController extends Controller
         Product::query()->create($request->validated());
 
         return to_route('products.index')
-            ->with('success', 'Produk berhasil ditambahkan.');
+            ->with('success', __('Produk berhasil ditambahkan.'));
     }
 
     /**
@@ -70,7 +70,7 @@ class ProductController extends Controller
         $product->update($request->validated());
 
         return to_route('products.index')
-            ->with('success', 'Produk berhasil diperbarui.');
+            ->with('success', __('Produk berhasil diperbarui.'));
     }
 
     /**
@@ -81,7 +81,7 @@ class ProductController extends Controller
         $product->delete();
 
         return to_route('products.index')
-            ->with('success', 'Produk berhasil dihapus.');
+            ->with('success', __('Produk berhasil dihapus.'));
     }
 
     /**
@@ -92,7 +92,10 @@ class ProductController extends Controller
         $copy = $product->duplicate();
 
         return to_route('products.index')
-            ->with('success', "Produk berhasil diduplikasi menjadi {$copy->name} ({$copy->sku}).");
+            ->with('success', __('Produk berhasil diduplikasi menjadi :name (:sku).', [
+                'name' => $copy->name,
+                'sku' => $copy->sku,
+            ]));
     }
 
     /**
@@ -126,15 +129,18 @@ class ProductController extends Controller
             Excel::import(new ProductsImport, $request->file('file'));
         } catch (ValidationException $exception) {
             $failures = collect($exception->failures())
-                ->map(fn ($failure): string => "Baris {$failure->row()}: ".implode(', ', $failure->errors()))
+                ->map(fn ($failure): string => __('Baris :row: :errors', [
+                    'row' => $failure->row(),
+                    'errors' => implode(', ', $failure->errors()),
+                ]))
                 ->take(5)
                 ->implode(' | ');
 
             return to_route('products.index')
-                ->with('error', "Gagal import Excel. {$failures}");
+                ->with('error', __('Gagal import Excel. :failures', ['failures' => $failures]));
         }
 
         return to_route('products.index')
-            ->with('success', 'Data produk berhasil diimport dari Excel.');
+            ->with('success', __('Data produk berhasil diimport dari Excel.'));
     }
 }

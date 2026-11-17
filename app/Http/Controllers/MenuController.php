@@ -67,7 +67,7 @@ class MenuController extends Controller
         Menu::query()->create($request->validated());
 
         return to_route('menus.index')
-            ->with('success', 'Menu berhasil ditambahkan.');
+            ->with('success', __('Menu berhasil ditambahkan.'));
     }
 
     /**
@@ -90,7 +90,7 @@ class MenuController extends Controller
         $menu->update($request->validated());
 
         return to_route('menus.index')
-            ->with('success', 'Menu berhasil diperbarui.');
+            ->with('success', __('Menu berhasil diperbarui.'));
     }
 
     /**
@@ -101,7 +101,7 @@ class MenuController extends Controller
         $menu->delete();
 
         return to_route('menus.index')
-            ->with('success', 'Menu berhasil dihapus.');
+            ->with('success', __('Menu berhasil dihapus.'));
     }
 
     /**
