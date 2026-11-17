@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/mazer/index.html');
+
+Route::resource('menus', MenuController::class)->except(['show']);
 
 Route::view('/mazer/index.html', 'mazer.index')->name('mazer.index.html');
 

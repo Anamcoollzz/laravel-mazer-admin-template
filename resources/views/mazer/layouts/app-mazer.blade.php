@@ -59,379 +59,51 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-title">Menu</li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.index.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.index.html') }}" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.component-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-stack"></i>
-                                <span>Components</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.component-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-accordion.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-accordion.html') }}" class="submenu-link">Accordion</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-alert.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-alert.html') }}" class="submenu-link">Alert</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-badge.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-badge.html') }}" class="submenu-link">Badge</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-breadcrumb.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-breadcrumb.html') }}" class="submenu-link">Breadcrumb</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-button.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-button.html') }}" class="submenu-link">Button</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-card.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-card.html') }}" class="submenu-link">Card</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-carousel.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-carousel.html') }}" class="submenu-link">Carousel</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-collapse.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-collapse.html') }}" class="submenu-link">Collapse</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-dropdown.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-dropdown.html') }}" class="submenu-link">Dropdown</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-list-group.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-list-group.html') }}" class="submenu-link">List Group</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-modal.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-modal.html') }}" class="submenu-link">Modal</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-navs.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-navs.html') }}" class="submenu-link">Navs</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-pagination.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-pagination.html') }}" class="submenu-link">Pagination</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-progress.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-progress.html') }}" class="submenu-link">Progress</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-spinner.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-spinner.html') }}" class="submenu-link">Spinner</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-toasts.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-toasts.html') }}" class="submenu-link">Toasts</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.component-tooltip.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.component-tooltip.html') }}" class="submenu-link">Tooltip</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.extra-component-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-collection-fill"></i>
-                                <span>Extra Components</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.extra-component-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.extra-component-avatar.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.extra-component-avatar.html') }}" class="submenu-link">Avatar</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.extra-component-divider.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.extra-component-divider.html') }}" class="submenu-link">Divider</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.extra-component-date-picker.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.extra-component-date-picker.html') }}" class="submenu-link">Date Picker</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.extra-component-sweetalert.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.extra-component-sweetalert.html') }}" class="submenu-link">Sweet Alert</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.extra-component-toastify.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.extra-component-toastify.html') }}" class="submenu-link">Toastify</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.extra-component-rating.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.extra-component-rating.html') }}" class="submenu-link">Rating</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.layout-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-grid-1x2-fill"></i>
-                                <span>Layouts</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.layout-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.layout-default.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.layout-default.html') }}" class="submenu-link">Default Layout</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.layout-vertical-1-column.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.layout-vertical-1-column.html') }}" class="submenu-link">1 Column</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.layout-vertical-navbar.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.layout-vertical-navbar.html') }}" class="submenu-link">Vertical Navbar</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.layout-rtl.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.layout-rtl.html') }}" class="submenu-link">RTL Layout</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.layout-horizontal.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.layout-horizontal.html') }}" class="submenu-link">Horizontal Menu</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-title">Forms &amp; Tables</li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.form-element-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-hexagon-fill"></i>
-                                <span>Form Elements</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.form-element-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-element-input.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-element-input.html') }}" class="submenu-link">Input</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-element-input-group.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-element-input-group.html') }}" class="submenu-link">Input Group</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-element-select.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-element-select.html') }}" class="submenu-link">Select</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-element-radio.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-element-radio.html') }}" class="submenu-link">Radio</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-element-checkbox.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-element-checkbox.html') }}" class="submenu-link">Checkbox</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-element-textarea.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-element-textarea.html') }}" class="submenu-link">Textarea</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.form-layout.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.form-layout.html') }}" class='sidebar-link'>
-                                <i class="bi bi-file-earmark-medical-fill"></i>
-                                <span>Form Layout</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.form-validation-parsley.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-journal-check"></i>
-                                <span>Form Validation</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.form-validation-parsley.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-validation-parsley.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-validation-parsley.html') }}" class="submenu-link">Parsley</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.form-editor-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-pen-fill"></i>
-                                <span>Form Editor</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.form-editor-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-editor-quill.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-editor-quill.html') }}" class="submenu-link">Quill</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-editor-ckeditor.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-editor-ckeditor.html') }}" class="submenu-link">CKEditor</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-editor-summernote.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-editor-summernote.html') }}" class="submenu-link">Summernote</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.form-editor-tinymce.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.form-editor-tinymce.html') }}" class="submenu-link">TinyMCE</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.table.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.table.html') }}" class='sidebar-link'>
-                                <i class="bi bi-grid-1x2-fill"></i>
-                                <span>Table</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.table-datatable*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                                <span>Datatables</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.table-datatable*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.table-datatable.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.table-datatable.html') }}" class="submenu-link">Datatable</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.table-datatable-jquery.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.table-datatable-jquery.html') }}" class="submenu-link">Datatable (jQuery)</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-title">Extra UI</li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.ui-widgets-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-pentagon-fill"></i>
-                                <span>Widgets</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.ui-widgets-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-widgets-chatbox.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-widgets-chatbox.html') }}" class="submenu-link">Chatbox</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-widgets-pricing.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-widgets-pricing.html') }}" class="submenu-link">Pricing</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-widgets-todolist.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-widgets-todolist.html') }}" class="submenu-link">To-do List</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.ui-icons-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-egg-fill"></i>
-                                <span>Icons</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.ui-icons-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-icons-bootstrap-icons.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-icons-bootstrap-icons.html') }}" class="submenu-link">Bootstrap Icons </a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-icons-fontawesome.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-icons-fontawesome.html') }}" class="submenu-link">Fontawesome</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-icons-dripicons.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-icons-dripicons.html') }}" class="submenu-link">Dripicons</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.ui-chart-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <span>Charts</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.ui-chart-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-chart-chartjs.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-chart-chartjs.html') }}" class="submenu-link">ChartJS</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-chart-apexcharts.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-chart-apexcharts.html') }}" class="submenu-link">Apexcharts</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.ui-file-uploader.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.ui-file-uploader.html') }}" class='sidebar-link'>
-                                <i class="bi bi-cloud-arrow-up-fill"></i>
-                                <span>File Uploader</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.ui-map-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-map-fill"></i>
-                                <span>Maps</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.ui-map-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-map-google-map.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-map-google-map.html') }}" class="submenu-link">Google Map</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-map-jsvectormap.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.ui-map-jsvectormap.html') }}" class="submenu-link">JS Vector Map</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.ui-multi-level-menu.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-three-dots"></i>
-                                <span>Multi-level Menu</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.ui-multi-level-menu.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.ui-multi-level-menu.html') ? 'active' : '' }} has-sub">
-                                    <a href="#" class="submenu-link">First Level</a>
-                                    <ul class="submenu submenu-level-2 {{ request()->routeIs('mazer.ui-multi-level-menu.html') ? 'active' : '' }}">
-                                        <li class="submenu-item {{ request()->routeIs('mazer.ui-multi-level-menu.html') ? 'active' : '' }}">
-                                            <a href="{{ route('mazer.ui-multi-level-menu.html') }}" class="submenu-link">Second Level</a>
-                                        </li>
-                                        <li class="submenu-item ">
-                                            <a href="#" class="submenu-link">Second Level Menu</a>
-                                        </li>
+                        @foreach ($sidebarMenus as $menu)
+                            @if ($menu->isTitle())
+                                <li class="sidebar-title">{{ $menu->title }}</li>
+                            @elseif ($menu->children->isNotEmpty())
+                                @php($isMenuActive = $menu->isCurrentlyActive())
+                                <li class="sidebar-item {{ $isMenuActive ? 'active' : '' }} has-sub">
+                                    <a href="{{ $menu->resolvedHref() }}" class="sidebar-link">
+                                        @if ($menu->icon)
+                                            <i class="{{ $menu->icon }}"></i>
+                                        @endif
+                                        <span>{{ $menu->title }}</span>
+                                    </a>
+                                    <ul class="submenu {{ $isMenuActive ? 'active' : '' }}">
+                                        @foreach ($menu->children as $child)
+                                            @if ($child->children->isNotEmpty())
+                                                @php($isChildActive = $child->isCurrentlyActive())
+                                                <li class="submenu-item {{ $isChildActive ? 'active' : '' }} has-sub">
+                                                    <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->title }}</a>
+                                                    <ul class="submenu submenu-level-2 {{ $isChildActive ? 'active' : '' }}">
+                                                        @foreach ($child->children as $grandchild)
+                                                            <li class="submenu-item {{ $grandchild->isCurrentlyActive() ? 'active' : '' }}">
+                                                                <a href="{{ $grandchild->resolvedHref() }}" class="submenu-link">{{ $grandchild->title }}</a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </li>
+                                            @else
+                                                <li class="submenu-item {{ $child->isCurrentlyActive() ? 'active' : '' }}">
+                                                    <a href="{{ $child->resolvedHref() }}" class="submenu-link">{{ $child->title }}</a>
+                                                </li>
+                                            @endif
+                                        @endforeach
                                     </ul>
                                 </li>
-                                <li class="submenu-item  has-sub">
-                                    <a href="#" class="submenu-link">Another Menu</a>
-                                    <ul class="submenu submenu-level-2 ">
-                                        <li class="submenu-item ">
-                                            <a href="#" class="submenu-link">Second Level Menu</a>
-                                        </li>
-                                    </ul>
+                            @else
+                                <li class="sidebar-item {{ $menu->isCurrentlyActive() ? 'active' : '' }}">
+                                    <a href="{{ $menu->resolvedHref() }}" class="sidebar-link">
+                                        @if ($menu->icon)
+                                            <i class="{{ $menu->icon }}"></i>
+                                        @endif
+                                        <span>{{ $menu->title }}</span>
+                                    </a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-title">Pages</li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.application-email.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.application-email.html') }}" class='sidebar-link'>
-                                <i class="bi bi-envelope-fill"></i>
-                                <span>Email Application</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.application-chat.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.application-chat.html') }}" class='sidebar-link'>
-                                <i class="bi bi-chat-dots-fill"></i>
-                                <span>Chat Application</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.application-gallery.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.application-gallery.html') }}" class='sidebar-link'>
-                                <i class="bi bi-image-fill"></i>
-                                <span>Photo Gallery</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.application-checkout.html') ? 'active' : '' }}">
-                            <a href="{{ route('mazer.application-checkout.html') }}" class='sidebar-link'>
-                                <i class="bi bi-basket-fill"></i>
-                                <span>Checkout Page</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.auth-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-person-badge-fill"></i>
-                                <span>Authentication</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.auth-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.auth-login.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.auth-login.html') }}" class="submenu-link">Login</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.auth-register.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.auth-register.html') }}" class="submenu-link">Register</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.auth-forgot-password.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.auth-forgot-password.html') }}" class="submenu-link">Forgot Password</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item {{ request()->routeIs('mazer.error-*.html') ? 'active' : '' }} has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-x-octagon-fill"></i>
-                                <span>Errors</span>
-                            </a>
-                            <ul class="submenu {{ request()->routeIs('mazer.error-*.html') ? 'active' : '' }}">
-                                <li class="submenu-item {{ request()->routeIs('mazer.error-403.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.error-403.html') }}" class="submenu-link">403</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.error-404.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.error-404.html') }}" class="submenu-link">404</a>
-                                </li>
-                                <li class="submenu-item {{ request()->routeIs('mazer.error-500.html') ? 'active' : '' }}">
-                                    <a href="{{ route('mazer.error-500.html') }}" class="submenu-link">500</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-title">Raise Support</li>
-                        <li class="sidebar-item">
-                            <a href="https://zuramai.github.io/mazer/docs" class='sidebar-link'>
-                                <i class="bi bi-life-preserver"></i>
-                                <span>Documentation</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="https://github.com/zuramai/mazer/blob/main/CONTRIBUTING.md" class='sidebar-link'>
-                                <i class="bi bi-puzzle"></i>
-                                <span>Contribute</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="https://github.com/zuramai/mazer#donation" class='sidebar-link'>
-                                <i class="bi bi-cash"></i>
-                                <span>Donate</span>
-                            </a>
-                        </li>
+                            @endif
+                        @endforeach
                     </ul>
                 </div>
             </div>
