@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateUserRequest;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 use Spatie\Permission\Models\Role;
 
@@ -61,10 +62,15 @@ class UserController extends Controller
     {
         $validated = $request->validated();
 
+        $avatarPath = $request->hasFile('avatar')
+            ? $request->file('avatar')->store('avatars', 'public')
+            : null;
+
         $user = User::query()->create([
             'name' => $validated['name'],
             'email' => $validated['email'],
             'password' => $validated['password'],
+            'avatar' => $avatarPath,
         ]);
 
         $user->syncRoles($validated['roles'] ?? []);
@@ -102,6 +108,14 @@ class UserController extends Controller
             $attributes['password'] = $validated['password'];
         }
 
+        if ($request->hasFile('avatar')) {
+            if ($user->avatar) {
+                Storage::disk('public')->delete($user->avatar);
+            }
+
+            $attributes['avatar'] = $request->file('avatar')->store('avatars', 'public');
+        }
+
         $user->update($attributes);
         $user->syncRoles($validated['roles'] ?? []);
 
@@ -117,6 +131,10 @@ class UserController extends Controller
         if ($request->user()?->is($user)) {
             return to_route('users.index')
                 ->with('error', __('User yang sedang login tidak dapat dihapus.'));
+        }
+
+        if ($user->avatar) {
+            Storage::disk('public')->delete($user->avatar);
         }
 
         $user->delete();

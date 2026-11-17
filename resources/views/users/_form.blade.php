@@ -64,6 +64,27 @@
         >
     </div>
 
+    <div class="col-md-6">
+        <label for="avatar" class="form-label">{{ __('Avatar') }}</label>
+        <div class="d-flex align-items-center gap-3">
+            @if ($user->exists)
+                <div class="avatar avatar-md">
+                    <img src="{{ $user->avatarUrl() }}" alt="{{ $user->name }}">
+                </div>
+            @endif
+            <input
+                type="file"
+                id="avatar"
+                name="avatar"
+                accept="image/jpeg,image/png,image/webp"
+                class="form-control @error('avatar') is-invalid @enderror"
+            >
+        </div>
+        @error('avatar')
+            <div class="text-danger small mt-1">{{ $message }}</div>
+        @enderror
+    </div>
+
     <div class="col-12">
         <label class="form-label d-block">{{ __('Roles') }}</label>
         <div class="row g-2">

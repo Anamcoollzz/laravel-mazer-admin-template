@@ -28,7 +28,7 @@
                   <h4 class="card-title">{{ __('Form User') }}</h4>
               </div>
               <div class="card-body">
-                  <form method="POST" action="{{ route('users.store') }}">
+                  <form method="POST" action="{{ route('users.store') }}" enctype="multipart/form-data">
                       @csrf
                       @include('users._form')
 

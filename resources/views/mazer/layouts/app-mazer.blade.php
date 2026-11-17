@@ -118,13 +118,58 @@
             </div>
         </div>
         <div id="main">
-            <header class="mb-3 d-flex justify-content-between align-items-center">
+            <header class="mb-3 d-flex justify-content-between align-items-center gap-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
                 </a>
-                <div class="ms-auto btn-group btn-group-sm" role="group" aria-label="Language switcher">
-                    <a href="{{ route('locale.switch', 'id') }}" class="btn {{ app()->getLocale() === 'id' ? 'btn-primary' : 'btn-outline-primary' }}">ID</a>
-                    <a href="{{ route('locale.switch', 'en') }}" class="btn {{ app()->getLocale() === 'en' ? 'btn-primary' : 'btn-outline-primary' }}">EN</a>
+                <div class="ms-auto d-flex align-items-center gap-3">
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Language switcher">
+                        <a href="{{ route('locale.switch', 'id') }}" class="btn {{ app()->getLocale() === 'id' ? 'btn-primary' : 'btn-outline-primary' }}">ID</a>
+                        <a href="{{ route('locale.switch', 'en') }}" class="btn {{ app()->getLocale() === 'en' ? 'btn-primary' : 'btn-outline-primary' }}">EN</a>
+                    </div>
+
+                    @auth
+                        <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="d-flex align-items-center text-decoration-none">
+                                <div class="user-menu d-flex align-items-center">
+                                    <div class="user-name text-end me-2">
+                                        <h6 class="mb-0 text-gray-600">{{ auth()->user()->name }}</h6>
+                                        <p class="mb-0 text-sm text-gray-600">{{ auth()->user()->getRoleNames()->first() ?? __('User') }}</p>
+                                    </div>
+                                    <div class="user-img d-flex align-items-center">
+                                        <div class="avatar avatar-md">
+                                            <img src="{{ auth()->user()->avatarUrl() }}" alt="{{ auth()->user()->name }}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 11rem;">
+                                <li>
+                                    <h6 class="dropdown-header">{{ __('Hello, :name!', ['name' => auth()->user()->name]) }}</h6>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('profile.edit') }}">
+                                        <i class="icon-mid bi bi-person me-2"></i> {{ __('Profile') }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <form method="POST" action="{{ route('app.auth.logout') }}">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item text-danger">
+                                            <i class="icon-mid bi bi-box-arrow-left me-2"></i> {{ __('Logout') }}
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    @else
+                        <a href="{{ route('app.auth.login') }}" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-box-arrow-in-right me-1"></i> {{ __('Login') }}
+                        </a>
+                    @endauth
                 </div>
             </header>
 

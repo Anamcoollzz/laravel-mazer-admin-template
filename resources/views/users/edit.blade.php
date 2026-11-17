@@ -28,7 +28,7 @@
                   <h4 class="card-title">{{ __('Form Edit User') }}</h4>
               </div>
               <div class="card-body">
-                  <form method="POST" action="{{ route('users.update', $user) }}">
+                  <form method="POST" action="{{ route('users.update', $user) }}" enctype="multipart/form-data">
                       @csrf
                       @method('PUT')
                       @include('users._form')

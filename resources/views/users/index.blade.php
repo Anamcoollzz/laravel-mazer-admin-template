@@ -86,7 +86,14 @@
                               @forelse ($users as $user)
                                   <tr>
                                       <td>{{ $users->firstItem() + $loop->index }}</td>
-                                      <td class="fw-semibold">{{ $user->name }}</td>
+                                      <td>
+                                          <div class="d-flex align-items-center gap-2">
+                                              <div class="avatar avatar-md">
+                                                  <img src="{{ $user->avatarUrl() }}" alt="{{ $user->name }}">
+                                              </div>
+                                              <span class="fw-semibold">{{ $user->name }}</span>
+                                          </div>
+                                      </td>
                                       <td>{{ $user->email }}</td>
                                       <td>
                                           @forelse ($user->roles as $role)
