@@ -39,9 +39,14 @@
           <div class="card">
               <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
                   <h4 class="card-title mb-0">{{ __('Daftar Role') }}</h4>
-                  <a href="{{ route('roles.create') }}" class="btn btn-primary">
-                      <i class="bi bi-plus-lg"></i> {{ __('Tambah Role') }}
-                  </a>
+                  <div class="d-flex flex-wrap gap-2">
+                      <a href="{{ route('roles.export', request()->only(['search'])) }}" class="btn btn-success">
+                          <i class="bi bi-file-earmark-excel"></i> {{ __('Export Excel') }}
+                      </a>
+                      <a href="{{ route('roles.create') }}" class="btn btn-primary">
+                          <i class="bi bi-plus-lg"></i> {{ __('Tambah Role') }}
+                      </a>
+                  </div>
               </div>
               <div class="card-body">
                   <form method="GET" action="{{ route('roles.index') }}" class="row g-2 mb-3">
@@ -92,6 +97,19 @@
                                       </td>
                                       <td class="text-end">
                                           <div class="d-inline-flex gap-1">
+                                              <form method="POST" action="{{ route('roles.duplicate', $role) }}">
+                                                  @csrf
+                                                  <button
+                                                      type="submit"
+                                                      class="btn btn-sm btn-secondary"
+                                                      data-bs-toggle="tooltip"
+                                                      data-bs-placement="top"
+                                                      title="{{ __('Duplikasi Role') }}"
+                                                      aria-label="{{ __('Duplikasi Role') }}"
+                                                  >
+                                                      <i class="bi bi-files"></i>
+                                                  </button>
+                                              </form>
                                               <a
                                                   href="{{ route('roles.edit', $role) }}"
                                                   class="btn btn-sm btn-warning"

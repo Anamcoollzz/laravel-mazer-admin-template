@@ -38,6 +38,8 @@ Route::prefix('/app')->middleware('auth')->group(function () {
     Route::post('users/import', [UserController::class, 'import'])->name('users.import');
     Route::post('users/{user}/duplicate', [UserController::class, 'duplicate'])->name('users.duplicate');
     Route::resource('users', UserController::class)->except(['show']);
+    Route::get('roles/export', [RoleController::class, 'export'])->name('roles.export');
+    Route::post('roles/{role}/duplicate', [RoleController::class, 'duplicate'])->name('roles.duplicate');
     Route::resource('roles', RoleController::class)->except(['show']);
 
     Route::get('products/template', [ProductController::class, 'template'])->name('products.template');
