@@ -36,6 +36,10 @@ class RolePermissionSeeder extends Seeder
             Permission::findOrCreate($permission, 'web');
         }
 
+        // Clear cache again because DatabaseSeeder uses WithoutModelEvents,
+        // preventing Spatie's model events from flushing the empty cache.
+        app(PermissionRegistrar::class)->forgetCachedPermissions();
+
         $superAdmin = Role::findOrCreate('super-admin', 'web');
         $superAdmin->syncPermissions($permissions);
 
@@ -51,6 +55,8 @@ class RolePermissionSeeder extends Seeder
         ]);
 
         Role::findOrCreate('user', 'web');
+
+        app(PermissionRegistrar::class)->forgetCachedPermissions();
 
         $this->seedSidebarMenus();
     }
