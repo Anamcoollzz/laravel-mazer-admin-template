@@ -31,8 +31,12 @@ Route::prefix('app/auth')->name('app.auth.')->group(function (): void {
         ->name('logout');
 });
 
-Route::prefix('/app')->group(function () {
+Route::prefix('/app')->middleware('auth')->group(function () {
     Route::resource('menus', MenuController::class)->except(['show']);
+    Route::get('users/template', [UserController::class, 'template'])->name('users.template');
+    Route::get('users/export', [UserController::class, 'export'])->name('users.export');
+    Route::post('users/import', [UserController::class, 'import'])->name('users.import');
+    Route::post('users/{user}/duplicate', [UserController::class, 'duplicate'])->name('users.duplicate');
     Route::resource('users', UserController::class)->except(['show']);
     Route::resource('roles', RoleController::class)->except(['show']);
 
@@ -42,10 +46,8 @@ Route::prefix('/app')->group(function () {
     Route::post('products/{product}/duplicate', [ProductController::class, 'duplicate'])->name('products.duplicate');
     Route::resource('products', ProductController::class)->except(['show']);
 
-    Route::middleware('auth')->group(function () {
-        Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::put('profile', [ProfileController::class, 'update'])->name('profile.update');
-    });
+    Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('profile', [ProfileController::class, 'update'])->name('profile.update');
 });
 
 Route::view('/mazer/index.html', 'mazer.index')->name('mazer.index.html');

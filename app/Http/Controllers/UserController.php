@@ -2,14 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\UsersExport;
+use App\Exports\UsersTemplateExport;
+use App\Http\Requests\ImportUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
+use App\Imports\UsersImport;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
+use Maatwebsite\Excel\Facades\Excel;
+use Maatwebsite\Excel\Validators\ValidationException;
 use Spatie\Permission\Models\Role;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class UserController extends Controller
 {
@@ -141,5 +148,68 @@ class UserController extends Controller
 
         return to_route('users.index')
             ->with('success', __('User berhasil dihapus.'));
+    }
+
+    /**
+     * Duplicate the specified user.
+     */
+    public function duplicate(User $user): RedirectResponse
+    {
+        $copy = $user->duplicate();
+
+        return to_route('users.index')
+            ->with('success', __('User berhasil diduplikasi menjadi :name (:email).', [
+                'name' => $copy->name,
+                'email' => $copy->email,
+            ]));
+    }
+
+    /**
+     * Download the Excel import template for users.
+     */
+    public function template(): BinaryFileResponse
+    {
+        return Excel::download(
+            new UsersTemplateExport,
+            'users-import-template.xlsx',
+        );
+    }
+
+    /**
+     * Export users to an Excel file.
+     */
+    public function export(Request $request): BinaryFileResponse
+    {
+        $search = $request->string('search')->trim()->value();
+        $role = $request->string('role')->trim()->value();
+
+        return Excel::download(
+            new UsersExport($search, $role),
+            'users-'.now()->format('Y-m-d').'.xlsx',
+        );
+    }
+
+    /**
+     * Import users from an uploaded Excel file.
+     */
+    public function import(ImportUserRequest $request): RedirectResponse
+    {
+        try {
+            Excel::import(new UsersImport, $request->file('file'));
+        } catch (ValidationException $exception) {
+            $failures = collect($exception->failures())
+                ->map(fn ($failure): string => __('Baris :row: :errors', [
+                    'row' => $failure->row(),
+                    'errors' => implode(', ', $failure->errors()),
+                ]))
+                ->take(5)
+                ->implode(' | ');
+
+            return to_route('users.index')
+                ->with('error', __('Gagal import Excel. :failures', ['failures' => $failures]));
+        }
+
+        return to_route('users.index')
+            ->with('success', __('Data user berhasil diimport dari Excel.'));
     }
 }

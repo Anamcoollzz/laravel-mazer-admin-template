@@ -48,4 +48,41 @@ class User extends Authenticatable
 
         return asset('mazzer-assets/compiled/jpg/1.jpg');
     }
+
+    /**
+     * Duplicate this user with a unique email, "(Copy)" suffix, and copied roles.
+     */
+    public function duplicate(): self
+    {
+        $this->loadMissing('roles:id,name');
+
+        $copy = $this->replicate(['last_logged_in', 'remember_token', 'avatar']);
+        $copy->name = "{$this->name} (Copy)";
+        $copy->email = $this->generateUniqueCopyEmail();
+        $copy->save();
+
+        $copy->syncRoles($this->roles->pluck('name')->all());
+
+        return $copy;
+    }
+
+    /**
+     * Generate a unique email address for a duplicated user.
+     */
+    private function generateUniqueCopyEmail(): string
+    {
+        [$local, $domain] = str_contains($this->email, '@')
+            ? explode('@', $this->email, 2)
+            : [$this->email, 'example.com'];
+
+        $candidate = "{$local}-copy@{$domain}";
+        $counter = 2;
+
+        while (self::query()->where('email', $candidate)->exists()) {
+            $candidate = "{$local}-copy-{$counter}@{$domain}";
+            $counter++;
+        }
+
+        return $candidate;
+    }
 }

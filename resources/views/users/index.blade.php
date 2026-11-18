@@ -35,13 +35,28 @@
           </div>
       @endif
 
+      @error('file')
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              {{ $message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('Close') }}"></button>
+          </div>
+      @enderror
+
       <section class="section">
           <div class="card">
               <div class="card-header d-flex flex-wrap justify-content-between align-items-center gap-2">
                   <h4 class="card-title mb-0">{{ __('Daftar User') }}</h4>
-                  <a href="{{ route('users.create') }}" class="btn btn-primary">
-                      <i class="bi bi-plus-lg"></i> {{ __('Tambah User') }}
-                  </a>
+                  <div class="d-flex flex-wrap gap-2">
+                      <a href="{{ route('users.export', request()->only(['search', 'role'])) }}" class="btn btn-success">
+                          <i class="bi bi-file-earmark-excel"></i> {{ __('Export Excel') }}
+                      </a>
+                      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#importUserModal">
+                          <i class="bi bi-upload"></i> {{ __('Import Excel') }}
+                      </button>
+                      <a href="{{ route('users.create') }}" class="btn btn-primary">
+                          <i class="bi bi-plus-lg"></i> {{ __('Tambah User') }}
+                      </a>
+                  </div>
               </div>
               <div class="card-body">
                   <form method="GET" action="{{ route('users.index') }}" class="row g-2 mb-3">
@@ -107,6 +122,19 @@
                                       <td>{{ $user->created_at?->format('d M Y') }}</td>
                                       <td class="text-end">
                                           <div class="d-inline-flex gap-1">
+                                              <form method="POST" action="{{ route('users.duplicate', $user) }}">
+                                                  @csrf
+                                                  <button
+                                                      type="submit"
+                                                      class="btn btn-sm btn-secondary"
+                                                      data-bs-toggle="tooltip"
+                                                      data-bs-placement="top"
+                                                      title="{{ __('Duplikasi User') }}"
+                                                      aria-label="{{ __('Duplikasi User') }}"
+                                                  >
+                                                      <i class="bi bi-files"></i>
+                                                  </button>
+                                              </form>
                                               <a
                                                   href="{{ route('users.edit', $user) }}"
                                                   class="btn btn-sm btn-warning"
@@ -149,5 +177,37 @@
               </div>
           </div>
       </section>
+  </div>
+
+  <!-- Import Excel Modal -->
+  <div class="modal fade" id="importUserModal" tabindex="-1" aria-labelledby="importUserModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <form method="POST" action="{{ route('users.import') }}" enctype="multipart/form-data" class="modal-content">
+              @csrf
+              <div class="modal-header">
+                  <h5 class="modal-title" id="importUserModalLabel">{{ __('Import User dari Excel') }}</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Close') }}"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="file" class="form-label">{{ __('File Excel (.xlsx, .xls, .csv)') }} <span class="text-danger">*</span></label>
+                      <input type="file" id="file" name="file" class="form-control" accept=".xlsx,.xls,.csv" required>
+                  </div>
+                  <div class="alert alert-light-info mb-0 small">
+                      <strong>{{ __('Format kolom header:') }}</strong> <code>name</code>, <code>email</code>, <code>roles</code> (pisahkan dengan koma), <code>password</code> (opsional).<br>
+                      {{ __('Jika email sudah ada, data user akan otomatis diperbarui.') }}
+                      <div class="mt-2">
+                          <a href="{{ route('users.template') }}" class="btn btn-sm btn-outline-primary">
+                              <i class="bi bi-download"></i> {{ __('Download Template Excel') }}
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-light-secondary" data-bs-dismiss="modal">{{ __('Batal') }}</button>
+                  <button type="submit" class="btn btn-primary">{{ __('Import') }}</button>
+              </div>
+          </form>
+      </div>
   </div>
 @endsection
